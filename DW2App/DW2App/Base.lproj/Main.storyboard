@@ -263,7 +263,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1720" y="-76"/>
+            <point key="canvasLocation" x="-1720" y="-87"/>
         </scene>
     </scenes>
     <resources>
@@ -271,7 +271,7 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Rur-Bt-57K"/>
-        <segue reference="fKM-5e-YvG"/>
+        <segue reference="YBS-uM-4H6"/>
+        <segue reference="VJT-Po-Pc0"/>
     </inferredMetricsTieBreakers>
 </document>
