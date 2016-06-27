@@ -17,18 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpR-lh-Sy7">
-                                <rect key="frame" x="339" y="72" width="38" height="30"/>
-                                <state key="normal" title="Artist"/>
-                                <connections>
-                                    <segue destination="tqF-II-plG" kind="show" id="VJT-Po-Pc0"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Om-CS-LIr">
-                                <rect key="frame" x="206" y="72" width="55" height="30"/>
-                                <state key="normal" title="Artwork"/>
+                                <rect key="frame" x="20" y="72" width="104" height="30"/>
+                                <state key="normal" title="Artwork gallery"/>
                                 <connections>
                                     <segue destination="hIs-vj-r55" kind="show" id="YBS-uM-4H6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpR-lh-Sy7">
+                                <rect key="frame" x="20" y="110" width="69" height="30"/>
+                                <state key="normal" title="Artists list"/>
+                                <connections>
+                                    <segue destination="tqF-II-plG" kind="show" id="VJT-Po-Pc0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -38,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wkb-kR-FlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-84" y="-1065"/>
+            <point key="canvasLocation" x="-84" y="-1765"/>
         </scene>
         <!--Power-->
         <scene sceneID="oRK-zA-0GV">
@@ -55,7 +55,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vxb-A8-PBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-798" y="-87"/>
+            <point key="canvasLocation" x="-802" y="-747"/>
         </scene>
         <!--Power-->
         <scene sceneID="bba-ij-vl0">
@@ -70,15 +70,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHh-UV-fl3">
-                                <rect key="frame" x="181" y="72" width="55" height="30"/>
-                                <state key="normal" title="Artwork"/>
+                                <rect key="frame" x="20" y="72" width="104" height="30"/>
+                                <state key="normal" title="Artwork gallery"/>
                                 <connections>
                                     <segue destination="hIs-vj-r55" kind="show" id="CIS-XS-VFr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYa-Vj-79m">
-                                <rect key="frame" x="371" y="72" width="45" height="30"/>
-                                <state key="normal" title="Artists"/>
+                                <rect key="frame" x="20" y="110" width="69" height="30"/>
+                                <state key="normal" title="Artists list"/>
                                 <connections>
                                     <segue destination="tqF-II-plG" kind="show" id="MAW-Gu-uBx"/>
                                 </connections>
@@ -90,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhy-Hi-CXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-84" y="-87"/>
+            <point key="canvasLocation" x="-84" y="-747"/>
         </scene>
         <!--Participation-->
         <scene sceneID="g8P-ih-kLq">
@@ -122,15 +122,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZT-5b-43J">
-                                <rect key="frame" x="183" y="72" width="55" height="30"/>
-                                <state key="normal" title="Artwork"/>
+                                <rect key="frame" x="20" y="72" width="104" height="30"/>
+                                <state key="normal" title="Artwork gallery"/>
                                 <connections>
                                     <segue destination="hIs-vj-r55" kind="show" id="Rur-Bt-57K"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFk-qi-IZN">
-                                <rect key="frame" x="373" y="72" width="45" height="30"/>
-                                <state key="normal" title="Artists"/>
+                                <rect key="frame" x="20" y="110" width="69" height="30"/>
+                                <state key="normal" title="Artists list"/>
                                 <connections>
                                     <segue destination="tqF-II-plG" kind="show" id="fKM-5e-YvG"/>
                                 </connections>
@@ -159,7 +159,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8gY-qg-zov">
-                                <rect key="frame" x="0.0" y="64" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -173,11 +173,43 @@
                             <outlet property="delegate" destination="hIs-vj-r55" id="a6U-zc-Fdz"/>
                         </connections>
                     </collectionView>
+                    <tabBarItem key="tabBarItem" title="Artwork gallery" image="first" id="v85-kx-O8E"/>
                     <navigationItem key="navigationItem" title="Artwork gallery" id="dx1-1P-ooE"/>
+                    <connections>
+                        <segue destination="WsX-bt-x2G" kind="show" id="Fo2-f5-U8c"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tvf-Ch-5GJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1334" y="-559"/>
+        </scene>
+        <!--Artwork detail-->
+        <scene sceneID="dVr-nE-6r0">
+            <objects>
+                <viewController id="WsX-bt-x2G" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wrp-T4-66q"/>
+                        <viewControllerLayoutGuide type="bottom" id="UEy-bf-vYi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DxJ-c5-9n3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUC-In-yrJ">
+                                <rect key="frame" x="20" y="72" width="79" height="30"/>
+                                <state key="normal" title="Artist detail"/>
+                                <connections>
+                                    <segue destination="Gdp-sl-N0h" kind="show" id="qZW-A5-nTG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Artwork detail" id="70X-w6-UWl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ov-TD-rCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2090" y="-559"/>
         </scene>
         <!--Artists list-->
         <scene sceneID="vpe-I0-gFM">
@@ -189,7 +221,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qv8-JS-boq">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qv8-JS-boq" id="4TB-Xj-chj">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -202,11 +234,43 @@
                             <outlet property="delegate" destination="tqF-II-plG" id="5nR-Sk-2SF"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Artists list" image="second" id="Qbf-sc-p48"/>
                     <navigationItem key="navigationItem" title="Artists list" id="JWd-Yk-hKd"/>
+                    <connections>
+                        <segue destination="Gdp-sl-N0h" kind="show" id="W3s-PW-p18"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7f-ov-ieO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1334" y="336"/>
+        </scene>
+        <!--Artist detail-->
+        <scene sceneID="CKR-S7-nmB">
+            <objects>
+                <viewController id="Gdp-sl-N0h" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pZy-Wx-5gh"/>
+                        <viewControllerLayoutGuide type="bottom" id="cPb-JS-2dZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JFN-1w-XIy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55W-5d-Ewa">
+                                <rect key="frame" x="20" y="72" width="104" height="30"/>
+                                <state key="normal" title="Artwork gallery"/>
+                                <connections>
+                                    <segue destination="hIs-vj-r55" kind="show" id="TkE-g0-hYh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Artist detail" id="TLW-WD-IwI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wwX-Au-ARe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2090" y="336"/>
         </scene>
         <!--Democracy Navigation Controller-->
         <scene sceneID="Vj2-fV-pCP">
@@ -223,7 +287,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HqS-1X-gd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-802" y="-1065"/>
+            <point key="canvasLocation" x="-802" y="-1765"/>
         </scene>
         <!--Info-->
         <scene sceneID="24k-wX-t4i">
@@ -259,6 +323,8 @@
                         <segue destination="ifr-G8-ohC" kind="relationship" relationship="viewControllers" id="aGg-Ds-iKr"/>
                         <segue destination="Rqn-yi-J0Q" kind="relationship" relationship="viewControllers" id="A3P-j0-aqb"/>
                         <segue destination="9gp-FB-oNU" kind="relationship" relationship="viewControllers" id="9cG-Py-Bz8"/>
+                        <segue destination="hIs-vj-r55" kind="relationship" relationship="viewControllers" id="2NH-wg-ZPc"/>
+                        <segue destination="tqF-II-plG" kind="relationship" relationship="viewControllers" id="EFK-3s-5qr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -271,7 +337,8 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YBS-uM-4H6"/>
-        <segue reference="VJT-Po-Pc0"/>
+        <segue reference="2NH-wg-ZPc"/>
+        <segue reference="EFK-3s-5qr"/>
+        <segue reference="W3s-PW-p18"/>
     </inferredMetricsTieBreakers>
 </document>
