@@ -13,6 +13,7 @@
 		3265F7CE1D1BE4EE00B33362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3265F7CC1D1BE4EE00B33362 /* Main.storyboard */; };
 		3265F7D01D1BE4EE00B33362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3265F7CF1D1BE4EE00B33362 /* Assets.xcassets */; };
 		3265F7D31D1BE4EE00B33362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3265F7D11D1BE4EE00B33362 /* LaunchScreen.storyboard */; };
+		32ADA0961D25083100A1292C /* Festival.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32ADA0951D25083100A1292C /* Festival.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		3265F7CF1D1BE4EE00B33362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3265F7D21D1BE4EE00B33362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3265F7D41D1BE4EE00B33362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32ADA0921D24FAD500A1292C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		32ADA0951D25083100A1292C /* Festival.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Festival.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +43,7 @@
 		3265F7BA1D1BE4ED00B33362 = {
 			isa = PBXGroup;
 			children = (
+				32ADA0921D24FAD500A1292C /* CoreData.framework */,
 				3265F7C51D1BE4EE00B33362 /* DW2App */,
 				3265F7C41D1BE4EE00B33362 /* Products */,
 			);
@@ -56,15 +60,24 @@
 		3265F7C51D1BE4EE00B33362 /* DW2App */ = {
 			isa = PBXGroup;
 			children = (
+				32ADA0941D2507AE00A1292C /* Supporting Files */,
 				3265F7C61D1BE4EE00B33362 /* AppDelegate.swift */,
 				3265F7C81D1BE4EE00B33362 /* FirstViewController.swift */,
 				3265F7CA1D1BE4EE00B33362 /* SecondViewController.swift */,
-				3265F7CC1D1BE4EE00B33362 /* Main.storyboard */,
-				3265F7CF1D1BE4EE00B33362 /* Assets.xcassets */,
-				3265F7D11D1BE4EE00B33362 /* LaunchScreen.storyboard */,
-				3265F7D41D1BE4EE00B33362 /* Info.plist */,
 			);
 			path = DW2App;
+			sourceTree = "<group>";
+		};
+		32ADA0941D2507AE00A1292C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3265F7CF1D1BE4EE00B33362 /* Assets.xcassets */,
+				3265F7D41D1BE4EE00B33362 /* Info.plist */,
+				3265F7D11D1BE4EE00B33362 /* LaunchScreen.storyboard */,
+				3265F7CC1D1BE4EE00B33362 /* Main.storyboard */,
+				32ADA0951D25083100A1292C /* Festival.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +141,7 @@
 			files = (
 				3265F7D31D1BE4EE00B33362 /* LaunchScreen.storyboard in Resources */,
 				3265F7D01D1BE4EE00B33362 /* Assets.xcassets in Resources */,
+				32ADA0961D25083100A1292C /* Festival.plist in Resources */,
 				3265F7CE1D1BE4EE00B33362 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +313,7 @@
 				3265F7D91D1BE4EE00B33362 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
