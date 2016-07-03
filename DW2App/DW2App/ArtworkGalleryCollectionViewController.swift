@@ -10,8 +10,9 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class ArtworkGalleryCollectionViewController: UICollectionViewController {
 
+class ArtworkGalleryCollectionViewController: UICollectionViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

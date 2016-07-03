@@ -10,8 +10,15 @@ import UIKit
 
 class ArtistsListTableViewController: UITableViewController {
 
-    var data = ["ADLER AF", "Agrawal"]
+    let all = "All"
+    let artist = "Artist"
     
+    //var artists = [Dictionary<String, String>]()
+    var artistNames = [String]()
+    var artistKeys = [String]()
+    
+    var weekend = "All"
+
     
     func readPropertyList(){
         var myDict: NSDictionary?
@@ -20,7 +27,20 @@ class ArtistsListTableViewController: UITableViewController {
         }
         if let dict = myDict {
             // Use your dict here
-            data = dict["Democracy"] as! [String]
+            
+            //let artists = dict[artist] as! NSDictionary
+            
+            if weekend == all {
+            
+            }
+            else {
+                artistKeys = dict[weekend] as! [String]
+            
+                for artistKey in artistKeys {
+                    let test = dict[artist]![artistKey]!!["Name"]! as! String //artists[artistKey]!["Name"]! as! String
+                    artistNames.append(test) //(artists[artistKey])! as! String)
+                }
+            }
         }
     }
     
@@ -52,7 +72,7 @@ class ArtistsListTableViewController: UITableViewController {
      */
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return data.count
+        return artistNames.count
     }
 
     
@@ -60,7 +80,7 @@ class ArtistsListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("LabelCell", forIndexPath: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = data[indexPath.row]
+        cell.textLabel?.text = artistNames[indexPath.row]
         
         return cell
     }
