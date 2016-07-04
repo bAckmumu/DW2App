@@ -448,8 +448,14 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Geg-yx-eFq" userLabel="Name Image">
+                                <rect key="frame" x="20" y="8" width="261" height="88"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JPk-FL-JMn" userLabel="Artist Image">
+                                <rect key="frame" x="20" y="104" width="261" height="190"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55W-5d-Ewa">
-                                <rect key="frame" x="32" y="72" width="80" height="30"/>
+                                <rect key="frame" x="110" y="302" width="80" height="30"/>
                                 <state key="normal" title="Kunstwerke"/>
                                 <connections>
                                     <segue destination="hIs-vj-r55" kind="show" id="TkE-g0-hYh"/>
@@ -459,6 +465,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Künstlerin" id="TLW-WD-IwI"/>
+                    <connections>
+                        <outlet property="artistImage" destination="JPk-FL-JMn" id="DVD-Dg-bD0"/>
+                        <outlet property="nameImage" destination="Geg-yx-eFq" id="22Q-32-nY8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wwX-Au-ARe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

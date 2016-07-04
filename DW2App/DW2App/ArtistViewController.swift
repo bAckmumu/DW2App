@@ -10,12 +10,19 @@ import UIKit
 
 class ArtistViewController: UIViewController {
 
+    @IBOutlet var nameImage: UIImageView!
+    @IBOutlet var artistImage: UIImageView!
+    
     var artist: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+                
+        nameImage.image = UIImage(named: artist + "_name")
+        artistImage.image = UIImage(named: artist + "_artist")
+        
     }
 
     override func didReceiveMemoryWarning() {
