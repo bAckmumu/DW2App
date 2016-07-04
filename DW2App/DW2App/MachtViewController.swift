@@ -43,7 +43,7 @@ class MachtViewController: UIViewController {
         else if segue.identifier == "showArtwork" {
             let vc = segue.destinationViewController as! ArtworkGalleryCollectionViewController
             
-            vc.head_label = "Macht"
+      
         }
     }
     

@@ -15,7 +15,7 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
     @IBOutlet var collectionView: UICollectionView!
     let Products = ["annanatascha_art","kollmareva_art"]
     let imageArray = [UIImage(named:"kollmareva_art"),UIImage(named:"annanatascha_art")]
-    var head_label: String!
+  //  var head_label: String!
     
     override func viewDidLoad() {
         
@@ -40,21 +40,9 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
         return self.Products.count
     }
     
-     func collectionView(collectionView: UICollectionView,
-                                 viewForSupplementaryElementOfKind kind: String,
-                                                                   atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "imageheader", forIndexPath: indexPath) as! CollectionReusableView
-        headerView.headlabel.text = self.head_label
-        headerView.headlabel.font = headerView.headlabel.font.fontWithSize(30)
-        headerView.headlabel.textColor = UIColor.whiteColor()
-     //  headerView.backgroundImage.backgroundColor = UIColor(patternImage: UIImage(named:"header1")!)
-      
-       headerView.backgroundColor = UIColor(patternImage: UIImage(named:"header1")!)
-            return headerView
-      
-    }
+    
    
-    func collectionView(collectionView : UICollectionView,layout collectionViewLayout:UICollectionViewLayout,sizeForItemAtIndexPath indexPath:NSIndexPath) -> CGSize
+   func collectionView(collectionView : UICollectionView,layout collectionViewLayout:UICollectionViewLayout,sizeForItemAtIndexPath indexPath:NSIndexPath) -> CGSize
     {
              let collectionViewWidth = self.collectionView!.bounds.width
                let itemWidth = (collectionViewWidth - 4)/2.1
@@ -62,7 +50,7 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
        // let cellSize:CGSize = CGSizeMake((collectionViewWidth - spacing * CGFloat(columnsNum-1))/CGFloat(columnsNum), 86)
         //return cellSize
     }
-    
+ 
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! ViewCell
         
@@ -71,8 +59,8 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
        
       //  cell.artworkLabel?.text = self.Products[indexPath.row]
         cell.layer.cornerRadius = 10.0
-        cell.backgroundColor = UIColor.init(red: 247, green: 247, blue: 247, alpha: 0.2)
-        cell.layer.borderWidth = 0.2
+       // cell.backgroundColor = UIColor.init(red: 247, green: 247, blue: 247, alpha: 0.2)
+        cell.layer.borderWidth = 1
         cell.layer.borderColor = UIColor.lightGrayColor().CGColor
         return cell
         
