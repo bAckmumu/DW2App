@@ -44,7 +44,7 @@ class PartViewController: UIViewController {
         {
             let vc = segue.destinationViewController as! ArtworkGalleryCollectionViewController
             
-            vc.head_label = "Partizipation"
+           
         }
     }
 

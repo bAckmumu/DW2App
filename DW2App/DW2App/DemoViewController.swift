@@ -46,8 +46,7 @@ class DemoViewController: UIViewController {
             let vc = segue.destinationViewController as! ArtworkGalleryCollectionViewController
             
             
-            vc.head_label = "Demokratie"
-        }
+                   }
     }
         /*if segue.identifier == "Demoshowing"
         {
