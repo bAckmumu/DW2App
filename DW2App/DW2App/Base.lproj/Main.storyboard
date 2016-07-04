@@ -26,15 +26,23 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpR-lh-Sy7">
                                         <rect key="frame" x="304" y="0.0" width="231" height="34"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                         <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
                                         <state key="normal" title="Künstlerinnen"/>
                                         <connections>
                                             <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="VJT-Po-Pc0"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Om-CS-LIr">
+                                        <rect key="frame" x="65" y="0.0" width="231" height="34"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <state key="normal" title="Kunstwerke"/>
+                                        <connections>
+                                            <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="YBS-uM-4H6"/>
+                                        </connections>
+                                    </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69d-DM-5en">
-                                        <rect key="frame" x="10" y="44" width="580" height="228"/>
+                                        <rect key="frame" x="27" y="43" width="547" height="228"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -43,14 +51,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Om-CS-LIr">
-                                        <rect key="frame" x="65" y="0.0" width="231" height="34"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Kunstwerke"/>
-                                        <connections>
-                                            <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="YBS-uM-4H6"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -123,30 +123,38 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="yql-wd-6jx">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="215"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2L-Bm-FHB" userLabel="View1">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m2L-Bm-FHB" userLabel="View1">
                                 <rect key="frame" x="0.0" y="216" width="600" height="271"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHh-UV-fl3">
-                                        <rect key="frame" x="65" y="8" width="231" height="34"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Kunstwerke"/>
-                                        <connections>
-                                            <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="CIS-XS-VFr"/>
-                                        </connections>
-                                    </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ULf-Yd-zyN">
-                                        <rect key="frame" x="10" y="44" width="580" height="228"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULf-Yd-zyN">
+                                        <rect key="frame" x="26" y="61" width="548" height="228"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Eröffnungsgrüße von Anna Hanusch, Vorsitzende des Bezirksausschuss Neuhausen-Nymphenburg &amp; Stadträtin der LHM. Lesungen und Performances:“Heilt Hitler!”  Aktion: Übermalen von Hakenkreuzschmierereien, Regie ADLER A.F.“Happening Nr. 32”  Künstlerkollaboration JPG, Franziska Agrawal und MINIMAN. Assoziative Speakers Corner:  “Wer bestimmt, wer bestimmt?” Das ist hier die Frage! Szenische Lesung: Anlis Spitzauer “Vorwärz! Lilly 3,50 zählt aus!" Studentische Laudatio   Tamara Hackenberg, Jelena Majstorovic und Marco Richtsfeld</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYa-Vj-79m">
-                                        <rect key="frame" x="304" y="8" width="231" height="34"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="304" y="19" width="174" height="34"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="Künstlerinnen"/>
                                         <connections>
                                             <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="MAW-Gu-uBx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHh-UV-fl3" colorLabel="IBBuiltInLabel-Gray">
+                                        <rect key="frame" x="117" y="19" width="174" height="34"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <state key="normal" title="Kunstwerke"/>
+                                        <connections>
+                                            <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="CIS-XS-VFr"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -178,8 +186,10 @@
                             <constraint firstItem="yql-wd-6jx" firstAttribute="centerX" secondItem="6iN-Dq-EzP" secondAttribute="centerX" id="zP7-uP-XVI"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Macht" id="Ivt-YH-g4L"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="ArtistButton" destination="GYa-Vj-79m" id="Iya-rf-jzn"/>
                         <outlet property="ArtworkButton" destination="JHh-UV-fl3" id="mbm-am-jp4"/>
@@ -225,29 +235,29 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AlK-TB-kon">
                                 <rect key="frame" x="0.0" y="216" width="600" height="271"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MRk-M5-5D7">
-                                        <rect key="frame" x="10" y="44" width="580" height="228"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZT-5b-43J">
-                                        <rect key="frame" x="65" y="8" width="231" height="34"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Kunstwerke"/>
-                                        <connections>
-                                            <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="Rur-Bt-57K"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFk-qi-IZN">
                                         <rect key="frame" x="304" y="8" width="231" height="34"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                         <state key="normal" title="KünstlerInnen"/>
                                         <connections>
                                             <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="fKM-5e-YvG"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZT-5b-43J">
+                                        <rect key="frame" x="65" y="8" width="231" height="34"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <state key="normal" title="Kunstwerke"/>
+                                        <connections>
+                                            <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="Rur-Bt-57K"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MRk-M5-5D7">
+                                        <rect key="frame" x="26" y="43" width="548" height="228"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -544,8 +554,8 @@
         <image name="trash1" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fKM-5e-YvG"/>
-        <segue reference="Rur-Bt-57K"/>
+        <segue reference="CIS-XS-VFr"/>
+        <segue reference="MAW-Gu-uBx"/>
         <segue reference="768-0U-tOh"/>
     </inferredMetricsTieBreakers>
 </document>
