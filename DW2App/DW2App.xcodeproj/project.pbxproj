@@ -28,7 +28,6 @@
 		3265F7CF1D1BE4EE00B33362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3265F7D21D1BE4EE00B33362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3265F7D41D1BE4EE00B33362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32ADA0921D24FAD500A1292C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		32ADA0951D25083100A1292C /* Festival.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Festival.plist; sourceTree = "<group>"; };
 		32F66E6D1D280D13007CB75E /* ArtistsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistsListTableViewController.swift; sourceTree = "<group>"; };
 		32F66E6F1D2810D0007CB75E /* ArtworkGalleryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkGalleryCollectionViewController.swift; sourceTree = "<group>"; };
@@ -53,7 +52,6 @@
 		3265F7BA1D1BE4ED00B33362 = {
 			isa = PBXGroup;
 			children = (
-				32ADA0921D24FAD500A1292C /* CoreData.framework */,
 				3265F7C51D1BE4EE00B33362 /* DW2App */,
 				3265F7C41D1BE4EE00B33362 /* Products */,
 			);
