@@ -24,15 +24,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IV0-zR-uaD">
                                 <rect key="frame" x="0.0" y="216" width="600" height="271"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpR-lh-Sy7">
-                                        <rect key="frame" x="304" y="0.0" width="231" height="34"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                        <state key="normal" title="Künstlerinnen"/>
-                                        <connections>
-                                            <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="VJT-Po-Pc0"/>
-                                        </connections>
-                                    </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69d-DM-5en">
                                         <rect key="frame" x="10" y="44" width="580" height="228"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -49,6 +40,15 @@
                                         <state key="normal" title="Kunstwerke"/>
                                         <connections>
                                             <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="YBS-uM-4H6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpR-lh-Sy7">
+                                        <rect key="frame" x="304" y="0.0" width="231" height="34"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                        <state key="normal" title="Künstlerinnen"/>
+                                        <connections>
+                                            <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="VJT-Po-Pc0"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -407,11 +407,11 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qv8-JS-boq" id="4TB-Xj-chj">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WNH-KL-L6c">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -544,8 +544,8 @@
         <image name="trash1" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="YBS-uM-4H6"/>
+        <segue reference="VJT-Po-Pc0"/>
         <segue reference="768-0U-tOh"/>
-        <segue reference="fKM-5e-YvG"/>
-        <segue reference="TkE-g0-hYh"/>
     </inferredMetricsTieBreakers>
 </document>
