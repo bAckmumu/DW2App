@@ -12,6 +12,9 @@ class MachtViewController: UIViewController {
 
     @IBOutlet weak var ArtistButton: UIButton!
     @IBOutlet weak var ArtworkButton: UIButton!
+    
+    let weekend = "Power"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ArtworkButton.layer.cornerRadius = 5
@@ -31,11 +34,17 @@ class MachtViewController: UIViewController {
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "Powershowing"
-        {
+        if segue.identifier == "showArtists" {
+            let viewController:ArtistsListTableViewController = segue.destinationViewController as! ArtistsListTableViewController
+            
+            viewController.weekend = weekend
+            
+        }
+        else if segue.identifier == "showArtwork" {
             let vc = segue.destinationViewController as! ArtworkGalleryCollectionViewController
             
-            vc.head_label = "Macht"       }
+            vc.head_label = "Macht"
+        }
     }
     
 

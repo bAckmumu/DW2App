@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="bIl-nG-FMT">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="214.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="215"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IV0-zR-uaD">
-                                <rect key="frame" x="0.0" y="215.5" width="600" height="271.5"/>
+                                <rect key="frame" x="0.0" y="216" width="600" height="271"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpR-lh-Sy7">
                                         <rect key="frame" x="304" y="0.0" width="231" height="34"/>
@@ -30,12 +30,15 @@
                                         <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
                                         <state key="normal" title="Künstlerinnen"/>
                                         <connections>
-                                            <segue destination="tqF-II-plG" kind="show" identifier="artistsList" id="VJT-Po-Pc0"/>
+                                            <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="VJT-Po-Pc0"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="69d-DM-5en">
-                                        <rect key="frame" x="10" y="44" width="580" height="227.5"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69d-DM-5en">
+                                        <rect key="frame" x="10" y="44" width="580" height="228"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -45,7 +48,7 @@
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Kunstwerke"/>
                                         <connections>
-                                            <segue destination="hIs-vj-r55" kind="show" identifier="artworkGallery" id="YBS-uM-4H6"/>
+                                            <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="YBS-uM-4H6"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -118,21 +121,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="yql-wd-6jx">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="214.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="215"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2L-Bm-FHB" userLabel="View1">
-                                <rect key="frame" x="0.0" y="215.5" width="600" height="271.5"/>
+                                <rect key="frame" x="0.0" y="216" width="600" height="271"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHh-UV-fl3">
                                         <rect key="frame" x="65" y="0.0" width="231" height="34"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Kunstwerke"/>
                                         <connections>
-                                            <segue destination="hIs-vj-r55" kind="show" identifier="Powershowing" id="CIS-XS-VFr"/>
+                                            <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="CIS-XS-VFr"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ULf-Yd-zyN">
-                                        <rect key="frame" x="10" y="44" width="580" height="227.5"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ULf-Yd-zyN">
+                                        <rect key="frame" x="10" y="44" width="580" height="228"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -143,7 +146,7 @@
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Künstlerinnen"/>
                                         <connections>
-                                            <segue destination="tqF-II-plG" kind="show" id="MAW-Gu-uBx"/>
+                                            <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="MAW-Gu-uBx"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -217,21 +220,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="KcC-DP-Sg4">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="214.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="215"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AlK-TB-kon">
-                                <rect key="frame" x="0.0" y="215.5" width="600" height="271.5"/>
+                                <rect key="frame" x="0.0" y="216" width="600" height="271"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFk-qi-IZN">
                                         <rect key="frame" x="304" y="0.0" width="231" height="34"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Künstlerinnen"/>
                                         <connections>
-                                            <segue destination="tqF-II-plG" kind="show" identifier="Partshowing1" id="fKM-5e-YvG"/>
+                                            <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="fKM-5e-YvG"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MRk-M5-5D7">
-                                        <rect key="frame" x="10" y="44" width="580" height="227.5"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MRk-M5-5D7">
+                                        <rect key="frame" x="10" y="44" width="580" height="228"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -242,7 +245,7 @@
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Kunstwerke"/>
                                         <connections>
-                                            <segue destination="hIs-vj-r55" kind="show" identifier="Partshowing" id="Rur-Bt-57K"/>
+                                            <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="Rur-Bt-57K"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -404,11 +407,11 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qv8-JS-boq" id="4TB-Xj-chj">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WNH-KL-L6c">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -417,7 +420,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Gdp-sl-N0h" kind="show" id="768-0U-tOh"/>
+                                    <segue destination="Gdp-sl-N0h" kind="show" identifier="showArtist" id="768-0U-tOh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -436,7 +439,7 @@
         <!--Künstlerin-->
         <scene sceneID="CKR-S7-nmB">
             <objects>
-                <viewController id="Gdp-sl-N0h" sceneMemberID="viewController">
+                <viewController id="Gdp-sl-N0h" customClass="ArtistViewController" customModule="DW2App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pZy-Wx-5gh"/>
                         <viewControllerLayoutGuide type="bottom" id="cPb-JS-2dZ"/>
@@ -533,6 +536,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="768-0U-tOh"/>
         <segue reference="fKM-5e-YvG"/>
-        <segue reference="Rur-Bt-57K"/>
+        <segue reference="TkE-g0-hYh"/>
     </inferredMetricsTieBreakers>
 </document>

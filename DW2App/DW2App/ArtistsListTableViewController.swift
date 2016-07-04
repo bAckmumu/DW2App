@@ -13,7 +13,7 @@ class ArtistsListTableViewController: UITableViewController {
     let all = "All"
     let artist = "Artist"
     
-    //var artists = [Dictionary<String, String>]()
+    //var artists = [String: String]()
     var artistNames = [String]()
     var artistKeys = [String]()
     
@@ -38,6 +38,9 @@ class ArtistsListTableViewController: UITableViewController {
                 
                 for artistKey in artistKeys {
                     let test = dict[artist]![artistKey]!!["Name"]! as! String //artists[artistKey]!["Name"]! as! String
+                    
+                    //artists[] =
+                    
                     artistNames.append(test) //(artists[artistKey])! as! String)
                 }
             }
@@ -121,14 +124,22 @@ class ArtistsListTableViewController: UITableViewController {
      }
      */
     
-    /*
+    
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
      // Get the new view controller using segue.destinationViewController.
      // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "showArtist" {
+            let indexPath = self.tableView.indexPathForSelectedRow
+            let viewController:ArtistViewController = segue.destinationViewController as! ArtistViewController
+            
+            viewController.artist = artistKeys[(indexPath?.row)!]
+            
+        }
      }
-     */
+    
     
 }

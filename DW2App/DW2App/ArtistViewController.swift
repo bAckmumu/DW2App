@@ -1,17 +1,16 @@
 //
-//  DemocracyViewController.swift
+//  ArtistViewController.swift
 //  DW2App
 //
-//  Created by manu on 03.07.16.
+//  Created by manu on 04.07.16.
 //  Copyright © 2016 DW2. All rights reserved.
 //
 
 import UIKit
 
+class ArtistViewController: UIViewController {
 
-class DemocracyViewController: UIViewController {
-
-    let weekend = "Democracy"
+    var artist: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,23 +24,14 @@ class DemocracyViewController: UIViewController {
     }
     
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-        if segue.identifier == "artistsList" {
-            let viewController:ArtistsListTableViewController = segue.destinationViewController as! ArtistsListTableViewController
-            
-            viewController.weekend = weekend
-            
-        } else if segue.identifier == "artworkGallery" {
-        
-        }
     }
-    
+    */
 
 }

@@ -12,6 +12,9 @@ class PartViewController: UIViewController {
 
     @IBOutlet weak var ArtistButton: UIButton!
     @IBOutlet weak var ArtworkButton: UIButton!
+    
+    let weekend = "Participation"    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ArtistButton.layer.cornerRadius = 5
@@ -31,11 +34,18 @@ class PartViewController: UIViewController {
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "Partshowing"
+        if segue.identifier == "showArtists" {
+            let viewController:ArtistsListTableViewController = segue.destinationViewController as! ArtistsListTableViewController
+            
+            viewController.weekend = weekend
+            
+        }
+        else if segue.identifier == "showArtwork"
         {
             let vc = segue.destinationViewController as! ArtworkGalleryCollectionViewController
             
-            vc.head_label = "Partizipation"       }
+            vc.head_label = "Partizipation"
+        }
     }
 
     /*
