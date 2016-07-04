@@ -34,7 +34,7 @@
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69d-DM-5en">
-                                        <rect key="frame" x="10" y="44" width="580" height="227"/>
+                                        <rect key="frame" x="10" y="44" width="580" height="177"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -63,7 +63,7 @@
                                     <constraint firstAttribute="trailing" secondItem="69d-DM-5en" secondAttribute="trailing" constant="10" id="jG2-M5-cpb"/>
                                     <constraint firstItem="1Om-CS-LIr" firstAttribute="top" secondItem="IV0-zR-uaD" secondAttribute="top" id="muH-8T-xuf"/>
                                     <constraint firstItem="69d-DM-5en" firstAttribute="leading" secondItem="IV0-zR-uaD" secondAttribute="leading" constant="10" id="nJw-SR-mMN"/>
-                                    <constraint firstAttribute="bottom" secondItem="69d-DM-5en" secondAttribute="bottom" id="njX-Ri-yXr"/>
+                                    <constraint firstAttribute="bottom" secondItem="69d-DM-5en" secondAttribute="bottom" constant="50" id="njX-Ri-yXr"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -84,6 +84,7 @@
                     <connections>
                         <outlet property="ArtistButton" destination="LpR-lh-Sy7" id="hsR-Fk-EUb"/>
                         <outlet property="ArtworkButton" destination="1Om-CS-LIr" id="HBv-gj-rzi"/>
+                        <outlet property="Text" destination="69d-DM-5en" id="hh8-Fe-nAm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wkb-kR-FlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -183,6 +184,7 @@
                     <connections>
                         <outlet property="ArtistButton" destination="GYa-Vj-79m" id="Iya-rf-jzn"/>
                         <outlet property="ArtworkButton" destination="JHh-UV-fl3" id="mbm-am-jp4"/>
+                        <outlet property="Text" destination="ULf-Yd-zyN" id="UZq-3i-uSF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhy-Hi-CXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -281,6 +283,7 @@
                     <connections>
                         <outlet property="ArtistButton" destination="uFk-qi-IZN" id="Fpi-96-TYT"/>
                         <outlet property="ArtworkButton" destination="IZT-5b-43J" id="Tvj-Eq-jlC"/>
+                        <outlet property="Text" destination="MRk-M5-5D7" id="5ZN-iU-PN5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7g-hL-4Ty" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -521,8 +524,8 @@
         <image name="trash1" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Rur-Bt-57K"/>
-        <segue reference="fKM-5e-YvG"/>
+        <segue reference="VJT-Po-Pc0"/>
+        <segue reference="YBS-uM-4H6"/>
         <segue reference="768-0U-tOh"/>
     </inferredMetricsTieBreakers>
 </document>

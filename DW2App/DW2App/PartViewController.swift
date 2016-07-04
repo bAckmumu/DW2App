@@ -10,6 +10,7 @@ import UIKit
 
 class PartViewController: UIViewController {
 
+    @IBOutlet weak var Text: UITextView!
     @IBOutlet weak var ArtistButton: UIButton!
     @IBOutlet weak var ArtworkButton: UIButton!
     
@@ -19,6 +20,7 @@ class PartViewController: UIViewController {
         super.viewDidLoad()
         ArtistButton.layer.cornerRadius = 5
         ArtworkButton.layer.cornerRadius = 5
+        Text.editable = false
 
         // Do any additional setup after loading the view.
     }
