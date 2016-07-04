@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+>>>>>>> origin/master
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -25,14 +29,20 @@
                                 <rect key="frame" x="0.0" y="216" width="600" height="271"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpR-lh-Sy7">
+<<<<<<< HEAD
                                         <rect key="frame" x="304" y="0.0" width="231" height="34"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+=======
+                                        <rect key="frame" x="304" y="0.0" width="246" height="34"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+>>>>>>> origin/master
                                         <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
                                         <state key="normal" title="Künstlerinnen"/>
                                         <connections>
                                             <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="VJT-Po-Pc0"/>
                                         </connections>
                                     </button>
+<<<<<<< HEAD
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Om-CS-LIr">
                                         <rect key="frame" x="65" y="0.0" width="231" height="34"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
@@ -43,6 +53,10 @@
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69d-DM-5en">
                                         <rect key="frame" x="27" y="43" width="547" height="228"/>
+=======
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69d-DM-5en">
+                                        <rect key="frame" x="10" y="44" width="580" height="177"/>
+>>>>>>> origin/master
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -51,19 +65,30 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+<<<<<<< HEAD
+=======
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Om-CS-LIr">
+                                        <rect key="frame" x="50" y="0.0" width="246" height="34"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Kunstwerke"/>
+                                        <connections>
+                                            <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="YBS-uM-4H6"/>
+                                        </connections>
+                                    </button>
+>>>>>>> origin/master
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="69d-DM-5en" firstAttribute="top" secondItem="LpR-lh-Sy7" secondAttribute="bottom" constant="10" id="0f9-mE-REc"/>
                                     <constraint firstItem="LpR-lh-Sy7" firstAttribute="leading" secondItem="1Om-CS-LIr" secondAttribute="trailing" constant="8" id="67L-26-HmU"/>
                                     <constraint firstItem="LpR-lh-Sy7" firstAttribute="top" secondItem="IV0-zR-uaD" secondAttribute="top" id="HJo-eO-XWE"/>
-                                    <constraint firstAttribute="trailing" secondItem="LpR-lh-Sy7" secondAttribute="trailing" constant="65" id="Y1x-Q1-53B"/>
+                                    <constraint firstAttribute="trailing" secondItem="LpR-lh-Sy7" secondAttribute="trailing" constant="50" id="Y1x-Q1-53B"/>
                                     <constraint firstItem="LpR-lh-Sy7" firstAttribute="width" secondItem="1Om-CS-LIr" secondAttribute="width" id="feP-Sg-zqV"/>
-                                    <constraint firstItem="1Om-CS-LIr" firstAttribute="leading" secondItem="IV0-zR-uaD" secondAttribute="leading" constant="65" id="iwk-Ax-1IX"/>
+                                    <constraint firstItem="1Om-CS-LIr" firstAttribute="leading" secondItem="IV0-zR-uaD" secondAttribute="leading" constant="50" id="iwk-Ax-1IX"/>
                                     <constraint firstAttribute="trailing" secondItem="69d-DM-5en" secondAttribute="trailing" constant="10" id="jG2-M5-cpb"/>
                                     <constraint firstItem="1Om-CS-LIr" firstAttribute="top" secondItem="IV0-zR-uaD" secondAttribute="top" id="muH-8T-xuf"/>
                                     <constraint firstItem="69d-DM-5en" firstAttribute="leading" secondItem="IV0-zR-uaD" secondAttribute="leading" constant="10" id="nJw-SR-mMN"/>
-                                    <constraint firstAttribute="bottom" secondItem="69d-DM-5en" secondAttribute="bottom" id="njX-Ri-yXr"/>
+                                    <constraint firstAttribute="bottom" secondItem="69d-DM-5en" secondAttribute="bottom" constant="50" id="njX-Ri-yXr"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -84,6 +109,7 @@
                     <connections>
                         <outlet property="ArtistButton" destination="LpR-lh-Sy7" id="hsR-Fk-EUb"/>
                         <outlet property="ArtworkButton" destination="1Om-CS-LIr" id="HBv-gj-rzi"/>
+                        <outlet property="Text" destination="69d-DM-5en" id="hh8-Fe-nAm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wkb-kR-FlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -126,8 +152,21 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m2L-Bm-FHB" userLabel="View1">
                                 <rect key="frame" x="0.0" y="216" width="600" height="271"/>
                                 <subviews>
+<<<<<<< HEAD
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULf-Yd-zyN">
                                         <rect key="frame" x="26" y="61" width="548" height="228"/>
+=======
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHh-UV-fl3">
+                                        <rect key="frame" x="50" y="0.0" width="246" height="34"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Kunstwerke"/>
+                                        <connections>
+                                            <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="CIS-XS-VFr"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ULf-Yd-zyN">
+                                        <rect key="frame" x="10" y="44" width="580" height="227"/>
+>>>>>>> origin/master
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <attributedString key="attributedText">
                                             <fragment>
@@ -140,10 +179,16 @@
                                         </attributedString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+<<<<<<< HEAD
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYa-Vj-79m">
                                         <rect key="frame" x="304" y="19" width="174" height="34"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
+=======
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYa-Vj-79m">
+                                        <rect key="frame" x="304" y="0.0" width="246" height="34"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+>>>>>>> origin/master
                                         <state key="normal" title="Künstlerinnen"/>
                                         <connections>
                                             <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="MAW-Gu-uBx"/>
@@ -160,14 +205,14 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="GYa-Vj-79m" secondAttribute="trailing" constant="65" id="1Jf-2o-VVh"/>
+                                    <constraint firstAttribute="trailing" secondItem="GYa-Vj-79m" secondAttribute="trailing" constant="50" id="1Jf-2o-VVh"/>
                                     <constraint firstAttribute="trailing" secondItem="ULf-Yd-zyN" secondAttribute="trailing" constant="10" id="8Rs-yA-4Ga"/>
                                     <constraint firstItem="GYa-Vj-79m" firstAttribute="leading" secondItem="JHh-UV-fl3" secondAttribute="trailing" constant="8" id="9Bt-Wj-NGe"/>
                                     <constraint firstAttribute="bottom" secondItem="ULf-Yd-zyN" secondAttribute="bottom" id="DCO-af-cDu"/>
                                     <constraint firstItem="JHh-UV-fl3" firstAttribute="top" secondItem="m2L-Bm-FHB" secondAttribute="top" id="Eb1-ef-W2w"/>
                                     <constraint firstItem="ULf-Yd-zyN" firstAttribute="top" secondItem="GYa-Vj-79m" secondAttribute="bottom" constant="10" id="IPR-bg-67H"/>
                                     <constraint firstItem="ULf-Yd-zyN" firstAttribute="leading" secondItem="m2L-Bm-FHB" secondAttribute="leading" constant="10" id="LLz-rL-O7W"/>
-                                    <constraint firstItem="JHh-UV-fl3" firstAttribute="leading" secondItem="m2L-Bm-FHB" secondAttribute="leading" constant="65" id="Pnr-kT-O2v"/>
+                                    <constraint firstItem="JHh-UV-fl3" firstAttribute="leading" secondItem="m2L-Bm-FHB" secondAttribute="leading" constant="50" id="Pnr-kT-O2v"/>
                                     <constraint firstItem="GYa-Vj-79m" firstAttribute="width" secondItem="JHh-UV-fl3" secondAttribute="width" id="bp7-2H-kZt"/>
                                     <constraint firstItem="GYa-Vj-79m" firstAttribute="top" secondItem="m2L-Bm-FHB" secondAttribute="top" id="yct-r3-tSK"/>
                                 </constraints>
@@ -193,6 +238,7 @@
                     <connections>
                         <outlet property="ArtistButton" destination="GYa-Vj-79m" id="Iya-rf-jzn"/>
                         <outlet property="ArtworkButton" destination="JHh-UV-fl3" id="mbm-am-jp4"/>
+                        <outlet property="Text" destination="ULf-Yd-zyN" id="UZq-3i-uSF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhy-Hi-CXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -235,14 +281,22 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AlK-TB-kon">
                                 <rect key="frame" x="0.0" y="216" width="600" height="271"/>
                                 <subviews>
+<<<<<<< HEAD
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFk-qi-IZN">
                                         <rect key="frame" x="304" y="8" width="231" height="34"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                         <state key="normal" title="KünstlerInnen"/>
+=======
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFk-qi-IZN">
+                                        <rect key="frame" x="304" y="0.0" width="246" height="34"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Künstlerinnen"/>
+>>>>>>> origin/master
                                         <connections>
                                             <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="fKM-5e-YvG"/>
                                         </connections>
                                     </button>
+<<<<<<< HEAD
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZT-5b-43J">
                                         <rect key="frame" x="65" y="8" width="231" height="34"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
@@ -253,23 +307,38 @@
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MRk-M5-5D7">
                                         <rect key="frame" x="26" y="43" width="548" height="228"/>
+=======
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MRk-M5-5D7">
+                                        <rect key="frame" x="10" y="44" width="580" height="227"/>
+>>>>>>> origin/master
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+<<<<<<< HEAD
+=======
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZT-5b-43J">
+                                        <rect key="frame" x="50" y="0.0" width="246" height="34"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Kunstwerke"/>
+                                        <connections>
+                                            <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="Rur-Bt-57K"/>
+                                        </connections>
+                                    </button>
+>>>>>>> origin/master
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="MRk-M5-5D7" secondAttribute="bottom" id="7F4-tM-j9l"/>
                                     <constraint firstItem="MRk-M5-5D7" firstAttribute="leading" secondItem="AlK-TB-kon" secondAttribute="leading" constant="10" id="Hlf-R3-p8g"/>
                                     <constraint firstItem="uFk-qi-IZN" firstAttribute="width" secondItem="IZT-5b-43J" secondAttribute="width" id="IEA-uI-fys"/>
-                                    <constraint firstAttribute="trailing" secondItem="uFk-qi-IZN" secondAttribute="trailing" constant="65" id="OGw-az-dUN"/>
+                                    <constraint firstAttribute="trailing" secondItem="uFk-qi-IZN" secondAttribute="trailing" constant="50" id="OGw-az-dUN"/>
                                     <constraint firstItem="uFk-qi-IZN" firstAttribute="leading" secondItem="IZT-5b-43J" secondAttribute="trailing" constant="8" id="VFD-gj-VIZ"/>
                                     <constraint firstItem="IZT-5b-43J" firstAttribute="top" secondItem="AlK-TB-kon" secondAttribute="top" id="b3G-SX-cMQ"/>
                                     <constraint firstItem="uFk-qi-IZN" firstAttribute="top" secondItem="AlK-TB-kon" secondAttribute="top" id="lge-F7-Qsl"/>
                                     <constraint firstItem="MRk-M5-5D7" firstAttribute="top" secondItem="uFk-qi-IZN" secondAttribute="bottom" constant="10" id="qD9-s5-Vb7"/>
-                                    <constraint firstItem="IZT-5b-43J" firstAttribute="leading" secondItem="AlK-TB-kon" secondAttribute="leading" constant="65" id="qo0-KE-uhN"/>
+                                    <constraint firstItem="IZT-5b-43J" firstAttribute="leading" secondItem="AlK-TB-kon" secondAttribute="leading" constant="50" id="qo0-KE-uhN"/>
                                     <constraint firstAttribute="trailing" secondItem="MRk-M5-5D7" secondAttribute="trailing" constant="10" id="xe5-pJ-9S2"/>
                                 </constraints>
                             </view>
@@ -291,6 +360,7 @@
                     <connections>
                         <outlet property="ArtistButton" destination="uFk-qi-IZN" id="Fpi-96-TYT"/>
                         <outlet property="ArtworkButton" destination="IZT-5b-43J" id="Tvj-Eq-jlC"/>
+                        <outlet property="Text" destination="MRk-M5-5D7" id="5ZN-iU-PN5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7g-hL-4Ty" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -307,13 +377,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="0.0" id="30h-ta-Yba">
                             <size key="itemSize" width="150" height="158"/>
-                            <size key="headerReferenceSize" width="600" height="104"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="8" minY="10" maxX="8" maxY="0.0"/>
+                            <inset key="sectionInset" minX="8" minY="65" maxX="8" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" reuseIdentifier="Cell" id="8gY-qg-zov" customClass="ViewCell" customModule="DW2App" customModuleProvider="target">
-                                <rect key="frame" x="8" y="114" width="150" height="158"/>
+                                <rect key="frame" x="8" y="65" width="150" height="158"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="158"/>
@@ -337,29 +407,6 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageheader" id="IPh-fY-mbS" customClass="CollectionReusableView" customModule="DW2App" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="104"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QoM-5o-bPG">
-                                    <rect key="frame" x="252" y="41" width="42" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXi-q0-UHx">
-                                    <rect key="frame" x="0.0" y="0.0" width="584" height="104"/>
-                                </imageView>
-                            </subviews>
-                            <constraints>
-                                <constraint firstItem="QoM-5o-bPG" firstAttribute="centerY" secondItem="IPh-fY-mbS" secondAttribute="centerY" id="cWK-T2-Vtm"/>
-                                <constraint firstItem="QoM-5o-bPG" firstAttribute="centerX" secondItem="IPh-fY-mbS" secondAttribute="centerX" id="ytg-Dv-187"/>
-                            </constraints>
-                            <connections>
-                                <outlet property="backgroundImage" destination="JXi-q0-UHx" id="28X-Gh-AlW"/>
-                                <outlet property="headlabel" destination="QoM-5o-bPG" id="L9K-8z-A5D"/>
-                            </connections>
-                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="hIs-vj-r55" id="XTb-57-xgD"/>
                             <outlet property="delegate" destination="hIs-vj-r55" id="a6U-zc-Fdz"/>
@@ -417,11 +464,11 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qv8-JS-boq" id="4TB-Xj-chj">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WNH-KL-L6c">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -554,8 +601,13 @@
         <image name="trash1" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+<<<<<<< HEAD
         <segue reference="CIS-XS-VFr"/>
         <segue reference="MAW-Gu-uBx"/>
+=======
+        <segue reference="VJT-Po-Pc0"/>
+        <segue reference="YBS-uM-4H6"/>
+>>>>>>> origin/master
         <segue reference="768-0U-tOh"/>
     </inferredMetricsTieBreakers>
 </document>
