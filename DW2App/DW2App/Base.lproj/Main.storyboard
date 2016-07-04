@@ -416,6 +416,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Gdp-sl-N0h" kind="show" id="768-0U-tOh"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -425,9 +428,6 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Künstler" image="second" id="Qbf-sc-p48"/>
                     <navigationItem key="navigationItem" title="Künstlerinnen" id="JWd-Yk-hKd"/>
-                    <connections>
-                        <segue destination="Gdp-sl-N0h" kind="show" id="W3s-PW-p18"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7f-ov-ieO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -531,8 +531,8 @@
         <image name="trash1" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qZW-A5-nTG"/>
-        <segue reference="Rur-Bt-57K"/>
+        <segue reference="768-0U-tOh"/>
         <segue reference="fKM-5e-YvG"/>
+        <segue reference="Rur-Bt-57K"/>
     </inferredMetricsTieBreakers>
 </document>
