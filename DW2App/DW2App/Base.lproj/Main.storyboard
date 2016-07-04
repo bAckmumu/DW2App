@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -126,8 +126,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2L-Bm-FHB" userLabel="View1">
                                 <rect key="frame" x="0.0" y="216" width="600" height="271"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHh-UV-fl3">
-                                        <rect key="frame" x="65" y="0.0" width="231" height="34"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHh-UV-fl3">
+                                        <rect key="frame" x="65" y="8" width="231" height="34"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Kunstwerke"/>
                                         <connections>
@@ -141,8 +141,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYa-Vj-79m">
-                                        <rect key="frame" x="304" y="0.0" width="231" height="34"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYa-Vj-79m">
+                                        <rect key="frame" x="304" y="8" width="231" height="34"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Künstlerinnen"/>
                                         <connections>
@@ -225,14 +225,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AlK-TB-kon">
                                 <rect key="frame" x="0.0" y="216" width="600" height="271"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFk-qi-IZN">
-                                        <rect key="frame" x="304" y="0.0" width="231" height="34"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Künstlerinnen"/>
-                                        <connections>
-                                            <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="fKM-5e-YvG"/>
-                                        </connections>
-                                    </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MRk-M5-5D7">
                                         <rect key="frame" x="10" y="44" width="580" height="228"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -240,12 +232,20 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZT-5b-43J">
-                                        <rect key="frame" x="65" y="0.0" width="231" height="34"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZT-5b-43J">
+                                        <rect key="frame" x="65" y="8" width="231" height="34"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Kunstwerke"/>
                                         <connections>
                                             <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="Rur-Bt-57K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFk-qi-IZN">
+                                        <rect key="frame" x="304" y="8" width="231" height="34"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="KünstlerInnen"/>
+                                        <connections>
+                                            <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="fKM-5e-YvG"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -544,8 +544,8 @@
         <image name="trash1" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="768-0U-tOh"/>
         <segue reference="fKM-5e-YvG"/>
-        <segue reference="TkE-g0-hYh"/>
+        <segue reference="Rur-Bt-57K"/>
+        <segue reference="768-0U-tOh"/>
     </inferredMetricsTieBreakers>
 </document>
