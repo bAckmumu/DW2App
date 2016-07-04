@@ -13,13 +13,28 @@ import UIKit
 class ArtworkGalleryCollectionViewController: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource {
 
     @IBOutlet var collectionView: UICollectionView!
-    let Products = ["annanatascha_art","kollmareva_art"]
-    let imageArray = [UIImage(named:"kollmareva_art"),UIImage(named:"annanatascha_art")]
+    //let Products = ["kollmareva_art","hofer_art"]
+    var Products = [String]()
+   // let imageArray = [UIImage(named:"kollmareva_art"),UIImage(named:"hofer_art")]
+    var imageArray = [UIImage]()
+    var weekend = "All"
+    
   //  var head_label: String!
+    
+    func readArtworklist(){
+        if weekend == "All"{
+            
+        }
+        else if weekend == "Democracy"{
+            Products = ["kollmareva_art","hofer_art"]
+            imageArray = [UIImage(named:"kollmareva_art")!,UIImage(named:"hofer_art")!]
+            }
+    }
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        readArtworklist()
         
         // Uncomment the following line to preserve selection between presentations
 //       self.clearsSelectionOnViewWillAppear = false
@@ -55,7 +70,7 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! ViewCell
         
         cell.artworkImage?.image = self.imageArray[indexPath.row]
-        cell.artworkImage.layer.cornerRadius = 10
+        cell.artworkImage.layer.cornerRadius = 5
        
       //  cell.artworkLabel?.text = self.Products[indexPath.row]
         cell.layer.cornerRadius = 10.0

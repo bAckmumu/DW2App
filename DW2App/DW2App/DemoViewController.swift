@@ -46,6 +46,7 @@ class DemoViewController: UIViewController {
         }
         else if segue.identifier == "showArtwork" {
             let vc = segue.destinationViewController as! ArtworkGalleryCollectionViewController
+            vc.weekend = weekend
             
             
                    }
