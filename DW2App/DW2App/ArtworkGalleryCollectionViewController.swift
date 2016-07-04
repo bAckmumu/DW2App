@@ -70,7 +70,7 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! ViewCell
         
         cell.artworkImage?.image = self.imageArray[indexPath.row]
-        cell.artworkImage.layer.cornerRadius = 5
+        cell.artworkImage.layer.cornerRadius = 3
        
       //  cell.artworkLabel?.text = self.Products[indexPath.row]
         cell.layer.cornerRadius = 10.0
@@ -80,9 +80,22 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
         return cell
         
     }
+
+
+
+func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    self.performSegueWithIdentifier("ArtWorkDetail", sender: self)
 }
 
-
+override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "ArtWorkDetail"
+    {
+        
+        
+        
+    }
+}
+}
 
   /*  override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
