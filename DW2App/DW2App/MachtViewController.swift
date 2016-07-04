@@ -10,6 +10,8 @@ import UIKit
 
 class MachtViewController: UIViewController {
 
+    @IBOutlet weak var Text: UITextView!
+    
     @IBOutlet weak var ArtistButton: UIButton!
     @IBOutlet weak var ArtworkButton: UIButton!
     
@@ -19,6 +21,7 @@ class MachtViewController: UIViewController {
         super.viewDidLoad()
         ArtworkButton.layer.cornerRadius = 5
         ArtistButton.layer.cornerRadius = 5
+        Text.editable = false
 
         // Do any additional setup after loading the view.
     }

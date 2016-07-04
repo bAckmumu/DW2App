@@ -14,6 +14,7 @@ class DemoViewController: UIViewController {
     @IBOutlet weak var ArtistButton: UIButton!
     @IBOutlet weak var ArtworkButton: UIButton!
     
+    @IBOutlet weak var Text: UITextView!
     let weekend = "Democracy"
     
     override func viewDidLoad() {
@@ -21,6 +22,7 @@ class DemoViewController: UIViewController {
 
         ArtworkButton.layer.cornerRadius = 5
         ArtistButton.layer.cornerRadius = 5
+        Text.editable = false
         
         // Do any additional setup after loading the view.
     }
