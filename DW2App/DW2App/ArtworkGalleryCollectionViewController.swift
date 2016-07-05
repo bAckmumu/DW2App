@@ -26,7 +26,7 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
             
         }
         else if weekend == "Democracy"{
-            Products = ["kollmareva_art","hofer_art"]
+            Products = ["Kollmareva","Hofer"]
             imageArray = [UIImage(named:"kollmareva_art")!,UIImage(named:"hofer_art")!]
             }
     }
@@ -91,7 +91,14 @@ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == "ArtWorkDetail"
     {
         
-        
+        let vc = segue.destinationViewController as! ArtWorkViewController
+        let indexPaths = self.collectionView!.indexPathsForSelectedItems()!
+        let indexPath = indexPaths[0] as NSIndexPath
+        vc.labelstring = self.Products[indexPath.row]
+        vc.image = self.imageArray[indexPath.row]
+        //vc.ResizeImage(vc.image, targetSize: CGSizeMake(50.0, 200.0))
+      //  vc.title = self.Products[indexPath.row]
+
         
     }
 }
