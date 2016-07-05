@@ -26,7 +26,7 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
             
         }
         else if weekend == "Democracy"{
-            Products = ["Kollmareva","Hofer"]
+            Products = ["kollmareva","hofer"]
             imageArray = [UIImage(named:"kollmareva_art")!,UIImage(named:"hofer_art")!]
             }
     }

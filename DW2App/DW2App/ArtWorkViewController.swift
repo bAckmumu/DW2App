@@ -14,6 +14,8 @@ class ArtWorkViewController: UIViewController,UIScrollViewDelegate {
     @IBOutlet weak var ArtistButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     var image = UIImage()
+    var viewController : ArtistViewController!
+
     
     var labelstring: String!
     /* func ResizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
@@ -62,13 +64,9 @@ class ArtWorkViewController: UIViewController,UIScrollViewDelegate {
               let longPress=UILongPressGestureRecognizer(target:self,
                                                    action:#selector(longPressDid(_:)))
         
-        let tapSingle=UITapGestureRecognizer(target:self,action:#selector(tapSingleDid))
-        tapSingle.numberOfTapsRequired=1
-        tapSingle.numberOfTouchesRequired=1
-        
-        imageView.addGestureRecognizer(longPress)
-        imageView.addGestureRecognizer(tapSingle)
-       
+               imageView.addGestureRecognizer(longPress)
+      
+     //  viewController.artist = labelstring
         
         
     }
@@ -77,15 +75,6 @@ class ArtWorkViewController: UIViewController,UIScrollViewDelegate {
     }
 
     
-    func tapSingleDid(){
-        scrollView.scrollEnabled = true
-        scrollView.showsVerticalScrollIndicator = false
-        scrollView.showsHorizontalScrollIndicator = false
-        scrollView.contentSize.height = imageView.frame.size.height+100
-        scrollView.contentSize.width =  imageView.frame.size.width + 100
-
-        
-    }
 
     
     override func didReceiveMemoryWarning() {
@@ -126,5 +115,20 @@ class ArtWorkViewController: UIViewController,UIScrollViewDelegate {
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
         return imageView
     }
+ 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showArtist"
+        {
+            
+            let viewController:ArtistViewController = segue.destinationViewController as! ArtistViewController
+            
+            viewController.artist = labelstring
 
+          
+            
+            
+            
+        }
+    }
+    
 }

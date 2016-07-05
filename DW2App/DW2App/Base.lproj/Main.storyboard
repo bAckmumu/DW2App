@@ -366,14 +366,14 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Gdp-sl-N0h" kind="show" id="qZW-A5-nTG"/>
+                                    <segue destination="Gdp-sl-N0h" kind="show" identifier="showArtist" id="qZW-A5-nTG"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YjN-yW-cqo">
                                 <rect key="frame" x="20" y="15" width="574" height="469"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-04-ZDC">
-                                        <rect key="frame" x="8" y="8" width="370" height="453"/>
+                                        <rect key="frame" x="4" y="8" width="370" height="453"/>
                                         <variation key="heightClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="100" y="16" width="398" height="274"/>
                                         </variation>
@@ -452,7 +452,7 @@
         <!--Künstlerin-->
         <scene sceneID="CKR-S7-nmB">
             <objects>
-                <viewController id="Gdp-sl-N0h" customClass="ArtistViewController" customModule="DW2App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ArtistViewController" id="Gdp-sl-N0h" customClass="ArtistViewController" customModule="DW2App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pZy-Wx-5gh"/>
                         <viewControllerLayoutGuide type="bottom" id="cPb-JS-2dZ"/>
@@ -557,8 +557,8 @@
         <image name="trash1" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="MAW-Gu-uBx"/>
         <segue reference="TkE-g0-hYh"/>
         <segue reference="qZW-A5-nTG"/>
-        <segue reference="VJT-Po-Pc0"/>
     </inferredMetricsTieBreakers>
 </document>
