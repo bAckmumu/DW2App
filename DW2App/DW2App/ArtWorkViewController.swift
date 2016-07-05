@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ArtWorkViewController: UIViewController {
+class ArtWorkViewController: UIViewController,UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var ArtistButton: UIButton!
@@ -46,10 +46,12 @@ class ArtWorkViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-       
-         scrollView.scrollEnabled = false
-        
+       scrollView.delegate = self
+        // scrollView.scrollEnabled = false
+        scrollView.minimumZoomScale = 1
+        scrollView.maximumZoomScale = 5
         self.imageView.contentMode = UIViewContentMode.ScaleAspectFit
+        
         
         
         //self.ResizeImage(image, targetSize: CGSizeMake(200.0, 200.0))
@@ -66,9 +68,14 @@ class ArtWorkViewController: UIViewController {
         
         imageView.addGestureRecognizer(longPress)
         imageView.addGestureRecognizer(tapSingle)
+       
         
         
     }
+    func setData() {
+        scrollView.zoomScale = 1
+    }
+
     
     func tapSingleDid(){
         scrollView.scrollEnabled = true
@@ -116,4 +123,8 @@ class ArtWorkViewController: UIViewController {
         }
         
 }
+    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+        return imageView
+    }
+
 }
