@@ -13,36 +13,66 @@ import UIKit
 class ArtworkGalleryCollectionViewController: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource {
 
     @IBOutlet var collectionView: UICollectionView!
-    //let Products = ["kollmareva_art","hofer_art"]
-    var Products = [String]()
-   // let imageArray = [UIImage(named:"kollmareva_art"),UIImage(named:"hofer_art")]
+       var Products = [String]()
     var imageArray = [UIImage]()
     var weekend = "All"
+    let artist = "Artist"
+    var ArtImage : UIImage!
+    //var artistNames = [String]()
+    var artistKeys = [String]()
+    var test1 = [String]()
+    var test2 = [String]()
     
   //  var head_label: String!
     
     func readArtworklist(){
-        if weekend == "All"{
-            
+        
+        
+        
+        var myDict: NSDictionary?
+        if let path = NSBundle.mainBundle().pathForResource("Festival", ofType: "plist") {
+            myDict = NSDictionary(contentsOfFile: path)
         }
-        else if weekend == "Democracy"{
-            Products = ["kollmareva","hofer"]
-            imageArray = [UIImage(named:"kollmareva_art")!,UIImage(named:"hofer_art")!]
+        if let dict = myDict {
+            // Use your dict here
+            
+            //let artists = dict[artist] as! NSDictionary
+            
+            if weekend == "ALL" {
+                
             }
+            
+            else if weekend == "Democracy" {
+              // Products = ["kollmareva","hofer"]
+                //imageArray = [UIImage(named:"kollmareva_art")!,UIImage(named:"hofer_art")!]
+                artistKeys = dict[weekend] as! [String]
+                
+                for artistKey in artistKeys {
+                    let artistName = dict[artist]![artistKey]!!["Name"]! as! String
+                    let artworkName = dict[artist]![artistKey]!!["Key"]! as! String + "_art"
+                  //let image = UIImage(named: artworkName)! as UIImage
+
+                    //artists[artistKey]!["Name"]! as! String
+                  
+                    //artists[] =
+                    Products.append(artistName)
+                    imageArray.append(UIImage(named:artworkName)!)
+                }
+            
+                
+                
+                
+            
+            }
+        }
+        
     }
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         readArtworklist()
-        
-        // Uncomment the following line to preserve selection between presentations
-//       self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-       // self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -94,7 +124,7 @@ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let vc = segue.destinationViewController as! ArtWorkViewController
         let indexPaths = self.collectionView!.indexPathsForSelectedItems()!
         let indexPath = indexPaths[0] as NSIndexPath
-        vc.labelstring = self.Products[indexPath.row]
+        vc.labelstring = self.artistKeys[indexPath.row]
         vc.image = self.imageArray[indexPath.row]
         //vc.ResizeImage(vc.image, targetSize: CGSizeMake(50.0, 200.0))
       //  vc.title = self.Products[indexPath.row]

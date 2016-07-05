@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -359,26 +358,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUC-In-yrJ">
-                                <rect key="frame" x="79" y="492" width="359" height="44"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <state key="normal" title="Künstlerinnen">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Gdp-sl-N0h" kind="show" identifier="showArtist" id="qZW-A5-nTG"/>
-                                </connections>
-                            </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YjN-yW-cqo">
-                                <rect key="frame" x="20" y="15" width="574" height="469"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YjN-yW-cqo">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-04-ZDC">
-                                        <rect key="frame" x="4" y="8" width="370" height="453"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-04-ZDC">
+                                        <rect key="frame" x="10" y="2" width="580" height="596"/>
                                         <variation key="heightClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="100" y="16" width="398" height="274"/>
                                         </variation>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUC-In-yrJ">
+                                        <rect key="frame" x="-25" y="529" width="410" height="35"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" title="Künstlerinnen">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Gdp-sl-N0h" kind="show" identifier="showArtist" id="qZW-A5-nTG"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="IUC-In-yrJ" secondAttribute="bottom" constant="20" id="5PY-1n-fNS"/>
+                                    <constraint firstItem="dHa-04-ZDC" firstAttribute="centerX" secondItem="YjN-yW-cqo" secondAttribute="centerX" id="Efi-OI-azK"/>
+                                    <constraint firstItem="dHa-04-ZDC" firstAttribute="leading" secondItem="YjN-yW-cqo" secondAttribute="leading" constant="10" id="GRz-a8-raE"/>
+                                    <constraint firstAttribute="trailing" secondItem="dHa-04-ZDC" secondAttribute="trailing" constant="10" id="NlN-l5-bk2"/>
+                                    <constraint firstItem="dHa-04-ZDC" firstAttribute="centerY" secondItem="YjN-yW-cqo" secondAttribute="centerY" id="SbR-mV-4lC"/>
+                                    <constraint firstAttribute="trailing" secondItem="IUC-In-yrJ" secondAttribute="trailing" constant="50" id="h5g-MH-BuA"/>
+                                    <constraint firstItem="IUC-In-yrJ" firstAttribute="top" secondItem="dHa-04-ZDC" secondAttribute="bottom" constant="-30" id="pKT-o5-xJL"/>
+                                    <constraint firstItem="IUC-In-yrJ" firstAttribute="leading" secondItem="YjN-yW-cqo" secondAttribute="leading" constant="50" id="sgq-Sd-wkP"/>
+                                    <constraint firstItem="dHa-04-ZDC" firstAttribute="top" secondItem="YjN-yW-cqo" secondAttribute="top" constant="2" id="uhz-7B-Vgf"/>
+                                </constraints>
                                 <variation key="heightClass=compact" ambiguous="YES">
                                     <rect key="frame" x="25" y="10" width="550" height="312"/>
                                 </variation>
@@ -386,14 +396,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="YjN-yW-cqo" firstAttribute="top" secondItem="DxJ-c5-9n3" secondAttribute="top" constant="5" id="IkY-sU-PP0"/>
-                            <constraint firstItem="IUC-In-yrJ" firstAttribute="top" secondItem="YjN-yW-cqo" secondAttribute="bottom" constant="8" id="KGE-7a-XMw"/>
-                            <constraint firstItem="IUC-In-yrJ" firstAttribute="leading" secondItem="DxJ-c5-9n3" secondAttribute="leadingMargin" constant="50" id="LYe-vp-Yk9"/>
-                            <constraint firstItem="UEy-bf-vYi" firstAttribute="top" secondItem="IUC-In-yrJ" secondAttribute="bottom" constant="40" id="QAn-s6-XCz"/>
-                            <constraint firstItem="YjN-yW-cqo" firstAttribute="leading" secondItem="DxJ-c5-9n3" secondAttribute="leading" constant="2" id="R8k-wF-KxY"/>
-                            <constraint firstAttribute="trailing" secondItem="YjN-yW-cqo" secondAttribute="trailing" constant="2" id="ilv-1R-DRM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IUC-In-yrJ" secondAttribute="trailing" constant="40" id="oe9-AM-so2"/>
-                            <constraint firstItem="YjN-yW-cqo" firstAttribute="centerX" secondItem="DxJ-c5-9n3" secondAttribute="centerX" id="vog-YD-H8o"/>
+                            <constraint firstItem="YjN-yW-cqo" firstAttribute="centerX" secondItem="DxJ-c5-9n3" secondAttribute="centerX" id="BZa-iy-Pyc"/>
+                            <constraint firstItem="YjN-yW-cqo" firstAttribute="height" secondItem="DxJ-c5-9n3" secondAttribute="height" id="Uoc-lo-Y2X"/>
+                            <constraint firstItem="YjN-yW-cqo" firstAttribute="width" secondItem="DxJ-c5-9n3" secondAttribute="width" id="WrQ-9a-hER"/>
+                            <constraint firstItem="YjN-yW-cqo" firstAttribute="centerY" secondItem="DxJ-c5-9n3" secondAttribute="centerY" id="xOu-4o-X7r"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Kunstwerk" id="70X-w6-UWl"/>

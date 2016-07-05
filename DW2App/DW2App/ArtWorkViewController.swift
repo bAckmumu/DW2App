@@ -56,6 +56,7 @@ class ArtWorkViewController: UIViewController,UIScrollViewDelegate {
         
         
         
+        
         //self.ResizeImage(image, targetSize: CGSizeMake(200.0, 200.0))
         //  self.imageView.image = self.ResizeImage(image, targetSize: CGSizeMake(500, 500))
         self.imageView.image = self.image
