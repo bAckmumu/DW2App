@@ -16,7 +16,7 @@ class ArtWorkViewController: UIViewController,UIScrollViewDelegate {
     var image = UIImage()
     var viewController : ArtistViewController!
 
-    
+    var ButtonTitle : String!
     var labelstring: String!
     /* func ResizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
      let size = image.size
@@ -60,7 +60,7 @@ class ArtWorkViewController: UIViewController,UIScrollViewDelegate {
         //self.ResizeImage(image, targetSize: CGSizeMake(200.0, 200.0))
         //  self.imageView.image = self.ResizeImage(image, targetSize: CGSizeMake(500, 500))
         self.imageView.image = self.image
-        ArtistButton.setTitle(labelstring, forState: UIControlState.Normal)
+        ArtistButton.setTitle(ButtonTitle, forState: UIControlState.Normal)
                imageView.userInteractionEnabled = true
               let longPress=UILongPressGestureRecognizer(target:self,
                                                    action:#selector(longPressDid(_:)))
