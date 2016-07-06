@@ -39,17 +39,14 @@ class DemoViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "showArtists" {
-            let viewController:ArtistsListTableViewController = segue.destinationViewController as! ArtistsListTableViewController
-            
+            let viewController = segue.destinationViewController as! ArtistsListTableViewController
             viewController.weekend = weekend
             
         }
         else if segue.identifier == "showArtwork" {
             let vc = segue.destinationViewController as! ArtworkGalleryCollectionViewController
             vc.weekend = weekend
-            
-            
-                   }
+        }
     }
         /*if segue.identifier == "Demoshowing"
         {

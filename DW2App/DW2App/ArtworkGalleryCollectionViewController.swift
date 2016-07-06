@@ -15,7 +15,7 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
     @IBOutlet var collectionView: UICollectionView!
        var Products = [String]()
     var imageArray = [UIImage]()
-    var weekend = "All"
+    var weekend = "all"
     let artist = "Artist"
     var ArtImage : UIImage!
     //var artistNames = [String]()
@@ -28,43 +28,78 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
     func readArtworklist(){
         
         
-        
-        var myDict: NSDictionary?
+        var festivalPlist: NSDictionary?
         if let path = NSBundle.mainBundle().pathForResource("Festival", ofType: "plist") {
-            myDict = NSDictionary(contentsOfFile: path)
+            festivalPlist = NSDictionary(contentsOfFile: path)
         }
-        if let dict = myDict {
-            // Use your dict here
+        
+        var artistsPlist: NSDictionary?
+        if let path = NSBundle.mainBundle().pathForResource("Artists", ofType: "plist") {
+            artistsPlist = NSDictionary(contentsOfFile: path)
+        }
+        
+        if let festivalDict = festivalPlist {
             
-            //let artists = dict[artist] as! NSDictionary
+            artistKeys = festivalDict[weekend] as! [String]
             
-            if weekend == "all" {
-                
-            }
-            
-            else if weekend == "Democracy" {
-              // Products = ["kollmareva","hofer"]
-                //imageArray = [UIImage(named:"kollmareva_art")!,UIImage(named:"hofer_art")!]
-                artistKeys = dict[weekend] as! [String]
+            if let artistsDict = artistsPlist {
                 
                 for artistKey in artistKeys {
-                    let artistName = dict[artist]![artistKey]!!["Name"]! as! String
-                    let artworkName = dict[artist]![artistKey]!!["Key"]! as! String + "_art"
-                  //let image = UIImage(named: artworkName)! as UIImage
-
+                    let artistName = artistsDict[artistKey]!["name"]! as! String
+                    let artworkName = artistsDict[artistKey]!["key"]! as! String + "_art"
+                    //let image = UIImage(named: artworkName)! as UIImage
+                    
                     //artists[artistKey]!["Name"]! as! String
-                  
+                    
                     //artists[] =
-                    Products.append(artistName)
-                    imageArray.append(UIImage(named:artworkName)!)
+                    
+                    
+                    if let image = UIImage(named:artworkName) {
+                        Products.append(artistName)
+                        imageArray.append(image)
+                    }
                 }
-            
-                
-                
-                
-            
             }
         }
+        
+        
+        
+//        var myDict: NSDictionary?
+//        if let path = NSBundle.mainBundle().pathForResource("Festival", ofType: "plist") {
+//            myDict = NSDictionary(contentsOfFile: path)
+//        }
+//        if let dict = myDict {
+//            // Use your dict here
+//            
+//            //let artists = dict[artist] as! NSDictionary
+//            
+//            if weekend == "all" {
+//                
+//            }
+//            
+//            else if weekend == "Democracy" {
+//              // Products = ["kollmareva","hofer"]
+//                //imageArray = [UIImage(named:"kollmareva_art")!,UIImage(named:"hofer_art")!]
+//                artistKeys = dict[weekend] as! [String]
+//                
+//                for artistKey in artistKeys {
+//                    let artistName = dict[artist]![artistKey]!!["Name"]! as! String
+//                    let artworkName = dict[artist]![artistKey]!!["Key"]! as! String + "_art"
+//                  //let image = UIImage(named: artworkName)! as UIImage
+//
+//                    //artists[artistKey]!["Name"]! as! String
+//                  
+//                    //artists[] =
+//                    Products.append(artistName)
+//                    imageArray.append(UIImage(named:artworkName)!)
+//                }
+//            
+//                
+//                
+//                
+//            
+//            }
+//        }
         
     }
     

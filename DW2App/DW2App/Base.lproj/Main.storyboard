@@ -336,7 +336,7 @@
                             <outlet property="delegate" destination="hIs-vj-r55" id="a6U-zc-Fdz"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Kunstwerke" image="first" id="v85-kx-O8E"/>
+                    <tabBarItem key="tabBarItem" title="Alle Kunstwerke" image="first" id="v85-kx-O8E"/>
                     <navigationItem key="navigationItem" title="Kunstwerke" id="dx1-1P-ooE"/>
                     <connections>
                         <outlet property="collectionView" destination="QeE-PC-68Y" id="oOR-Pw-HSz"/>
@@ -449,7 +449,7 @@
                             <outlet property="delegate" destination="tqF-II-plG" id="5nR-Sk-2SF"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Künstler" image="second" id="Qbf-sc-p48"/>
+                    <tabBarItem key="tabBarItem" title="Alle Künstlerinnen" image="second" id="Qbf-sc-p48"/>
                     <navigationItem key="navigationItem" title="Künstlerinnen" id="JWd-Yk-hKd"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7f-ov-ieO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -567,6 +567,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="2NH-wg-ZPc"/>
         <segue reference="EFK-3s-5qr"/>
-        <segue reference="qZW-A5-nTG"/>
+        <segue reference="768-0U-tOh"/>
     </inferredMetricsTieBreakers>
 </document>
