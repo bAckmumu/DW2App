@@ -15,7 +15,7 @@ class MachtViewController: UIViewController {
     @IBOutlet weak var ArtistButton: UIButton!
     @IBOutlet weak var ArtworkButton: UIButton!
     
-    let weekend = "Power"
+    let weekend = "power"
     
     override func viewDidLoad() {
         super.viewDidLoad()

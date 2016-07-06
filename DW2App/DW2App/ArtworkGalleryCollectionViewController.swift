@@ -38,7 +38,7 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
             
             //let artists = dict[artist] as! NSDictionary
             
-            if weekend == "ALL" {
+            if weekend == "all" {
                 
             }
             

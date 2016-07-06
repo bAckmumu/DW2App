@@ -14,7 +14,7 @@ class PartViewController: UIViewController {
     @IBOutlet weak var ArtistButton: UIButton!
     @IBOutlet weak var ArtworkButton: UIButton!
     
-    let weekend = "Participation"    
+    let weekend = "participation"    
     
     override func viewDidLoad() {
         super.viewDidLoad()

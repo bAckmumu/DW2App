@@ -15,7 +15,7 @@ class DemoViewController: UIViewController {
     @IBOutlet weak var ArtworkButton: UIButton!
     
     @IBOutlet weak var Text: UITextView!
-    let weekend = "Democracy"
+    let weekend = "democracy"
     
     override func viewDidLoad() {
         super.viewDidLoad()

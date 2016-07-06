@@ -15,6 +15,8 @@
 		32ECA68D1D2A8085001D2F02 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ECA68C1D2A8085001D2F02 /* ArtistViewController.swift */; };
 		32F66E6E1D280D13007CB75E /* ArtistsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F66E6D1D280D13007CB75E /* ArtistsListTableViewController.swift */; };
 		32F66E701D2810D0007CB75E /* ArtworkGalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F66E6F1D2810D0007CB75E /* ArtworkGalleryCollectionViewController.swift */; };
+		32FCE4B81D2DA6C1008BCAA1 /* Artists.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32FCE4B71D2DA6C1008BCAA1 /* Artists.plist */; };
+		32FCE4BA1D2DA8C2008BCAA1 /* Artwork.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32FCE4B91D2DA8C2008BCAA1 /* Artwork.plist */; };
 		F6D1379B1D2962E500A4100E /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D1379A1D2962E500A4100E /* ViewCell.swift */; };
 		F6D137A11D29A47F00A4100E /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D137A01D29A47F00A4100E /* DemoViewController.swift */; };
 		F6D137A31D29A49400A4100E /* MachtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D137A21D29A49400A4100E /* MachtViewController.swift */; };
@@ -34,6 +36,8 @@
 		32ECA68C1D2A8085001D2F02 /* ArtistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
 		32F66E6D1D280D13007CB75E /* ArtistsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistsListTableViewController.swift; sourceTree = "<group>"; };
 		32F66E6F1D2810D0007CB75E /* ArtworkGalleryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkGalleryCollectionViewController.swift; sourceTree = "<group>"; };
+		32FCE4B71D2DA6C1008BCAA1 /* Artists.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Artists.plist; sourceTree = "<group>"; };
+		32FCE4B91D2DA8C2008BCAA1 /* Artwork.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Artwork.plist; sourceTree = "<group>"; };
 		F6D1379A1D2962E500A4100E /* ViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
 		F6D137A01D29A47F00A4100E /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		F6D137A21D29A49400A4100E /* MachtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachtViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 		32ADA0941D2507AE00A1292C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				32FCE4B71D2DA6C1008BCAA1 /* Artists.plist */,
+				32FCE4B91D2DA8C2008BCAA1 /* Artwork.plist */,
 				3265F7CF1D1BE4EE00B33362 /* Assets.xcassets */,
 				3265F7D41D1BE4EE00B33362 /* Info.plist */,
 				3265F7D11D1BE4EE00B33362 /* LaunchScreen.storyboard */,
@@ -159,7 +165,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3265F7D31D1BE4EE00B33362 /* LaunchScreen.storyboard in Resources */,
+				32FCE4BA1D2DA8C2008BCAA1 /* Artwork.plist in Resources */,
 				3265F7D01D1BE4EE00B33362 /* Assets.xcassets in Resources */,
+				32FCE4B81D2DA6C1008BCAA1 /* Artists.plist in Resources */,
 				32ADA0961D25083100A1292C /* Festival.plist in Resources */,
 				3265F7CE1D1BE4EE00B33362 /* Main.storyboard in Resources */,
 			);

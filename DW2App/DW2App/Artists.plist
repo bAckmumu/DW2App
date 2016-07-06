@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>adleraf</key>
+	<dict>
+		<key>key</key>
+		<string>adleraf</string>
+		<key>name</key>
+		<string>ADLER A.F.</string>
+	</dict>
+	<key>annanatascha</key>
+	<dict>
+		<key>key</key>
+		<string>annanatascha</string>
+		<key>name</key>
+		<string>Annanatascha</string>
+	</dict>
+	<key>anra</key>
+	<dict>
+		<key>key</key>
+		<string>anra</string>
+		<key>name</key>
+		<string>ANRA</string>
+	</dict>
+	<key>christinatihansen</key>
+	<dict>
+		<key>key</key>
+		<string>christinatihansen</string>
+		<key>name</key>
+		<string>Christina Ti Hansen</string>
+	</dict>
+	<key>eleonorahofer</key>
+	<dict>
+		<key>key</key>
+		<string>eleonorahofer</string>
+		<key>name</key>
+		<string>Eleonora Hofer</string>
+	</dict>
+	<key>elfiekriester</key>
+	<dict>
+		<key>key</key>
+		<string>elfiekriester</string>
+		<key>name</key>
+		<string>Elfie Kriester</string>
+	</dict>
+	<key>emilmemon</key>
+	<dict>
+		<key>key</key>
+		<string>emilmemon</string>
+		<key>name</key>
+		<string>Emil Memon</string>
+	</dict>
+	<key>evakollmar</key>
+	<dict>
+		<key>key</key>
+		<string>evakollmar</string>
+		<key>name</key>
+		<string>Eva Kollmar</string>
+	</dict>
+	<key>fabiankochendoerfer</key>
+	<dict>
+		<key>key</key>
+		<string>fabiankochendoerfer</string>
+		<key>name</key>
+		<string>Fabian Kochendoerfer</string>
+	</dict>
+	<key>franziskaagrawal</key>
+	<dict>
+		<key>key</key>
+		<string>franziskaagrawal</string>
+		<key>name</key>
+		<string>Franziska Agrawal</string>
+	</dict>
+	<key>hpberndl</key>
+	<dict>
+		<key>key</key>
+		<string>hpberndl</string>
+		<key>name</key>
+		<string>HP Berndl</string>
+	</dict>
+	<key>ingekurtz</key>
+	<dict>
+		<key>key</key>
+		<string>ingekurtz</string>
+		<key>name</key>
+		<string>Inge Kurtz</string>
+	</dict>
+	<key>jpg</key>
+	<dict>
+		<key>key</key>
+		<string>jpg</string>
+		<key>name</key>
+		<string>JPG</string>
+	</dict>
+	<key>kathykissik</key>
+	<dict>
+		<key>key</key>
+		<string>kathykissik</string>
+		<key>name</key>
+		<string>Kathy Kissik</string>
+	</dict>
+	<key>lilly350</key>
+	<dict>
+		<key>key</key>
+		<string>lilly350</string>
+		<key>name</key>
+		<string>Lilly3.50</string>
+	</dict>
+	<key>michaelheininger</key>
+	<dict>
+		<key>key</key>
+		<string>michaelheininger</string>
+		<key>name</key>
+		<string>Michael Heininger</string>
+	</dict>
+	<key>optopussies</key>
+	<dict>
+		<key>key</key>
+		<string>optopussies</string>
+		<key>name</key>
+		<string>OptoPussies</string>
+	</dict>
+	<key>peneloperichardson</key>
+	<dict>
+		<key>key</key>
+		<string>peneloperichardson</string>
+		<key>name</key>
+		<string>Penelope Richardson</string>
+	</dict>
+	<key>reginastaudturck</key>
+	<dict>
+		<key>key</key>
+		<string>reginastaudturck</string>
+		<key>name</key>
+		<string>Regina Staud.-Türck</string>
+	</dict>
+	<key>roswithavallendor</key>
+	<dict>
+		<key>key</key>
+		<string>roswithavallendor</string>
+		<key>name</key>
+		<string>Roswitha Vallendor</string>
+	</dict>
+	<key>saanakang</key>
+	<dict>
+		<key>key</key>
+		<string>saanakang</string>
+		<key>name</key>
+		<string>Saana Kang</string>
+	</dict>
+	<key>sabinedresler</key>
+	<dict>
+		<key>key</key>
+		<string>sabinedresler</string>
+		<key>name</key>
+		<string>Sabine Dreßler</string>
+	</dict>
+	<key>ursuladuch</key>
+	<dict>
+		<key>key</key>
+		<string>ursuladuch</string>
+		<key>name</key>
+		<string>Ursula Duch</string>
+	</dict>
+</dict>
+</plist>

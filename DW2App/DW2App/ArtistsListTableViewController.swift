@@ -10,36 +10,35 @@ import UIKit
 
 class ArtistsListTableViewController: UITableViewController {
     
-    let all = "All"
-    let artist = "Artist"
+    let all = "all"
+    let artist = "artist"
     
     //var artists = [String: String]()
     var artistNames = [String]()
     var artistKeys = [String]()
     
-    var weekend = "All"
+    var weekend = "all"
     
     
     func readPropertyList(){
-        var myDict: NSDictionary?
+        var festivalPlist: NSDictionary?
         if let path = NSBundle.mainBundle().pathForResource("Festival", ofType: "plist") {
-            myDict = NSDictionary(contentsOfFile: path)
+            festivalPlist = NSDictionary(contentsOfFile: path)
         }
-        if let dict = myDict {
-            // Use your dict here
+        
+        var artistsPlist: NSDictionary?
+        if let path = NSBundle.mainBundle().pathForResource("Artists", ofType: "plist") {
+            artistsPlist = NSDictionary(contentsOfFile: path)
+        }
+        
+        if let festivalDict = festivalPlist {
             
-            //let artists = dict[artist] as! NSDictionary
+            artistKeys = festivalDict[weekend] as! [String]
             
-            if weekend == all {
-                
-            }
-            else {
-                artistKeys = dict[weekend] as! [String]
+            if let artistsDict = artistsPlist {
                 
                 for artistKey in artistKeys {
-                    let test = dict[artist]![artistKey]!!["Name"]! as! String //artists[artistKey]!["Name"]! as! String
-                    
-                    //artists[] =
+                    let test = artistsDict[artistKey]!["name"]! as! String //artists[artistKey]!["Name"]! as! String
                     
                     artistNames.append(test) //(artists[artistKey])! as! String)
                 }
