@@ -53,8 +53,8 @@ class ArtWorkViewController: UIViewController,UIScrollViewDelegate {
         scrollView.minimumZoomScale = 1
         scrollView.maximumZoomScale = 5
         self.imageView.contentMode = UIViewContentMode.ScaleAspectFit
-       // self.view.backgroundColor = UIColor.blackColor()
-        self.navigationController?.navigationBar.clipsToBounds = true
+        self.view.backgroundColor =  UIColor(red: 250/255, green: 250/255, blue: 250/255, alpha: 1)
+        // self.navigationController?.navigationBar.clipsToBounds = true
         
         
         //self.ResizeImage(image, targetSize: CGSizeMake(200.0, 200.0))
@@ -81,6 +81,16 @@ class ArtWorkViewController: UIViewController,UIScrollViewDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        self.navigationController?.navigationBar.shadowImage =  UIImage()
+        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blackColor()]
+                      self.navigationController?.navigationBar.translucent = true
+        super.viewWillAppear(animated)
+        
     }
     func longPressDid(sender: UILongPressGestureRecognizer){
         if sender.state == .Began {
@@ -130,6 +140,18 @@ class ArtWorkViewController: UIViewController,UIScrollViewDelegate {
             
             
         }
+    }
+    override func viewWillDisappear(animated: Bool) {
+        //  self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        // self.navigationController?.navigationBar.shadowImage =  UIImage()
+        self.navigationController?.navigationBar.translucent = false
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+        self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        
+        super.viewDidDisappear(animated)
+        
+        // self.navigationController?.navigationBar = UIN
     }
     
 }
