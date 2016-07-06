@@ -53,9 +53,8 @@ class ArtWorkViewController: UIViewController,UIScrollViewDelegate {
         scrollView.minimumZoomScale = 1
         scrollView.maximumZoomScale = 5
         self.imageView.contentMode = UIViewContentMode.ScaleAspectFit
-        self.view.backgroundColor = UIColor.blackColor()
+       // self.view.backgroundColor = UIColor.blackColor()
         self.navigationController?.navigationBar.clipsToBounds = true
-        
         
         
         //self.ResizeImage(image, targetSize: CGSizeMake(200.0, 200.0))
