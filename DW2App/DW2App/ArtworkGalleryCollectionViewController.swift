@@ -91,7 +91,7 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
     {
              let collectionViewWidth = self.collectionView!.bounds.width
                let itemWidth = (collectionViewWidth - 4)/2.1
-                       return CGSizeMake(itemWidth, itemWidth)
+                       return CGSizeMake(itemWidth, itemWidth*1.2)
        // let cellSize:CGSize = CGSizeMake((collectionViewWidth - spacing * CGFloat(columnsNum-1))/CGFloat(columnsNum), 86)
         //return cellSize
     }
@@ -103,9 +103,9 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
         cell.artworkImage.layer.cornerRadius = 3
        
       //  cell.artworkLabel?.text = self.Products[indexPath.row]
-        cell.layer.cornerRadius = 10.0
+        cell.layer.cornerRadius = 3.0
        // cell.backgroundColor = UIColor.init(red: 247, green: 247, blue: 247, alpha: 0.2)
-        cell.layer.borderWidth = 1
+        cell.layer.borderWidth = 0.5
         cell.layer.borderColor = UIColor.lightGrayColor().CGColor
         return cell
         
