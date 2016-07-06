@@ -69,6 +69,8 @@ class ArtWorkViewController: UIViewController,UIScrollViewDelegate {
                                                    action:#selector(longPressDid(_:)))
         
                imageView.addGestureRecognizer(longPress)
+        scrollView.showsHorizontalScrollIndicator = false
+        scrollView.showsVerticalScrollIndicator = false
       
      //  viewController.artist = labelstring
         
