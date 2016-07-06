@@ -363,7 +363,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="540"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-04-ZDC">
-                                        <rect key="frame" x="10" y="0.0" width="580" height="471"/>
+                                        <rect key="frame" x="10" y="0.0" width="580" height="481"/>
                                         <variation key="heightClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="100" y="16" width="398" height="274"/>
                                         </variation>
@@ -381,7 +381,7 @@
                                 </variation>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUC-In-yrJ">
-                                <rect key="frame" x="70" y="496" width="460" height="37"/>
+                                <rect key="frame" x="70" y="489" width="460" height="37"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="22"/>
                                 <state key="normal" title="Künstlerinnen">
                                     <color key="titleColor" red="0.97461939102564099" green="0.97461939102564099" blue="0.97461939102564099" alpha="1" colorSpace="calibratedRGB"/>
@@ -396,10 +396,10 @@
                             <constraint firstItem="YjN-yW-cqo" firstAttribute="centerX" secondItem="DxJ-c5-9n3" secondAttribute="centerX" id="BZa-iy-Pyc"/>
                             <constraint firstItem="YjN-yW-cqo" firstAttribute="top" secondItem="DxJ-c5-9n3" secondAttribute="topMargin" id="KvT-6m-c2r"/>
                             <constraint firstItem="YjN-yW-cqo" firstAttribute="width" secondItem="DxJ-c5-9n3" secondAttribute="width" id="WrQ-9a-hER"/>
-                            <constraint firstItem="UEy-bf-vYi" firstAttribute="top" secondItem="YjN-yW-cqo" secondAttribute="bottom" constant="80" id="bM6-9K-FX3"/>
+                            <constraint firstItem="UEy-bf-vYi" firstAttribute="top" secondItem="YjN-yW-cqo" secondAttribute="bottom" constant="70" id="bM6-9K-FX3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IUC-In-yrJ" secondAttribute="trailing" constant="50" id="iAs-04-61X"/>
                             <constraint firstItem="IUC-In-yrJ" firstAttribute="leading" secondItem="DxJ-c5-9n3" secondAttribute="leadingMargin" constant="50" id="jiK-0F-cJk"/>
-                            <constraint firstItem="UEy-bf-vYi" firstAttribute="top" secondItem="IUC-In-yrJ" secondAttribute="bottom" constant="18" id="nxl-MP-bbe"/>
+                            <constraint firstItem="UEy-bf-vYi" firstAttribute="top" secondItem="IUC-In-yrJ" secondAttribute="bottom" constant="25" id="nxl-MP-bbe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Kunstwerk" id="70X-w6-UWl"/>
@@ -535,7 +535,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="TabBarController" customModule="DW2App" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
