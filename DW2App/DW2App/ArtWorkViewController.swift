@@ -53,14 +53,17 @@ class ArtWorkViewController: UIViewController,UIScrollViewDelegate {
         scrollView.minimumZoomScale = 1
         scrollView.maximumZoomScale = 5
         self.imageView.contentMode = UIViewContentMode.ScaleAspectFit
-        self.view.backgroundColor =  UIColor(red: 250/255, green: 250/255, blue: 250/255, alpha: 1)
+        self.view.backgroundColor =  UIColor(red: 235/255, green: 235/255, blue: 235/255, alpha: 1)
         // self.navigationController?.navigationBar.clipsToBounds = true
-        
-        
         //self.ResizeImage(image, targetSize: CGSizeMake(200.0, 200.0))
         //  self.imageView.image = self.ResizeImage(image, targetSize: CGSizeMake(500, 500))
         self.imageView.image = self.image
         ArtistButton.setTitle(ButtonTitle, forState: UIControlState.Normal)
+        ArtistButton.layer.cornerRadius = 5
+        ArtistButton.backgroundColor = UIColor(red: 187/255, green: 14/255, blue: 25/255, alpha: 1)
+        //let black = UIColor.lightGrayColor()
+        //ArtistButton.layer.borderColor = black.CGColor
+        //ArtistButton.layer.borderWidth = 1.5
                imageView.userInteractionEnabled = true
               let longPress=UILongPressGestureRecognizer(target:self,
                                                    action:#selector(longPressDid(_:)))

@@ -359,11 +359,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YjN-yW-cqo">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YjN-yW-cqo">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="540"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-04-ZDC">
-                                        <rect key="frame" x="10" y="0.0" width="580" height="540"/>
+                                        <rect key="frame" x="10" y="0.0" width="580" height="471"/>
                                         <variation key="heightClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="100" y="16" width="398" height="274"/>
                                         </variation>
@@ -380,11 +380,11 @@
                                     <rect key="frame" x="25" y="10" width="550" height="312"/>
                                 </variation>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUC-In-yrJ">
-                                <rect key="frame" x="70" y="548" width="460" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUC-In-yrJ">
+                                <rect key="frame" x="70" y="496" width="460" height="37"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="22"/>
                                 <state key="normal" title="Künstlerinnen">
-                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.97461939102564099" green="0.97461939102564099" blue="0.97461939102564099" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="Gdp-sl-N0h" kind="show" identifier="showArtist" id="qZW-A5-nTG"/>
@@ -396,10 +396,10 @@
                             <constraint firstItem="YjN-yW-cqo" firstAttribute="centerX" secondItem="DxJ-c5-9n3" secondAttribute="centerX" id="BZa-iy-Pyc"/>
                             <constraint firstItem="YjN-yW-cqo" firstAttribute="top" secondItem="DxJ-c5-9n3" secondAttribute="topMargin" id="KvT-6m-c2r"/>
                             <constraint firstItem="YjN-yW-cqo" firstAttribute="width" secondItem="DxJ-c5-9n3" secondAttribute="width" id="WrQ-9a-hER"/>
-                            <constraint firstItem="UEy-bf-vYi" firstAttribute="top" secondItem="YjN-yW-cqo" secondAttribute="bottom" constant="60" id="bM6-9K-FX3"/>
+                            <constraint firstItem="UEy-bf-vYi" firstAttribute="top" secondItem="YjN-yW-cqo" secondAttribute="bottom" constant="80" id="bM6-9K-FX3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IUC-In-yrJ" secondAttribute="trailing" constant="50" id="iAs-04-61X"/>
                             <constraint firstItem="IUC-In-yrJ" firstAttribute="leading" secondItem="DxJ-c5-9n3" secondAttribute="leadingMargin" constant="50" id="jiK-0F-cJk"/>
-                            <constraint firstItem="UEy-bf-vYi" firstAttribute="top" secondItem="IUC-In-yrJ" secondAttribute="bottom" constant="20" id="nxl-MP-bbe"/>
+                            <constraint firstItem="UEy-bf-vYi" firstAttribute="top" secondItem="IUC-In-yrJ" secondAttribute="bottom" constant="18" id="nxl-MP-bbe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Kunstwerk" id="70X-w6-UWl"/>
@@ -419,7 +419,7 @@
             <objects>
                 <tableViewController id="tqF-II-plG" customClass="ArtistsListTableViewController" customModule="DW2App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hht-xk-Se9">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -521,11 +521,12 @@
                         <viewControllerLayoutGuide type="bottom" id="Ofa-Qf-rf7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0ZW-1s-zfa">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="info" id="4mf-SD-gyB"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DzY-Fn-Ips" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -564,8 +565,8 @@
         <image name="trash1" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MAW-Gu-uBx"/>
-        <segue reference="TkE-g0-hYh"/>
+        <segue reference="2NH-wg-ZPc"/>
+        <segue reference="EFK-3s-5qr"/>
         <segue reference="qZW-A5-nTG"/>
     </inferredMetricsTieBreakers>
 </document>
