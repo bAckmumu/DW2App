@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import AVKit
-import AVFoundation
 
 class DemoViewController: UIViewController {
 
@@ -52,15 +50,6 @@ class DemoViewController: UIViewController {
             vc.weekend = weekend
         }
         
-        if segue.identifier == "showVideo"
-        {
-            let destination = segue.destinationViewController as! AVPlayerViewController
-            //Change to match you video filename in supporting files
-            let termsPath:String? = NSBundle.mainBundle().pathForResource("power", ofType: "mp4")!
-            let url = NSURL(fileURLWithPath: termsPath!)
-            destination.player = AVPlayer(URL: url)
-            destination.player!.play()
-        }
     }
         /*if segue.identifier == "Demoshowing"
         {
