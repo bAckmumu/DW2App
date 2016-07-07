@@ -135,7 +135,7 @@ class ArtistsListTableViewController: UITableViewController {
             let indexPath = self.tableView.indexPathForSelectedRow
             let viewController:ArtistViewController = segue.destinationViewController as! ArtistViewController
             
-            viewController.artist = artistKeys[(indexPath?.row)!]
+            viewController.artistKey = artistKeys[(indexPath?.row)!]
             
         }
      }

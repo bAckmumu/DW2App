@@ -138,7 +138,7 @@ class ArtWorkViewController: UIViewController,UIScrollViewDelegate {
             
             let viewController:ArtistViewController = segue.destinationViewController as! ArtistViewController
             
-         viewController.artist = labelstring
+         viewController.artistKey = labelstring
 
           
             
