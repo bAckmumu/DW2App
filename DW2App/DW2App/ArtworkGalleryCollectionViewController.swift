@@ -22,6 +22,7 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
     var artistKeys = [String]()
     var test1 = [String]()
     var test2 = [String]()
+    var Artist: String!
     
   //  var head_label: String!
     
@@ -52,7 +53,7 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
                 
                 for artistKey in artistKeys {
                     let artistName = artistsDict[artistKey]!["name"]! as! String
-                    
+                   
                     
                     if weekend == "all" {
                     
@@ -71,7 +72,7 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
                                     //let image = UIImage(named: artworkName)! as UIImage
                                     //artists[artistKey]!["Name"]! as! String
                                     //artists[] =
-                    
+                     Artist = artistKey
                                     if let image = UIImage(named:artworkName) {
                                         Products.append(artistName)
                                         imageArray.append(image)
@@ -181,9 +182,10 @@ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let vc = segue.destinationViewController as! ArtWorkViewController
         let indexPaths = self.collectionView!.indexPathsForSelectedItems()!
         let indexPath = indexPaths[0] as NSIndexPath
-     //   vc.labelstring = self.artistKeys[indexPath.row]
+        vc.labelstring =  Artist
         vc.ButtonTitle = self.Products[indexPath.row]
         vc.image = self.imageArray[indexPath.row]
+        print(Artist)
         //vc.ResizeImage(vc.image, targetSize: CGSizeMake(50.0, 200.0))
       //  vc.title = self.Products[indexPath.row]
 
