@@ -468,14 +468,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Geg-yx-eFq" userLabel="Name Image">
-                                <rect key="frame" x="20" y="8" width="261" height="75"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Geg-yx-eFq" userLabel="Name Image">
+                                <rect key="frame" x="50" y="40" width="500" height="59"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JPk-FL-JMn" userLabel="Artist Image">
-                                <rect key="frame" x="20" y="104" width="261" height="190"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JPk-FL-JMn" userLabel="Artist Image">
+                                <rect key="frame" x="40" y="119" width="520" height="362"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55W-5d-Ewa">
-                                <rect key="frame" x="110" y="302" width="80" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55W-5d-Ewa">
+                                <rect key="frame" x="218" y="506" width="139" height="30"/>
                                 <state key="normal" title="Kunstwerke"/>
                                 <connections>
                                     <segue destination="hIs-vj-r55" kind="show" id="TkE-g0-hYh"/>
@@ -483,11 +483,27 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="55W-5d-Ewa" secondAttribute="trailing" constant="100" id="2Wi-5o-gVE"/>
+                            <constraint firstItem="cPb-JS-2dZ" firstAttribute="top" secondItem="55W-5d-Ewa" secondAttribute="bottom" constant="20" id="50v-tZ-omD"/>
+                            <constraint firstItem="JPk-FL-JMn" firstAttribute="centerY" secondItem="JFN-1w-XIy" secondAttribute="centerY" id="ELm-TJ-RSp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JPk-FL-JMn" secondAttribute="trailing" constant="20" id="GaM-jt-Hg6"/>
+                            <constraint firstItem="JPk-FL-JMn" firstAttribute="centerX" secondItem="JFN-1w-XIy" secondAttribute="centerX" id="Uwt-wz-hAN"/>
+                            <constraint firstAttribute="trailing" secondItem="Geg-yx-eFq" secondAttribute="trailing" constant="50" id="X2F-k6-x8g"/>
+                            <constraint firstItem="JPk-FL-JMn" firstAttribute="top" secondItem="Geg-yx-eFq" secondAttribute="bottom" constant="20" id="c3f-Nz-QG0"/>
+                            <constraint firstItem="Geg-yx-eFq" firstAttribute="top" secondItem="pZy-Wx-5gh" secondAttribute="bottom" constant="20" id="clm-Yx-9OA"/>
+                            <constraint firstItem="55W-5d-Ewa" firstAttribute="top" secondItem="JPk-FL-JMn" secondAttribute="bottom" constant="20" id="fxF-6K-T2f"/>
+                            <constraint firstItem="Geg-yx-eFq" firstAttribute="leading" secondItem="JFN-1w-XIy" secondAttribute="leading" constant="50" id="gP9-Kn-Nff"/>
+                            <constraint firstItem="JPk-FL-JMn" firstAttribute="leading" secondItem="JFN-1w-XIy" secondAttribute="leadingMargin" constant="20" id="mu2-qZ-cGU"/>
+                            <constraint firstItem="55W-5d-Ewa" firstAttribute="leading" secondItem="JFN-1w-XIy" secondAttribute="leading" constant="100" id="nFc-Yl-qU7"/>
+                            <constraint firstItem="Geg-yx-eFq" firstAttribute="centerX" secondItem="JFN-1w-XIy" secondAttribute="centerX" id="yFo-gC-y2H"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Künstlerin" id="TLW-WD-IwI"/>
                     <connections>
                         <outlet property="artistImage" destination="JPk-FL-JMn" id="DVD-Dg-bD0"/>
                         <outlet property="nameImage" destination="Geg-yx-eFq" id="22Q-32-nY8"/>
+                        <outlet property="toArtwork_Button" destination="55W-5d-Ewa" id="lMB-S3-7VK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wwX-Au-ARe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -565,8 +581,8 @@
         <image name="trash" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2NH-wg-ZPc"/>
         <segue reference="EFK-3s-5qr"/>
         <segue reference="768-0U-tOh"/>
+        <segue reference="TkE-g0-hYh"/>
     </inferredMetricsTieBreakers>
 </document>
