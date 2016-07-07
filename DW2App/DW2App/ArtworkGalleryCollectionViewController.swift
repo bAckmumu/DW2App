@@ -167,18 +167,18 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
     func artworksInGroup(index: Int) -> [String] {
         let item = groups[index]
         var names = [String]()
-        
+        if artworks.count > 0 {
         for index in 0...artworks.count-1 {
             var group1 = ""
             group1 = artworks[index].group!
             //  let group1 = artworks[index].group
             print(item + group1)
             if group1 == item{
-                print("yes")
+               
                 let name = artworks[index].name
                 names.append(name!)
             }
-            
+            }
         }
         return names
     }
@@ -246,7 +246,6 @@ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         vc.ButtonTitle = self.names[indexPath.section]
        // vc.ButtonTitle = self.Products[indexPath.row]
         vc.image = self.imageArray[indexPath.row]
-        print(Artist)
         //vc.ResizeImage(vc.image, targetSize: CGSizeMake(50.0, 200.0))
       //  vc.title = self.Products[indexPath.row]
 
