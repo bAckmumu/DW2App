@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class DemoViewController: UIViewController {
 
     
     @IBOutlet weak var ArtistButton: UIButton!
     @IBOutlet weak var ArtworkButton: UIButton!
+
     
-    @IBOutlet weak var Text: UITextView!
+    //@IBOutlet weak var Text: UITextView!
     let weekend = "democracy"
     
     override func viewDidLoad() {
@@ -22,7 +25,7 @@ class DemoViewController: UIViewController {
 
         ArtworkButton.layer.cornerRadius = 5
         ArtistButton.layer.cornerRadius = 5
-        Text.editable = false
+        //Text.editable = false
         
         // Do any additional setup after loading the view.
     }
@@ -43,9 +46,20 @@ class DemoViewController: UIViewController {
             viewController.weekend = weekend
             
         }
-        else if segue.identifier == "showArtwork" {
+        
+        if segue.identifier == "showArtwork" {
             let vc = segue.destinationViewController as! ArtworkGalleryCollectionViewController
             vc.weekend = weekend
+        }
+        
+        if segue.identifier == "showVideo"
+        {
+            let destination = segue.destinationViewController as! AVPlayerViewController
+            //Change to match you video filename in supporting files
+            let termsPath:String? = NSBundle.mainBundle().pathForResource("power", ofType: "mp4")!
+            let url = NSURL(fileURLWithPath: termsPath!)
+            destination.player = AVPlayer(URL: url)
+            destination.player!.play()
         }
     }
         /*if segue.identifier == "Demoshowing"

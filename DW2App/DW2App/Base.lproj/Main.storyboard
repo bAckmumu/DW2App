@@ -34,16 +34,6 @@
                                             <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="VJT-Po-Pc0"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69d-DM-5en">
-                                        <rect key="frame" x="10" y="44" width="580" height="177"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" notEnabled="YES"/>
-                                        </accessibility>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Om-CS-LIr">
                                         <rect key="frame" x="50" y="0.0" width="246" height="34"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,19 +42,31 @@
                                             <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="YBS-uM-4H6"/>
                                         </connections>
                                     </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SDz-Sv-iyW">
+                                        <rect key="frame" x="50" y="42" width="318" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">06.-08..05.2016 Demokratie-Wochenende
+Fr. 20 bis 22 Uhr, Sa. und So. 14 bis 18 Uhr
+Vernissage: Freitag, 6. Mai 20 Uhr</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5W-xl-zJf">
+                                        <rect key="frame" x="189" y="121" width="40" height="30"/>
+                                        <state key="normal" title="Video"/>
+                                        <connections>
+                                            <segue destination="6FD-3Z-UWe" kind="show" identifier="showVideo" id="83m-ht-XFd"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="69d-DM-5en" firstAttribute="top" secondItem="LpR-lh-Sy7" secondAttribute="bottom" constant="10" id="0f9-mE-REc"/>
                                     <constraint firstItem="LpR-lh-Sy7" firstAttribute="leading" secondItem="1Om-CS-LIr" secondAttribute="trailing" constant="8" id="67L-26-HmU"/>
                                     <constraint firstItem="LpR-lh-Sy7" firstAttribute="top" secondItem="IV0-zR-uaD" secondAttribute="top" id="HJo-eO-XWE"/>
                                     <constraint firstAttribute="trailing" secondItem="LpR-lh-Sy7" secondAttribute="trailing" constant="50" id="Y1x-Q1-53B"/>
                                     <constraint firstItem="LpR-lh-Sy7" firstAttribute="width" secondItem="1Om-CS-LIr" secondAttribute="width" id="feP-Sg-zqV"/>
                                     <constraint firstItem="1Om-CS-LIr" firstAttribute="leading" secondItem="IV0-zR-uaD" secondAttribute="leading" constant="50" id="iwk-Ax-1IX"/>
-                                    <constraint firstAttribute="trailing" secondItem="69d-DM-5en" secondAttribute="trailing" constant="10" id="jG2-M5-cpb"/>
                                     <constraint firstItem="1Om-CS-LIr" firstAttribute="top" secondItem="IV0-zR-uaD" secondAttribute="top" id="muH-8T-xuf"/>
-                                    <constraint firstItem="69d-DM-5en" firstAttribute="leading" secondItem="IV0-zR-uaD" secondAttribute="leading" constant="10" id="nJw-SR-mMN"/>
-                                    <constraint firstAttribute="bottom" secondItem="69d-DM-5en" secondAttribute="bottom" constant="50" id="njX-Ri-yXr"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -85,12 +87,19 @@
                     <connections>
                         <outlet property="ArtistButton" destination="LpR-lh-Sy7" id="hsR-Fk-EUb"/>
                         <outlet property="ArtworkButton" destination="1Om-CS-LIr" id="HBv-gj-rzi"/>
-                        <outlet property="Text" destination="69d-DM-5en" id="hh8-Fe-nAm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wkb-kR-FlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-84" y="-1765"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="ydO-ze-JxO">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="6FD-3Z-UWe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D9S-0z-n06" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="-1766"/>
         </scene>
         <!--Macht-->
         <scene sceneID="oRK-zA-0GV">
@@ -601,8 +610,8 @@
         <image name="trash" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="YBS-uM-4H6"/>
         <segue reference="VJT-Po-Pc0"/>
         <segue reference="768-0U-tOh"/>
-        <segue reference="TkE-g0-hYh"/>
     </inferredMetricsTieBreakers>
 </document>
