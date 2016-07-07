@@ -23,6 +23,10 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
     var test1 = [String]()
     var test2 = [String]()
     var Artist: String!
+    var groups = [String]()
+    var artworks = [Artwork]()
+    var names = [String]()
+    var Count = 0
     
   //  var head_label: String!
     
@@ -64,6 +68,9 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
                         if let artworkDict = artworkPlist {
                     
                             let imageCount = artworkDict[artistKey]![weekend] as! Int
+                            Count = Count + 1
+                            groups.append(artistKey)
+                            names.append(artistName)
                         
                             if imageCount > 0 {
                                 for index in 1...imageCount {
@@ -73,6 +80,9 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
                                     //artists[artistKey]!["Name"]! as! String
                                     //artists[] =
                      Artist = artistKey
+                                    
+                                    let artwork = Artwork(name:artworkName,group: Artist)
+                                    artworks.append(artwork)
                                     if let image = UIImage(named:artworkName) {
                                         Products.append(artistName)
                                         imageArray.append(image)
@@ -138,11 +148,40 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
         // Dispose of any resources that can be recreated.
     }
 
-    
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.Products.count
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        
+        return Count
     }
     
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return numbeOfRowsInEachGroup(section)
+        
+    }
+    
+    func numbeOfRowsInEachGroup(index: Int) -> Int {
+        return artworksInGroup(index).count
+    }
+    
+    func artworksInGroup(index: Int) -> [String] {
+        let item = groups[index]
+        var names = [String]()
+        
+        for index in 0...artworks.count-1 {
+            var group1 = ""
+            group1 = artworks[index].group!
+            //  let group1 = artworks[index].group
+            print(item + group1)
+            if group1 == item{
+                print("yes")
+                let name = artworks[index].name
+                names.append(name!)
+            }
+            
+        }
+        return names
+    }
     
    
    func collectionView(collectionView : UICollectionView,layout collectionViewLayout:UICollectionViewLayout,sizeForItemAtIndexPath indexPath:NSIndexPath) -> CGSize
@@ -157,7 +196,13 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! ViewCell
         
-        cell.artworkImage?.image = self.imageArray[indexPath.row]
+        let names = artworksInGroup(indexPath.section)
+        
+        let name = names[indexPath.row]
+        
+        print(name)
+        cell.artworkImage.image = UIImage(named:name)
+    //    cell.artworkImage?.image = self.imageArray[indexPath.row]
         cell.artworkImage.layer.cornerRadius = 3
        
       //  cell.artworkLabel?.text = self.Products[indexPath.row]
@@ -169,11 +214,26 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
         
     }
 
+    func gettGroupLabelAtIndex(index: Int) -> String {
+        return names[index]
+    }
+    func collectionView(collectionView: UICollectionView,
+                        viewForSupplementaryElementOfKind kind: String,
+                                                          atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+        let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "imageheader", forIndexPath: indexPath) as! ReusableView
+        headerView.section.text = gettGroupLabelAtIndex(indexPath.section)
+        headerView.backgroundColor = UIColor(red: 187/255, green: 14/255, blue: 25/255, alpha: 1)
+    
+        return headerView
+        
+    }
+    
 
 
 func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
     self.performSegueWithIdentifier("ArtWorkDetail", sender: self)
 }
+    
 
 override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == "ArtWorkDetail"
@@ -182,8 +242,9 @@ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let vc = segue.destinationViewController as! ArtWorkViewController
         let indexPaths = self.collectionView!.indexPathsForSelectedItems()!
         let indexPath = indexPaths[0] as NSIndexPath
-        vc.labelstring =  Artist
-        vc.ButtonTitle = self.Products[indexPath.row]
+        vc.labelstring = self.groups[indexPath.section]
+        vc.ButtonTitle = self.names[indexPath.section]
+       // vc.ButtonTitle = self.Products[indexPath.row]
         vc.image = self.imageArray[indexPath.row]
         print(Artist)
         //vc.ResizeImage(vc.image, targetSize: CGSizeMake(50.0, 200.0))
@@ -192,6 +253,16 @@ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
     }
 }
+}
+
+class Artwork {
+    var name:String?
+    var group:String?
+    
+    init(name: String, group: String) {
+        self.name = name
+        self.group = group
+    }
 }
 
   /*  override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
