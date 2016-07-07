@@ -296,7 +296,7 @@
             <objects>
                 <collectionViewController id="hIs-vj-r55" customClass="ArtworkGalleryCollectionViewController" customModule="DW2App" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="QeE-PC-68Y">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="0.0" id="30h-ta-Yba">
@@ -356,14 +356,14 @@
                         <viewControllerLayoutGuide type="bottom" id="UEy-bf-vYi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DxJ-c5-9n3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YjN-yW-cqo">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="540"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-04-ZDC">
-                                        <rect key="frame" x="10" y="0.0" width="580" height="481"/>
+                                        <rect key="frame" x="10" y="0.0" width="580" height="417"/>
                                         <variation key="heightClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="100" y="16" width="398" height="274"/>
                                         </variation>
@@ -381,7 +381,7 @@
                                 </variation>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUC-In-yrJ">
-                                <rect key="frame" x="70" y="489" width="460" height="37"/>
+                                <rect key="frame" x="70" y="425" width="460" height="37"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="22"/>
                                 <state key="normal" title="Künstlerinnen">
                                     <color key="titleColor" red="0.97461939102564099" green="0.97461939102564099" blue="0.97461939102564099" alpha="1" colorSpace="calibratedRGB"/>
@@ -419,7 +419,7 @@
             <objects>
                 <tableViewController id="tqF-II-plG" customClass="ArtistsListTableViewController" customModule="DW2App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hht-xk-Se9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -465,46 +465,38 @@
                         <viewControllerLayoutGuide type="bottom" id="cPb-JS-2dZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JFN-1w-XIy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Geg-yx-eFq" userLabel="Name Image">
-                                <rect key="frame" x="50" y="40" width="500" height="59"/>
+                                <rect key="frame" x="50" y="20" width="500" height="59"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55W-5d-Ewa">
-                                <rect key="frame" x="231" y="107" width="139" height="30"/>
+                                <rect key="frame" x="231" y="87" width="139" height="30"/>
                                 <state key="normal" title="Kunstwerke"/>
                                 <connections>
                                     <segue destination="hIs-vj-r55" kind="show" id="TkE-g0-hYh"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kr1-xz-rfc">
-                                <rect key="frame" x="50" y="145" width="500" height="398"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kr1-xz-rfc">
+                                <rect key="frame" x="20" y="125" width="560" height="398"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="55W-5d-Ewa" secondAttribute="trailing" constant="100" id="2Wi-5o-gVE"/>
-                            <constraint firstItem="cPb-JS-2dZ" firstAttribute="top" secondItem="kr1-xz-rfc" secondAttribute="bottom" constant="8" id="KgZ-Cw-r7S"/>
-                            <constraint firstAttribute="trailing" secondItem="Geg-yx-eFq" secondAttribute="trailing" constant="50" id="X2F-k6-x8g"/>
-                            <constraint firstItem="55W-5d-Ewa" firstAttribute="top" secondItem="Geg-yx-eFq" secondAttribute="bottom" constant="8" id="cbf-zB-Ax2"/>
-                            <constraint firstItem="Geg-yx-eFq" firstAttribute="top" secondItem="pZy-Wx-5gh" secondAttribute="bottom" constant="20" id="clm-Yx-9OA"/>
-                            <constraint firstItem="kr1-xz-rfc" firstAttribute="leading" secondItem="JFN-1w-XIy" secondAttribute="leadingMargin" constant="30" id="fa1-zc-Sex"/>
-                            <constraint firstItem="Geg-yx-eFq" firstAttribute="leading" secondItem="JFN-1w-XIy" secondAttribute="leading" constant="50" id="gP9-Kn-Nff"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="kr1-xz-rfc" secondAttribute="trailing" constant="30" id="gaH-ti-j7Q"/>
-                            <constraint firstItem="55W-5d-Ewa" firstAttribute="leading" secondItem="JFN-1w-XIy" secondAttribute="leading" constant="100" id="nFc-Yl-qU7"/>
-                            <constraint firstItem="kr1-xz-rfc" firstAttribute="top" secondItem="55W-5d-Ewa" secondAttribute="bottom" constant="8" id="saj-KD-pQ5"/>
-                            <constraint firstItem="Geg-yx-eFq" firstAttribute="centerX" secondItem="JFN-1w-XIy" secondAttribute="centerX" id="yFo-gC-y2H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Geg-yx-eFq" secondAttribute="trailing" constant="30" id="6vt-x6-V23"/>
+                            <constraint firstItem="55W-5d-Ewa" firstAttribute="top" secondItem="Geg-yx-eFq" secondAttribute="bottom" constant="8" id="DNp-L9-rKj"/>
+                            <constraint firstItem="Geg-yx-eFq" firstAttribute="leading" secondItem="JFN-1w-XIy" secondAttribute="leadingMargin" constant="30" id="NZj-33-h1n"/>
+                            <constraint firstItem="Geg-yx-eFq" firstAttribute="centerX" secondItem="JFN-1w-XIy" secondAttribute="centerX" id="RtZ-GT-up4"/>
+                            <constraint firstItem="kr1-xz-rfc" firstAttribute="leading" secondItem="JFN-1w-XIy" secondAttribute="leadingMargin" id="cXP-NY-3GK"/>
+                            <constraint firstItem="55W-5d-Ewa" firstAttribute="centerX" secondItem="JFN-1w-XIy" secondAttribute="centerX" id="d1b-ih-TDB"/>
+                            <constraint firstItem="kr1-xz-rfc" firstAttribute="trailing" secondItem="JFN-1w-XIy" secondAttribute="trailingMargin" id="fmo-yz-yOx"/>
+                            <constraint firstItem="Geg-yx-eFq" firstAttribute="top" secondItem="pZy-Wx-5gh" secondAttribute="bottom" id="jEF-66-baK"/>
+                            <constraint firstItem="55W-5d-Ewa" firstAttribute="top" secondItem="Geg-yx-eFq" secondAttribute="bottom" constant="8" id="pWa-yJ-Gfv"/>
+                            <constraint firstItem="kr1-xz-rfc" firstAttribute="top" secondItem="55W-5d-Ewa" secondAttribute="bottom" constant="8" id="xFj-1T-ciO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Künstlerin" id="TLW-WD-IwI"/>
@@ -589,7 +581,7 @@
         <image name="trash" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EFK-3s-5qr"/>
+        <segue reference="VJT-Po-Pc0"/>
         <segue reference="768-0U-tOh"/>
         <segue reference="TkE-g0-hYh"/>
     </inferredMetricsTieBreakers>

@@ -29,7 +29,7 @@ class ArtistViewController: UIViewController {
         toArtwork_Button.tintColor = UIColor.whiteColor()
         
         
-        if let path = NSBundle.mainBundle().pathForResource("artistKey", ofType: "txt") {
+        if let path = NSBundle.mainBundle().pathForResource(artistKey, ofType: "txt") {
             let contents: NSString
             do {
                 contents = try NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding)
