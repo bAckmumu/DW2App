@@ -181,7 +181,7 @@ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let vc = segue.destinationViewController as! ArtWorkViewController
         let indexPaths = self.collectionView!.indexPathsForSelectedItems()!
         let indexPath = indexPaths[0] as NSIndexPath
-        vc.labelstring = self.artistKeys[indexPath.row]
+     //   vc.labelstring = self.artistKeys[indexPath.row]
         vc.ButtonTitle = self.Products[indexPath.row]
         vc.image = self.imageArray[indexPath.row]
         //vc.ResizeImage(vc.image, targetSize: CGSizeMake(50.0, 200.0))
