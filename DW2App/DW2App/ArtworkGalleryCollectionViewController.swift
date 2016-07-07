@@ -75,7 +75,8 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
                             if imageCount > 0 {
                                 for index in 1...imageCount {
                         
-                                    let artworkName = "\(artistKey)_\(weekend)_mini_\(index)" //artistKey + "_" + weekend + "_mini_" + (index as! String)
+                                    let artworkName = "\(artistKey)_\(weekend)_mini_\(index)"//artistKey + "_" + weekend + "_mini_" + (index as! String)
+                                    let artworkNameBig = "\(artistKey)_\(weekend)_\(index)"
                                     //let image = UIImage(named: artworkName)! as UIImage
                                     //artists[artistKey]!["Name"]! as! String
                                     //artists[] =
@@ -83,7 +84,7 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
                                     
                                     let artwork = Artwork(name:artworkName,group: Artist)
                                     artworks.append(artwork)
-                                    if let image = UIImage(named:artworkName) {
+                                    if let image = UIImage(named:artworkNameBig) {
                                         Products.append(artistName)
                                         imageArray.append(image)
                                     }
@@ -172,7 +173,6 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
             var group1 = ""
             group1 = artworks[index].group!
             //  let group1 = artworks[index].group
-            print(item + group1)
             if group1 == item{
                
                 let name = artworks[index].name
