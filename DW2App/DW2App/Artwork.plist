@@ -5,358 +5,209 @@
 	<key>adleraf</key>
 	<dict>
 		<key>democracy</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>52</integer>
 		<key>power</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>annanatascha</key>
 	<dict>
 		<key>democracy</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>1</integer>
+		<key>power</key>
+		<integer>0</integer>
+		<key>participation</key>
+		<integer>0</integer>
 	</dict>
 	<key>anra</key>
 	<dict>
+		<key>democracy</key>
+		<integer>0</integer>
 		<key>power</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>christinatihansen</key>
 	<dict>
+		<key>democracy</key>
+		<integer>0</integer>
+		<key>power</key>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>eleonorahofer</key>
 	<dict>
 		<key>democracy</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>11</integer>
+		<key>power</key>
+		<integer>0</integer>
+		<key>participation</key>
+		<integer>0</integer>
 	</dict>
 	<key>elfiekriester</key>
 	<dict>
 		<key>democracy</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>6</integer>
 		<key>power</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>emilmemon</key>
 	<dict>
+		<key>democracy</key>
+		<integer>0</integer>
 		<key>power</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>evakollmar</key>
 	<dict>
 		<key>democracy</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>15</integer>
+		<key>power</key>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>fabiankochendoerfer</key>
 	<dict>
+		<key>democracy</key>
+		<integer>0</integer>
 		<key>power</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>franziskaagrawal</key>
 	<dict>
 		<key>democracy</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>3</integer>
 		<key>power</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>hpberndl</key>
 	<dict>
+		<key>democracy</key>
+		<integer>0</integer>
 		<key>power</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>ingekurtz</key>
 	<dict>
+		<key>democracy</key>
+		<integer>0</integer>
+		<key>power</key>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>jpg</key>
 	<dict>
 		<key>democracy</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>8</integer>
 		<key>power</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>kathykissik</key>
 	<dict>
+		<key>democracy</key>
+		<integer>2</integer>
+		<key>power</key>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>lilly350</key>
 	<dict>
 		<key>democracy</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>22</integer>
 		<key>power</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>michaelheininger</key>
 	<dict>
+		<key>democracy</key>
+		<integer>0</integer>
 		<key>power</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>optopussies</key>
 	<dict>
 		<key>democracy</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>3</integer>
+		<key>power</key>
+		<integer>0</integer>
+		<key>participation</key>
+		<integer>0</integer>
 	</dict>
 	<key>peneloperichardson</key>
 	<dict>
+		<key>democracy</key>
+		<integer>0</integer>
 		<key>power</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>reginastaudturck</key>
 	<dict>
+		<key>democracy</key>
+		<integer>0</integer>
+		<key>power</key>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>roswithavallendor</key>
 	<dict>
 		<key>democracy</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>5</integer>
+		<key>power</key>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>saanakang</key>
 	<dict>
+		<key>democracy</key>
+		<integer>0</integer>
+		<key>power</key>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 	<key>sabinedresler</key>
 	<dict>
 		<key>democracy</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>10</integer>
+		<key>power</key>
+		<integer>0</integer>
+		<key>participation</key>
+		<integer>0</integer>
 	</dict>
 	<key>ursuladuch</key>
 	<dict>
+		<key>democracy</key>
+		<integer>0</integer>
+		<key>power</key>
+		<integer>0</integer>
 		<key>participation</key>
-		<dict>
-			<key>artwork</key>
-			<string></string>
-			<key>images</key>
-			<array/>
-		</dict>
+		<integer>0</integer>
 	</dict>
 </dict>
 </plist>

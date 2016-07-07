@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -313,7 +313,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="158"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nTG-Nd-ZOU">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nTG-Nd-ZOU">
                                             <rect key="frame" x="-3" y="0.0" width="154" height="158"/>
                                         </imageView>
                                     </subviews>
@@ -427,11 +427,11 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qv8-JS-boq" id="4TB-Xj-chj">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WNH-KL-L6c">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -468,11 +468,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Geg-yx-eFq" userLabel="Name Image">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Geg-yx-eFq" userLabel="Name Image">
                                 <rect key="frame" x="50" y="40" width="500" height="59"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JPk-FL-JMn" userLabel="Artist Image">
-                                <rect key="frame" x="40" y="119" width="520" height="362"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55W-5d-Ewa">
                                 <rect key="frame" x="218" y="506" width="139" height="30"/>
@@ -486,22 +483,15 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="55W-5d-Ewa" secondAttribute="trailing" constant="100" id="2Wi-5o-gVE"/>
                             <constraint firstItem="cPb-JS-2dZ" firstAttribute="top" secondItem="55W-5d-Ewa" secondAttribute="bottom" constant="20" id="50v-tZ-omD"/>
-                            <constraint firstItem="JPk-FL-JMn" firstAttribute="centerY" secondItem="JFN-1w-XIy" secondAttribute="centerY" id="ELm-TJ-RSp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JPk-FL-JMn" secondAttribute="trailing" constant="20" id="GaM-jt-Hg6"/>
-                            <constraint firstItem="JPk-FL-JMn" firstAttribute="centerX" secondItem="JFN-1w-XIy" secondAttribute="centerX" id="Uwt-wz-hAN"/>
                             <constraint firstAttribute="trailing" secondItem="Geg-yx-eFq" secondAttribute="trailing" constant="50" id="X2F-k6-x8g"/>
-                            <constraint firstItem="JPk-FL-JMn" firstAttribute="top" secondItem="Geg-yx-eFq" secondAttribute="bottom" constant="20" id="c3f-Nz-QG0"/>
                             <constraint firstItem="Geg-yx-eFq" firstAttribute="top" secondItem="pZy-Wx-5gh" secondAttribute="bottom" constant="20" id="clm-Yx-9OA"/>
-                            <constraint firstItem="55W-5d-Ewa" firstAttribute="top" secondItem="JPk-FL-JMn" secondAttribute="bottom" constant="20" id="fxF-6K-T2f"/>
                             <constraint firstItem="Geg-yx-eFq" firstAttribute="leading" secondItem="JFN-1w-XIy" secondAttribute="leading" constant="50" id="gP9-Kn-Nff"/>
-                            <constraint firstItem="JPk-FL-JMn" firstAttribute="leading" secondItem="JFN-1w-XIy" secondAttribute="leadingMargin" constant="20" id="mu2-qZ-cGU"/>
                             <constraint firstItem="55W-5d-Ewa" firstAttribute="leading" secondItem="JFN-1w-XIy" secondAttribute="leading" constant="100" id="nFc-Yl-qU7"/>
                             <constraint firstItem="Geg-yx-eFq" firstAttribute="centerX" secondItem="JFN-1w-XIy" secondAttribute="centerX" id="yFo-gC-y2H"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Künstlerin" id="TLW-WD-IwI"/>
                     <connections>
-                        <outlet property="artistImage" destination="JPk-FL-JMn" id="DVD-Dg-bD0"/>
                         <outlet property="nameImage" destination="Geg-yx-eFq" id="22Q-32-nY8"/>
                         <outlet property="toArtwork_Button" destination="55W-5d-Ewa" id="lMB-S3-7VK"/>
                     </connections>
