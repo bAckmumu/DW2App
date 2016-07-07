@@ -22,9 +22,12 @@ class DemoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let buttonColor = UIColor(red: 85/255, green: 85/255, blue: 85/255, alpha: 1)
+        ArtistButton.layer.backgroundColor = buttonColor.CGColor
+        ArtworkButton.layer.backgroundColor = buttonColor.CGColor
 
-        ArtworkButton.layer.cornerRadius = 5
-        ArtistButton.layer.cornerRadius = 5
+        ArtworkButton.layer.cornerRadius = 0
+        ArtistButton.layer.cornerRadius = 0
         //Text.editable = false
         
         // Do any additional setup after loading the view.
@@ -38,6 +41,20 @@ class DemoViewController: UIViewController {
     @IBAction func ArtWorkAction(sender: UIButton) {
         
     }
+  /*  override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        self.navigationController?.navigationBar.shadowImage =  UIImage()
+        
+       self.navigationController?.view.backgroundColor = UIColor.whiteColor()
+
+       // self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
+        
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+        self.navigationController?.navigationBar.translucent = true
+        super.viewWillAppear(animated)
+        
+    }*/
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         

@@ -60,6 +60,11 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
                    
                     
                     if weekend == "all" {
+                        
+                       // if let artworkDict = artworkPlist{
+                            
+                           
+                       // }
                     
                     }
                     else {
@@ -222,7 +227,7 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
                                                           atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "imageheader", forIndexPath: indexPath) as! ReusableView
         headerView.section.text = gettGroupLabelAtIndex(indexPath.section)
-        headerView.backgroundColor = UIColor(red: 187/255, green: 14/255, blue: 25/255, alpha: 1)
+        headerView.backgroundColor = UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1)
     
         return headerView
         
@@ -243,7 +248,7 @@ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let indexPaths = self.collectionView!.indexPathsForSelectedItems()!
         let indexPath = indexPaths[0] as NSIndexPath
         vc.labelstring = self.groups[indexPath.section]
-        vc.ButtonTitle = self.names[indexPath.section]
+    //    vc.ButtonTitle = self.names[indexPath.section]
        // vc.ButtonTitle = self.Products[indexPath.row]
         vc.image = self.imageArray[indexPath.row]
         //vc.ResizeImage(vc.image, targetSize: CGSizeMake(50.0, 200.0))

@@ -106,7 +106,6 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
             <objects>
                 <navigationController id="ifr-G8-ohC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Macht" image="trash" id="6VU-WH-R1t"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Xfi-yU-drD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -137,14 +136,6 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2L-Bm-FHB" userLabel="View1">
                                 <rect key="frame" x="0.0" y="216" width="600" height="271"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHh-UV-fl3">
-                                        <rect key="frame" x="50" y="0.0" width="246" height="34"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Kunstwerke"/>
-                                        <connections>
-                                            <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="CIS-XS-VFr"/>
-                                        </connections>
-                                    </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ULf-Yd-zyN">
                                         <rect key="frame" x="10" y="44" width="580" height="227"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -154,10 +145,18 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYa-Vj-79m">
                                         <rect key="frame" x="304" y="0.0" width="246" height="34"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Künstlerinnen"/>
                                         <connections>
                                             <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="MAW-Gu-uBx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHh-UV-fl3">
+                                        <rect key="frame" x="50" y="0.0" width="246" height="34"/>
+                                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Kunstwerke"/>
+                                        <connections>
+                                            <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="CIS-XS-VFr"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -190,7 +189,6 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Macht" id="Ivt-YH-g4L"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="ArtistButton" destination="GYa-Vj-79m" id="Iya-rf-jzn"/>
                         <outlet property="ArtworkButton" destination="JHh-UV-fl3" id="mbm-am-jp4"/>
@@ -206,7 +204,6 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
             <objects>
                 <navigationController id="Rqn-yi-J0Q" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Partizipation" image="partizipation4" id="3pz-iE-2sD"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="RDC-CG-1Iy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -305,7 +302,7 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
             <objects>
                 <collectionViewController id="hIs-vj-r55" customClass="ArtworkGalleryCollectionViewController" customModule="DW2App" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="QeE-PC-68Y">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="0.0" id="30h-ta-Yba">
@@ -347,7 +344,7 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nG-pI-nqq">
                                     <rect key="frame" x="80" y="18.5" width="440" height="24"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                    <color key="textColor" red="0.92361778849999998" green="0.92361778849999998" blue="0.92361778849999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -386,14 +383,24 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                         <viewControllerLayoutGuide type="bottom" id="UEy-bf-vYi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DxJ-c5-9n3">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUC-In-yrJ">
+                                <rect key="frame" x="100" y="530" width="400" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Zur Künstlerin">
+                                    <color key="titleColor" red="0.97461939102564099" green="0.97461939102564099" blue="0.97461939102564099" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gdp-sl-N0h" kind="show" identifier="showArtist" id="qZW-A5-nTG"/>
+                                </connections>
+                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YjN-yW-cqo">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="540"/>
+                                <rect key="frame" x="0.0" y="10" width="600" height="520"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-04-ZDC">
-                                        <rect key="frame" x="10" y="0.0" width="580" height="417"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-04-ZDC">
+                                        <rect key="frame" x="10" y="35" width="580" height="435"/>
                                         <variation key="heightClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="100" y="16" width="398" height="274"/>
                                         </variation>
@@ -402,7 +409,7 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                                 <constraints>
                                     <constraint firstItem="dHa-04-ZDC" firstAttribute="centerX" secondItem="YjN-yW-cqo" secondAttribute="centerX" id="Efi-OI-azK"/>
                                     <constraint firstItem="dHa-04-ZDC" firstAttribute="centerY" secondItem="YjN-yW-cqo" secondAttribute="centerY" id="SbR-mV-4lC"/>
-                                    <constraint firstItem="dHa-04-ZDC" firstAttribute="top" secondItem="YjN-yW-cqo" secondAttribute="top" id="hrb-Hb-Wfm"/>
+                                    <constraint firstItem="dHa-04-ZDC" firstAttribute="top" secondItem="YjN-yW-cqo" secondAttribute="top" constant="35" id="hrb-Hb-Wfm"/>
                                     <constraint firstItem="dHa-04-ZDC" firstAttribute="leading" secondItem="YjN-yW-cqo" secondAttribute="leading" constant="10" id="sth-ji-cuI"/>
                                     <constraint firstAttribute="trailing" secondItem="dHa-04-ZDC" secondAttribute="trailing" constant="10" id="vdc-EM-94g"/>
                                 </constraints>
@@ -410,26 +417,17 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                                     <rect key="frame" x="25" y="10" width="550" height="312"/>
                                 </variation>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUC-In-yrJ">
-                                <rect key="frame" x="70" y="425" width="460" height="37"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="22"/>
-                                <state key="normal" title="Künstlerinnen">
-                                    <color key="titleColor" red="0.97461939102564099" green="0.97461939102564099" blue="0.97461939102564099" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Gdp-sl-N0h" kind="show" identifier="showArtist" id="qZW-A5-nTG"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YjN-yW-cqo" firstAttribute="centerX" secondItem="DxJ-c5-9n3" secondAttribute="centerX" id="BZa-iy-Pyc"/>
-                            <constraint firstItem="YjN-yW-cqo" firstAttribute="top" secondItem="DxJ-c5-9n3" secondAttribute="topMargin" id="KvT-6m-c2r"/>
+                            <constraint firstItem="YjN-yW-cqo" firstAttribute="top" secondItem="DxJ-c5-9n3" secondAttribute="topMargin" constant="25" id="KvT-6m-c2r"/>
                             <constraint firstItem="YjN-yW-cqo" firstAttribute="width" secondItem="DxJ-c5-9n3" secondAttribute="width" id="WrQ-9a-hER"/>
                             <constraint firstItem="UEy-bf-vYi" firstAttribute="top" secondItem="YjN-yW-cqo" secondAttribute="bottom" constant="70" id="bM6-9K-FX3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IUC-In-yrJ" secondAttribute="trailing" constant="50" id="iAs-04-61X"/>
-                            <constraint firstItem="IUC-In-yrJ" firstAttribute="leading" secondItem="DxJ-c5-9n3" secondAttribute="leadingMargin" constant="50" id="jiK-0F-cJk"/>
-                            <constraint firstItem="UEy-bf-vYi" firstAttribute="top" secondItem="IUC-In-yrJ" secondAttribute="bottom" constant="25" id="nxl-MP-bbe"/>
+                            <constraint firstItem="IUC-In-yrJ" firstAttribute="top" secondItem="dHa-04-ZDC" secondAttribute="bottom" constant="35" id="dum-Ll-WgA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IUC-In-yrJ" secondAttribute="trailing" constant="80" id="iAs-04-61X"/>
+                            <constraint firstItem="IUC-In-yrJ" firstAttribute="leading" secondItem="DxJ-c5-9n3" secondAttribute="leadingMargin" constant="80" id="jiK-0F-cJk"/>
+                            <constraint firstItem="UEy-bf-vYi" firstAttribute="top" secondItem="IUC-In-yrJ" secondAttribute="bottom" constant="30" id="nxl-MP-bbe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Kunstwerk" id="70X-w6-UWl"/>
@@ -449,7 +447,7 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
             <objects>
                 <tableViewController id="tqF-II-plG" customClass="ArtistsListTableViewController" customModule="DW2App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hht-xk-Se9">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -495,10 +493,10 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                         <viewControllerLayoutGuide type="bottom" id="cPb-JS-2dZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JFN-1w-XIy">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x6b-vF-Skg">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x6b-vF-Skg">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kr1-xz-rfc">
@@ -587,12 +585,11 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                         <viewControllerLayoutGuide type="bottom" id="Ofa-Qf-rf7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0ZW-1s-zfa">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="info-1" id="4mf-SD-gyB"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DzY-Fn-Ips" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -631,8 +628,8 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
         <image name="trash" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YBS-uM-4H6"/>
-        <segue reference="VJT-Po-Pc0"/>
-        <segue reference="768-0U-tOh"/>
+        <segue reference="2NH-wg-ZPc"/>
+        <segue reference="EFK-3s-5qr"/>
+        <segue reference="qZW-A5-nTG"/>
     </inferredMetricsTieBreakers>
 </document>

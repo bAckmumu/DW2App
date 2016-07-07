@@ -58,9 +58,9 @@ class ArtWorkViewController: UIViewController,UIScrollViewDelegate {
         //self.ResizeImage(image, targetSize: CGSizeMake(200.0, 200.0))
         //  self.imageView.image = self.ResizeImage(image, targetSize: CGSizeMake(500, 500))
         self.imageView.image = self.image
-        ArtistButton.setTitle(ButtonTitle, forState: UIControlState.Normal)
+       // ArtistButton.setTitle(ButtonTitle, forState: UIControlState.Normal)
         ArtistButton.layer.cornerRadius = 5
-        ArtistButton.backgroundColor = UIColor(red: 187/255, green: 14/255, blue: 25/255, alpha: 1)
+        ArtistButton.backgroundColor = UIColor(red: 75/255, green: 75/255, blue: 75/255, alpha: 1)
         //let black = UIColor.lightGrayColor()
         //ArtistButton.layer.borderColor = black.CGColor
         //ArtistButton.layer.borderWidth = 1.5

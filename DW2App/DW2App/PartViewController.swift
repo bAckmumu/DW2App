@@ -18,8 +18,11 @@ class PartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ArtistButton.layer.cornerRadius = 5
-        ArtworkButton.layer.cornerRadius = 5
+        let buttonColor = UIColor(red: 30/255, green: 30/255, blue: 30/255, alpha: 1)
+        ArtistButton.layer.backgroundColor = buttonColor.CGColor
+        ArtworkButton.layer.backgroundColor = buttonColor.CGColor
+        ArtistButton.layer.cornerRadius = 0
+        ArtworkButton.layer.cornerRadius = 0
         Text.editable = false
 
         // Do any additional setup after loading the view.
