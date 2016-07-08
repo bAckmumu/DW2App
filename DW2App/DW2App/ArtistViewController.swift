@@ -45,6 +45,20 @@ class ArtistViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        
+        if segue.identifier == "showArtwork" {
+            let vc = segue.destinationViewController as! ArtworkGalleryCollectionViewController
+            vc.oneArtist = artistKey
+            
+            vc.ArtWork_for_Artist = true
+            
+        }
+        
+    }
+
    
     /*
     // MARK: - Navigation

@@ -521,7 +521,7 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                                         </constraints>
                                         <state key="normal" title="Kunstwerke"/>
                                         <connections>
-                                            <segue destination="hIs-vj-r55" kind="show" id="TkE-g0-hYh"/>
+                                            <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="TkE-g0-hYh"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -628,8 +628,8 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
         <image name="trash" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2NH-wg-ZPc"/>
         <segue reference="EFK-3s-5qr"/>
         <segue reference="qZW-A5-nTG"/>
+        <segue reference="TkE-g0-hYh"/>
     </inferredMetricsTieBreakers>
 </document>

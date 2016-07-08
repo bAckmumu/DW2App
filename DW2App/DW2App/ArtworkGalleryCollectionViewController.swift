@@ -13,7 +13,7 @@ import UIKit
 class ArtworkGalleryCollectionViewController: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource {
 
     @IBOutlet var collectionView: UICollectionView!
-       var Products = [String]()
+    var Products = [String]()
     var imageArray = [UIImage]()
     var weekend = "all"
     let artist = "Artist"
@@ -27,8 +27,11 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
     var artworks = [Artwork]()
     var names = [String]()
     var Count = 0
-    
-  //  var head_label: String!
+    var ArtWork_for_Artist = false
+    var oneArtist: String!
+    var artistKey: String!
+    var Weekends = ["democracy","power","participation"]
+    //  var head_label: String!
     
     func readArtworklist(){
         
@@ -47,51 +50,113 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
         if let path = NSBundle.mainBundle().pathForResource("Artwork", ofType: "plist") {
             artworkPlist = NSDictionary(contentsOfFile: path)
         }
-
         
-        if let festivalDict = festivalPlist {
-            
-            artistKeys = festivalDict[weekend] as! [String]
-            
+        if ArtWork_for_Artist{
             if let artistsDict = artistsPlist {
                 
-                for artistKey in artistKeys {
-                    let artistName = artistsDict[artistKey]!["name"]! as! String
-                   
+                artistKey = artistsDict[oneArtist]!["key"]as! String
+                let artistName = artistsDict[oneArtist]!["name"]as! String
+                groups.append(artistKey)
+                names.append(artistName)
+                Count = groups.count
+                
+                if let artworkDict = artworkPlist{
                     
-                    if weekend == "all" {
+                    let imageCount_Demo = artworkDict[artistKey]!["democracy"] as! Int
+                    let imageCount_Power = artworkDict[artistKey]!["power"] as! Int
+                    let imgeCount_Part = artworkDict[artistKey]!["participation"] as! Int
+                    let imageCount = imageCount_Demo + imageCount_Power + imgeCount_Part
+                    
+                    if imageCount>0{
                         
-                       // if let artworkDict = artworkPlist{
+                        for index in 1...imageCount{
                             
-                           
-                       // }
-                    
-                    }
-                    else {
-                    
-                    
-                        if let artworkDict = artworkPlist {
-                    
-                            let imageCount = artworkDict[artistKey]![weekend] as! Int
-                            Count = Count + 1
-                            groups.append(artistKey)
-                            names.append(artistName)
-                        
-                            if imageCount > 0 {
-                                for index in 1...imageCount {
-                        
-                                    let artworkName = "\(artistKey)_\(weekend)_mini_\(index)"//artistKey + "_" + weekend + "_mini_" + (index as! String)
-                                    let artworkNameBig = "\(artistKey)_\(weekend)_\(index)"
-                                    //let image = UIImage(named: artworkName)! as UIImage
-                                    //artists[artistKey]!["Name"]! as! String
-                                    //artists[] =
-                     Artist = artistKey
+                            for index1 in 0...Weekends.count-1 {
+                                
+                                let we = Weekends [index1]
+                                let i = artworkDict[artistKey]![we] as! Int
+                                
+                                if i>0 {
                                     
-                                    let artwork = Artwork(name:artworkName,group: Artist)
+                                    
+                                    let artworkName = "\(artistKey)_\(we)_mini_\(index)"//artistKey + "_" + weekend + "_mini_" + (index as! String)
+                                    let artworkNameBig = "\(artistKey)_\(we)_\(index)"
+                                    
+                                    
+                                    let artwork = Artwork(name:artworkName,bigname:artworkNameBig,group: oneArtist)
                                     artworks.append(artwork)
+                                    //    let image = UIImage(named:artworkNameBig)
+                                    
                                     if let image = UIImage(named:artworkNameBig) {
-                                        Products.append(artistName)
+                                        Products.append(oneArtist)
                                         imageArray.append(image)
+                                        
+                                    }
+                                    
+                                    
+                                }
+                                
+                                
+                                
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+            
+        else{
+            
+            
+            if let festivalDict = festivalPlist {
+                
+                
+                
+                
+                artistKeys = festivalDict[weekend] as! [String]
+                
+                if let artistsDict = artistsPlist {
+                    
+                    for artistKey in artistKeys {
+                        let artistName = artistsDict[artistKey]!["name"]! as! String
+                        
+                        
+                        if weekend == "all" {
+                            
+                            // if let artworkDict = artworkPlist{
+                            
+                            
+                            // }
+                            
+                        }
+                        else {
+                            
+                            
+                            if let artworkDict = artworkPlist {
+                                
+                                let imageCount = artworkDict[artistKey]![weekend] as! Int
+                                Count = Count + 1
+                                groups.append(artistKey)
+                                names.append(artistName)
+                                
+                                if imageCount > 0 {
+                                    for index in 1...imageCount {
+                                        
+                                        let artworkName = "\(artistKey)_\(weekend)_mini_\(index)"//artistKey + "_" + weekend + "_mini_" + (index as! String)
+                                        let artworkNameBig = "\(artistKey)_\(weekend)_\(index)"
+                                        //let image = UIImage(named: artworkName)! as UIImage
+                                        //artists[artistKey]!["Name"]! as! String
+                                        //artists[] =
+                                        Artist = artistKey
+                                        
+                                        let artwork = Artwork(name:artworkName,bigname:artworkNameBig,group: Artist)
+                                        artworks.append(artwork)
+                                      //  if let image = UIImage(named:artworkNameBig) {
+                                        //    Products.append(artistName)
+                                          //  imageArray.append(image)
+                                       // }
                                     }
                                 }
                             }
@@ -103,57 +168,22 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
         
         
         
-//        var myDict: NSDictionary?
-//        if let path = NSBundle.mainBundle().pathForResource("Festival", ofType: "plist") {
-//            myDict = NSDictionary(contentsOfFile: path)
-//        }
-//        if let dict = myDict {
-//            // Use your dict here
-//            
-//            //let artists = dict[artist] as! NSDictionary
-//            
-//            if weekend == "all" {
-//                
-//            }
-//            
-//            else if weekend == "Democracy" {
-//              // Products = ["kollmareva","hofer"]
-//                //imageArray = [UIImage(named:"kollmareva_art")!,UIImage(named:"hofer_art")!]
-//                artistKeys = dict[weekend] as! [String]
-//                
-//                for artistKey in artistKeys {
-//                    let artistName = dict[artist]![artistKey]!!["Name"]! as! String
-//                    let artworkName = dict[artist]![artistKey]!!["Key"]! as! String + "_art"
-//                  //let image = UIImage(named: artworkName)! as UIImage
-//
-//                    //artists[artistKey]!["Name"]! as! String
-//                  
-//                    //artists[] =
-//                    Products.append(artistName)
-//                    imageArray.append(UIImage(named:artworkName)!)
-//                }
-//            
-//                
-//                
-//                
-//            
-//            }
-//        }
         
     }
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
         readArtworklist()
-    
+        
     }
-
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         
         return Count
@@ -174,30 +204,51 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
         let item = groups[index]
         var names = [String]()
         if artworks.count > 0 {
-        for index in 0...artworks.count-1 {
-            var group1 = ""
-            group1 = artworks[index].group!
-            //  let group1 = artworks[index].group
-            if group1 == item{
-               
-                let name = artworks[index].name
-                names.append(name!)
-            }
+            for index in 0...artworks.count-1 {
+                var group1 = ""
+                group1 = artworks[index].group!
+                //  let group1 = artworks[index].group
+                if group1 == item{
+                    
+                    let name = artworks[index].name
+                    names.append(name!)
+                    
+                }
             }
         }
         return names
     }
     
-   
-   func collectionView(collectionView : UICollectionView,layout collectionViewLayout:UICollectionViewLayout,sizeForItemAtIndexPath indexPath:NSIndexPath) -> CGSize
+    func BigartworksInGroup(index: Int) -> [String] {
+        let item = groups[index]
+        var names = [String]()
+        if artworks.count > 0 {
+            for index in 0...artworks.count-1 {
+                var group1 = ""
+                group1 = artworks[index].group!
+                //  let group1 = artworks[index].group
+                if group1 == item{
+                    
+                    let name = artworks[index].bigname
+                    names.append(name!)
+                    
+                }
+            }
+        }
+        return names
+    }
+    
+    
+    
+    func collectionView(collectionView : UICollectionView,layout collectionViewLayout:UICollectionViewLayout,sizeForItemAtIndexPath indexPath:NSIndexPath) -> CGSize
     {
-             let collectionViewWidth = self.collectionView!.bounds.width
-               let itemWidth = (collectionViewWidth - 4)/2.1
-                       return CGSizeMake(itemWidth, itemWidth*1.2)
-       // let cellSize:CGSize = CGSizeMake((collectionViewWidth - spacing * CGFloat(columnsNum-1))/CGFloat(columnsNum), 86)
+        let collectionViewWidth = self.collectionView!.bounds.width
+        let itemWidth = (collectionViewWidth - 4)/2.1
+        return CGSizeMake(itemWidth, itemWidth*1.2)
+        // let cellSize:CGSize = CGSizeMake((collectionViewWidth - spacing * CGFloat(columnsNum-1))/CGFloat(columnsNum), 86)
         //return cellSize
     }
- 
+    
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! ViewCell
         
@@ -205,20 +256,21 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
         
         let name = names[indexPath.row]
         
-        print(name)
+        
         cell.artworkImage.image = UIImage(named:name)
-    //    cell.artworkImage?.image = self.imageArray[indexPath.row]
+        
+        //    cell.artworkImage?.image = self.imageArray[indexPath.row]
         cell.artworkImage.layer.cornerRadius = 3
-       
-      //  cell.artworkLabel?.text = self.Products[indexPath.row]
+        
+        //  cell.artworkLabel?.text = self.Products[indexPath.row]
         cell.layer.cornerRadius = 3.0
-       // cell.backgroundColor = UIColor.init(red: 247, green: 247, blue: 247, alpha: 0.2)
+        // cell.backgroundColor = UIColor.init(red: 247, green: 247, blue: 247, alpha: 0.2)
         cell.layer.borderWidth = 0.5
         cell.layer.borderColor = UIColor.lightGrayColor().CGColor
         return cell
         
     }
-
+    
     func gettGroupLabelAtIndex(index: Int) -> String {
         return names[index]
     }
@@ -228,95 +280,53 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
         let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "imageheader", forIndexPath: indexPath) as! ReusableView
         headerView.section.text = gettGroupLabelAtIndex(indexPath.section)
         headerView.backgroundColor = UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1)
-    
+        
         return headerView
         
     }
     
-
-
-func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-    self.performSegueWithIdentifier("ArtWorkDetail", sender: self)
-}
     
-
-override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    if segue.identifier == "ArtWorkDetail"
-    {
-        
-        let vc = segue.destinationViewController as! ArtWorkViewController
-        let indexPaths = self.collectionView!.indexPathsForSelectedItems()!
-        let indexPath = indexPaths[0] as NSIndexPath
-        vc.labelstring = self.groups[indexPath.section]
-    //    vc.ButtonTitle = self.names[indexPath.section]
-       // vc.ButtonTitle = self.Products[indexPath.row]
-        vc.image = self.imageArray[indexPath.row]
-        //vc.ResizeImage(vc.image, targetSize: CGSizeMake(50.0, 200.0))
-      //  vc.title = self.Products[indexPath.row]
-
-        
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("ArtWorkDetail", sender: self)
     }
-}
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "ArtWorkDetail"
+        {
+            
+            let vc = segue.destinationViewController as! ArtWorkViewController
+            let indexPaths = self.collectionView!.indexPathsForSelectedItems()!
+            let indexPath = indexPaths[0] as NSIndexPath
+            vc.labelstring = self.groups[indexPath.section]
+
+            let works = BigartworksInGroup(indexPath.section)
+            
+            let imagename = works[indexPath.row]
+            let image1 = UIImage(named:imagename)!
+            vc.image = image1
+            
+            // vc.image = self.imageArray[indexPath.row]
+            //vc.ResizeImage(vc.image, targetSize: CGSizeMake(50.0, 200.0))
+            //  vc.title = self.Products[indexPath.row]
+            ArtWork_for_Artist = false
+            
+        }
+    }
 }
 
 class Artwork {
     var name:String?
     var group:String?
+    var bigname:String?
     
-    init(name: String, group: String) {
+    init(name: String, bigname:String, group: String) {
         self.name = name
+        self.bigname = bigname
         self.group = group
     }
 }
 
-  /*  override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
 
-
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
-    }
-
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)
-    
-        // Configure the cell
-    
-        return cell
-    }
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(collectionView: UICollectionView, shouldShowMenuForItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, canPerformAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, performAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {
-    
-    }
-    */
-
-}*/
