@@ -388,7 +388,7 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUC-In-yrJ">
                                 <rect key="frame" x="100" y="530" width="400" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Zur Künstlerin">
                                     <color key="titleColor" red="0.97461939102564099" green="0.97461939102564099" blue="0.97461939102564099" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -399,7 +399,7 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YjN-yW-cqo">
                                 <rect key="frame" x="0.0" y="10" width="600" height="520"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-04-ZDC">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-04-ZDC">
                                         <rect key="frame" x="10" y="35" width="580" height="435"/>
                                         <variation key="heightClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="100" y="16" width="398" height="274"/>
@@ -425,8 +425,8 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                             <constraint firstItem="YjN-yW-cqo" firstAttribute="width" secondItem="DxJ-c5-9n3" secondAttribute="width" id="WrQ-9a-hER"/>
                             <constraint firstItem="UEy-bf-vYi" firstAttribute="top" secondItem="YjN-yW-cqo" secondAttribute="bottom" constant="70" id="bM6-9K-FX3"/>
                             <constraint firstItem="IUC-In-yrJ" firstAttribute="top" secondItem="dHa-04-ZDC" secondAttribute="bottom" constant="35" id="dum-Ll-WgA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IUC-In-yrJ" secondAttribute="trailing" constant="80" id="iAs-04-61X"/>
-                            <constraint firstItem="IUC-In-yrJ" firstAttribute="leading" secondItem="DxJ-c5-9n3" secondAttribute="leadingMargin" constant="80" id="jiK-0F-cJk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IUC-In-yrJ" secondAttribute="trailing" constant="50" id="iAs-04-61X"/>
+                            <constraint firstItem="IUC-In-yrJ" firstAttribute="leading" secondItem="DxJ-c5-9n3" secondAttribute="leadingMargin" constant="50" id="jiK-0F-cJk"/>
                             <constraint firstItem="UEy-bf-vYi" firstAttribute="top" secondItem="IUC-In-yrJ" secondAttribute="bottom" constant="30" id="nxl-MP-bbe"/>
                         </constraints>
                     </view>
