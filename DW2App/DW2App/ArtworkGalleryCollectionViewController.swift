@@ -62,39 +62,28 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
                 
                 if let artworkDict = artworkPlist{
                     
-                    let imageCount_Demo = artworkDict[artistKey]!["democracy"] as! Int
-                    let imageCount_Power = artworkDict[artistKey]!["power"] as! Int
-                    let imgeCount_Part = artworkDict[artistKey]!["participation"] as! Int
-                    let imageCount = imageCount_Demo + imageCount_Power + imgeCount_Part
                     
-                    if imageCount>0{
+                    
+                    
+                    for index in 0...Weekends.count-1 {
                         
-                        for index in 1...imageCount{
+                        let week = Weekends[index]
+                        let imageCount = artworkDict[artistKey]![week] as! Int
+                        
+                        if imageCount>0{
                             
-                            for index1 in 0...Weekends.count-1 {
+                            for i in 1...imageCount{
                                 
-                                let we = Weekends [index1]
-                                let i = artworkDict[artistKey]![we] as! Int
                                 
-                                if i>0 {
-                                    
-                                    
-                                    let artworkName = "\(artistKey)_\(we)_mini_\(index)"//artistKey + "_" + weekend + "_mini_" + (index as! String)
-                                    let artworkNameBig = "\(artistKey)_\(we)_\(index)"
-                                    
-                                    
-                                    let artwork = Artwork(name:artworkName,bigname:artworkNameBig,group: oneArtist)
-                                    artworks.append(artwork)
-                                    //    let image = UIImage(named:artworkNameBig)
-                                    
-                                    if let image = UIImage(named:artworkNameBig) {
-                                        Products.append(oneArtist)
-                                        imageArray.append(image)
-                                        
-                                    }
-                                    
-                                    
-                                }
+                                
+                                
+                                let artworkName = "\(artistKey)_\(week)_mini_\(i)"//artistKey + "_" + weekend + "_mini_" + (index as! String)
+                                let artworkNameBig = "\(artistKey)_\(week)_\(i)"
+                                
+                                
+                                let artwork = Artwork(name:artworkName,bigname:artworkNameBig,group: oneArtist)
+                                artworks.append(artwork)
+                                
                                 
                                 
                                 
@@ -119,17 +108,44 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
                 
                 if let artistsDict = artistsPlist {
                     
+                    
                     for artistKey in artistKeys {
                         let artistName = artistsDict[artistKey]!["name"]! as! String
                         
                         
                         if weekend == "all" {
-                            
-                            // if let artworkDict = artworkPlist{
-                            
-                            
-                            // }
-                            
+                            if let artworkDict = artworkPlist {
+                                
+                                Count = Count+1
+                                groups.append(artistKey)
+                                names.append(artistName)
+                                
+                                for index in 0...Weekends.count-1{
+                                    
+                                    let we = Weekends[index]
+                                    let imageCount = artworkDict[artistKey]![we] as! Int
+                                    
+                                    if imageCount>0{
+                                        
+                                        for i in 1...imageCount {
+                                            
+                                            
+                                            let artworkName = "\(artistKey)_\(we)_mini_\(i)"//artistKey + "_" + weekend + "_mini_" + (index as! String)
+                                            let artworkNameBig = "\(artistKey)_\(we)_\(i)"
+                                            
+                                            
+                                            let artwork = Artwork(name:artworkName,bigname:artworkNameBig,group: artistKey)
+                                            artworks.append(artwork)
+                                            
+                                            print (artworkName)
+                                        }
+                                        
+                                        
+                                    }
+                                    
+                                }
+                                
+                            }
                         }
                         else {
                             
@@ -153,10 +169,7 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
                                         
                                         let artwork = Artwork(name:artworkName,bigname:artworkNameBig,group: Artist)
                                         artworks.append(artwork)
-                                      //  if let image = UIImage(named:artworkNameBig) {
-                                        //    Products.append(artistName)
-                                          //  imageArray.append(image)
-                                       // }
+                                        
                                     }
                                 }
                             }
@@ -166,10 +179,8 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
             }
         }
         
-        
-        
-        
     }
+    
     
     override func viewDidLoad() {
         
@@ -279,7 +290,7 @@ class ArtworkGalleryCollectionViewController: UIViewController, UICollectionView
                                                           atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "imageheader", forIndexPath: indexPath) as! ReusableView
         headerView.section.text = gettGroupLabelAtIndex(indexPath.section)
-        headerView.backgroundColor = UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1)
+        headerView.backgroundColor = UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1)
         
         return headerView
         

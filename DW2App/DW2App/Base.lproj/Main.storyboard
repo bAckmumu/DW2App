@@ -341,7 +341,7 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                             <rect key="frame" x="0.0" y="0.0" width="600" height="42.5"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nG-pI-nqq">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nG-pI-nqq">
                                     <rect key="frame" x="80" y="18.5" width="440" height="24"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -350,8 +350,8 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="9nG-pI-nqq" firstAttribute="centerY" secondItem="tCR-kE-vDy" secondAttribute="centerY" id="0l7-JD-QGa"/>
-                                <constraint firstItem="9nG-pI-nqq" firstAttribute="leading" secondItem="tCR-kE-vDy" secondAttribute="leading" constant="80" id="CdF-8E-eaz"/>
-                                <constraint firstAttribute="trailing" secondItem="9nG-pI-nqq" secondAttribute="trailing" constant="80" id="j9k-6V-wEc"/>
+                                <constraint firstItem="9nG-pI-nqq" firstAttribute="leading" secondItem="tCR-kE-vDy" secondAttribute="leading" constant="10" id="CdF-8E-eaz"/>
+                                <constraint firstAttribute="trailing" secondItem="9nG-pI-nqq" secondAttribute="trailing" constant="100" id="j9k-6V-wEc"/>
                                 <constraint firstItem="9nG-pI-nqq" firstAttribute="centerX" secondItem="tCR-kE-vDy" secondAttribute="centerX" id="lma-GL-kYJ"/>
                             </constraints>
                             <connections>
