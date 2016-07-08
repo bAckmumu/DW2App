@@ -19,11 +19,12 @@ class MachtViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let buttonColor = UIColor(red: 65/255, green: 65/255, blue: 65/255, alpha: 1)
+        let buttonColor = UIColor(red: 15/255, green: 15/255, blue: 15/255, alpha: 0.8)
         ArtistButton.layer.backgroundColor = buttonColor.CGColor
         ArtworkButton.layer.backgroundColor = buttonColor.CGColor
-        ArtworkButton.layer.cornerRadius = 0
-        ArtistButton.layer.cornerRadius = 0
+        
+        ArtworkButton.layer.cornerRadius = 2
+        ArtistButton.layer.cornerRadius = 2
         Text.editable = false
 
         // Do any additional setup after loading the view.

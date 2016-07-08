@@ -24,8 +24,8 @@ class ArtistViewController: UIViewController {
         nameImage.image = UIImage(named: artistKey + "_name")
         
         toArtwork_Button.setTitle("Kunstwerke", forState: UIControlState.Normal)
-        toArtwork_Button.layer.cornerRadius = 5
-        toArtwork_Button.backgroundColor = UIColor(red: 187/255, green: 14/255, blue: 25/255, alpha: 1)
+        toArtwork_Button.layer.cornerRadius = 15
+        toArtwork_Button.backgroundColor = UIColor(red: 187/255, green: 14/255, blue: 25/255, alpha: 0.8)
         toArtwork_Button.tintColor = UIColor.whiteColor()
         
         

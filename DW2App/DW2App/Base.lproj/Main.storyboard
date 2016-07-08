@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="215"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IV0-zR-uaD">
-                                <rect key="frame" x="0.0" y="216" width="600" height="271"/>
+                                <rect key="frame" x="0.0" y="215" width="600" height="272"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpR-lh-Sy7">
                                         <rect key="frame" x="301" y="0.0" width="239" height="32"/>
@@ -45,7 +45,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5W-xl-zJf">
-                                        <rect key="frame" x="100" y="141" width="400" height="30"/>
+                                        <rect key="frame" x="100" y="142" width="400" height="30"/>
                                         <state key="normal" title="Video"/>
                                         <connections>
                                             <segue destination="6FD-3Z-UWe" kind="show" identifier="showVideo" id="83m-ht-XFd"/>
@@ -85,7 +85,7 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                             <constraint firstItem="bIl-nG-FMT" firstAttribute="height" relation="lessThanOrEqual" secondItem="Bjh-Pv-gdq" secondAttribute="height" multiplier="0.4" id="AWx-EP-VY6"/>
                             <constraint firstItem="bIl-nG-FMT" firstAttribute="top" secondItem="EkP-ae-uxu" secondAttribute="bottom" id="FLk-Z1-Weu"/>
                             <constraint firstAttribute="trailing" secondItem="IV0-zR-uaD" secondAttribute="trailing" id="SbH-nz-Hxg"/>
-                            <constraint firstItem="IV0-zR-uaD" firstAttribute="top" secondItem="bIl-nG-FMT" secondAttribute="bottom" constant="1" id="SkZ-6t-2ks"/>
+                            <constraint firstItem="IV0-zR-uaD" firstAttribute="top" secondItem="bIl-nG-FMT" secondAttribute="bottom" id="SkZ-6t-2ks"/>
                             <constraint firstAttribute="trailing" secondItem="bIl-nG-FMT" secondAttribute="trailing" id="lc0-8R-FaD"/>
                             <constraint firstItem="bIl-nG-FMT" firstAttribute="leading" secondItem="Bjh-Pv-gdq" secondAttribute="leading" id="tke-jj-5Yj"/>
                             <constraint firstItem="IV0-zR-uaD" firstAttribute="leading" secondItem="Bjh-Pv-gdq" secondAttribute="leading" id="u6t-ay-bDW"/>
@@ -143,7 +143,7 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="215"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2L-Bm-FHB" userLabel="View1">
-                                <rect key="frame" x="0.0" y="216" width="600" height="271"/>
+                                <rect key="frame" x="0.0" y="215" width="600" height="272"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ULf-Yd-zyN">
                                         <rect key="frame" x="10" y="44" width="580" height="227"/>
@@ -193,7 +193,7 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                             <constraint firstItem="m2L-Bm-FHB" firstAttribute="leading" secondItem="6iN-Dq-EzP" secondAttribute="leading" id="3wQ-CY-DEG"/>
                             <constraint firstAttribute="trailing" secondItem="yql-wd-6jx" secondAttribute="trailing" id="EcG-zt-tJl"/>
                             <constraint firstItem="yql-wd-6jx" firstAttribute="top" secondItem="vpD-Ud-YdG" secondAttribute="bottom" id="IPA-Ix-dzt"/>
-                            <constraint firstItem="m2L-Bm-FHB" firstAttribute="top" secondItem="yql-wd-6jx" secondAttribute="bottom" constant="1" id="QRn-0q-iwC"/>
+                            <constraint firstItem="m2L-Bm-FHB" firstAttribute="top" secondItem="yql-wd-6jx" secondAttribute="bottom" id="QRn-0q-iwC"/>
                             <constraint firstAttribute="trailing" secondItem="m2L-Bm-FHB" secondAttribute="trailing" id="sJV-dU-f49"/>
                             <constraint firstItem="yql-wd-6jx" firstAttribute="leading" secondItem="6iN-Dq-EzP" secondAttribute="leading" id="yTM-eR-dlY"/>
                             <constraint firstItem="yql-wd-6jx" firstAttribute="centerX" secondItem="6iN-Dq-EzP" secondAttribute="centerX" id="zP7-uP-XVI"/>
@@ -243,7 +243,7 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="215"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AlK-TB-kon">
-                                <rect key="frame" x="0.0" y="216" width="600" height="271"/>
+                                <rect key="frame" x="0.0" y="215" width="600" height="272"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFk-qi-IZN">
                                         <rect key="frame" x="301" y="0.0" width="219" height="34"/>
@@ -294,7 +294,7 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                             <constraint firstItem="KcC-DP-Sg4" firstAttribute="leading" secondItem="Ou4-Yu-tqR" secondAttribute="leading" id="7Xn-rI-JOB"/>
                             <constraint firstAttribute="trailing" secondItem="KcC-DP-Sg4" secondAttribute="trailing" id="FmI-Q9-Tdt"/>
                             <constraint firstItem="AlK-TB-kon" firstAttribute="leading" secondItem="Ou4-Yu-tqR" secondAttribute="leading" id="Id6-Us-jTj"/>
-                            <constraint firstItem="AlK-TB-kon" firstAttribute="top" secondItem="KcC-DP-Sg4" secondAttribute="bottom" constant="1" id="d2g-39-4Nn"/>
+                            <constraint firstItem="AlK-TB-kon" firstAttribute="top" secondItem="KcC-DP-Sg4" secondAttribute="bottom" id="d2g-39-4Nn"/>
                             <constraint firstItem="KcC-DP-Sg4" firstAttribute="top" secondItem="Q4S-bK-9gG" secondAttribute="bottom" id="jK0-Vr-OwA"/>
                             <constraint firstAttribute="trailing" secondItem="AlK-TB-kon" secondAttribute="trailing" id="n2V-AK-d5d"/>
                         </constraints>
@@ -320,13 +320,13 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="0.0" id="30h-ta-Yba">
                             <size key="itemSize" width="150" height="158"/>
-                            <size key="headerReferenceSize" width="50" height="42.5"/>
+                            <size key="headerReferenceSize" width="50" height="39.5"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="8" minY="10" maxX="8" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" reuseIdentifier="Cell" id="8gY-qg-zov" customClass="ViewCell" customModule="DW2App" customModuleProvider="target">
-                                <rect key="frame" x="8" y="52.5" width="150" height="158"/>
+                                <rect key="frame" x="8" y="49.5" width="150" height="158"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="158"/>
@@ -351,21 +351,19 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageheader" id="tCR-kE-vDy" customClass="ReusableView" customModule="DW2App" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="42.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="39.5"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nG-pI-nqq">
-                                    <rect key="frame" x="80" y="18.5" width="440" height="24"/>
+                                    <rect key="frame" x="8" y="8" width="490" height="24"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="9nG-pI-nqq" firstAttribute="centerY" secondItem="tCR-kE-vDy" secondAttribute="centerY" id="0l7-JD-QGa"/>
-                                <constraint firstItem="9nG-pI-nqq" firstAttribute="leading" secondItem="tCR-kE-vDy" secondAttribute="leading" constant="10" id="CdF-8E-eaz"/>
-                                <constraint firstAttribute="trailing" secondItem="9nG-pI-nqq" secondAttribute="trailing" constant="100" id="j9k-6V-wEc"/>
-                                <constraint firstItem="9nG-pI-nqq" firstAttribute="centerX" secondItem="tCR-kE-vDy" secondAttribute="centerX" id="lma-GL-kYJ"/>
+                                <constraint firstAttribute="bottom" secondItem="9nG-pI-nqq" secondAttribute="bottom" constant="2" id="AwV-Iw-rTO"/>
+                                <constraint firstItem="9nG-pI-nqq" firstAttribute="leading" secondItem="tCR-kE-vDy" secondAttribute="leadingMargin" constant="2" id="cua-jx-B5i"/>
                             </constraints>
                             <connections>
                                 <outlet property="section" destination="9nG-pI-nqq" id="JlG-AI-nOc"/>
@@ -641,8 +639,8 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
         <image name="trash" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VJT-Po-Pc0"/>
-        <segue reference="YBS-uM-4H6"/>
+        <segue reference="fKM-5e-YvG"/>
+        <segue reference="Rur-Bt-57K"/>
         <segue reference="qZW-A5-nTG"/>
     </inferredMetricsTieBreakers>
 </document>
