@@ -25,25 +25,34 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IV0-zR-uaD">
                                 <rect key="frame" x="0.0" y="216" width="600" height="271"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpR-lh-Sy7">
-                                        <rect key="frame" x="304" y="0.0" width="246" height="34"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpR-lh-Sy7">
+                                        <rect key="frame" x="301" y="0.0" width="239" height="32"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
                                         <state key="normal" title="Künstlerinnen"/>
                                         <connections>
                                             <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="VJT-Po-Pc0"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Om-CS-LIr">
-                                        <rect key="frame" x="50" y="0.0" width="246" height="34"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Om-CS-LIr">
+                                        <rect key="frame" x="60" y="0.0" width="239" height="32"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="Kunstwerke"/>
                                         <connections>
                                             <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="YBS-uM-4H6"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SDz-Sv-iyW">
-                                        <rect key="frame" x="50" y="42" width="318" height="70"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5W-xl-zJf">
+                                        <rect key="frame" x="100" y="141" width="400" height="30"/>
+                                        <state key="normal" title="Video"/>
+                                        <connections>
+                                            <segue destination="6FD-3Z-UWe" kind="show" identifier="showVideo" id="83m-ht-XFd"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SDz-Sv-iyW">
+                                        <rect key="frame" x="50" y="42" width="500" height="89"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">06.-08..05.2016 Demokratie-Wochenende
 Fr. 20 bis 22 Uhr, Sa. und So. 14 bis 18 Uhr
@@ -51,22 +60,22 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5W-xl-zJf">
-                                        <rect key="frame" x="189" y="121" width="40" height="30"/>
-                                        <state key="normal" title="Video"/>
-                                        <connections>
-                                            <segue destination="6FD-3Z-UWe" kind="show" identifier="showVideo" id="83m-ht-XFd"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="LpR-lh-Sy7" firstAttribute="leading" secondItem="1Om-CS-LIr" secondAttribute="trailing" constant="8" id="67L-26-HmU"/>
+                                    <constraint firstItem="LpR-lh-Sy7" firstAttribute="leading" secondItem="1Om-CS-LIr" secondAttribute="trailing" constant="2" id="67L-26-HmU"/>
+                                    <constraint firstItem="SDz-Sv-iyW" firstAttribute="top" secondItem="1Om-CS-LIr" secondAttribute="bottom" constant="10" id="D5W-Jn-iqs"/>
+                                    <constraint firstAttribute="bottom" secondItem="S5W-xl-zJf" secondAttribute="bottom" constant="100" id="Dzz-II-KRZ"/>
+                                    <constraint firstItem="S5W-xl-zJf" firstAttribute="top" secondItem="SDz-Sv-iyW" secondAttribute="bottom" constant="10" id="FyT-vA-0YZ"/>
                                     <constraint firstItem="LpR-lh-Sy7" firstAttribute="top" secondItem="IV0-zR-uaD" secondAttribute="top" id="HJo-eO-XWE"/>
-                                    <constraint firstAttribute="trailing" secondItem="LpR-lh-Sy7" secondAttribute="trailing" constant="50" id="Y1x-Q1-53B"/>
+                                    <constraint firstItem="S5W-xl-zJf" firstAttribute="leading" secondItem="IV0-zR-uaD" secondAttribute="leading" constant="100" id="TeP-dZ-a7c"/>
+                                    <constraint firstAttribute="trailing" secondItem="LpR-lh-Sy7" secondAttribute="trailing" constant="60" id="Y1x-Q1-53B"/>
+                                    <constraint firstAttribute="trailing" secondItem="SDz-Sv-iyW" secondAttribute="trailing" constant="50" id="a9U-Yz-0Mo"/>
                                     <constraint firstItem="LpR-lh-Sy7" firstAttribute="width" secondItem="1Om-CS-LIr" secondAttribute="width" id="feP-Sg-zqV"/>
-                                    <constraint firstItem="1Om-CS-LIr" firstAttribute="leading" secondItem="IV0-zR-uaD" secondAttribute="leading" constant="50" id="iwk-Ax-1IX"/>
+                                    <constraint firstItem="1Om-CS-LIr" firstAttribute="leading" secondItem="IV0-zR-uaD" secondAttribute="leading" constant="60" id="iwk-Ax-1IX"/>
                                     <constraint firstItem="1Om-CS-LIr" firstAttribute="top" secondItem="IV0-zR-uaD" secondAttribute="top" id="muH-8T-xuf"/>
+                                    <constraint firstAttribute="trailing" secondItem="S5W-xl-zJf" secondAttribute="trailing" constant="100" id="uIz-cB-g61"/>
+                                    <constraint firstItem="SDz-Sv-iyW" firstAttribute="leading" secondItem="IV0-zR-uaD" secondAttribute="leading" constant="50" id="yp3-K9-ALZ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -136,40 +145,42 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2L-Bm-FHB" userLabel="View1">
                                 <rect key="frame" x="0.0" y="216" width="600" height="271"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ULf-Yd-zyN">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ULf-Yd-zyN">
                                         <rect key="frame" x="10" y="44" width="580" height="227"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYa-Vj-79m">
-                                        <rect key="frame" x="304" y="0.0" width="246" height="34"/>
-                                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Künstlerinnen"/>
-                                        <connections>
-                                            <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="MAW-Gu-uBx"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHh-UV-fl3">
-                                        <rect key="frame" x="50" y="0.0" width="246" height="34"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHh-UV-fl3">
+                                        <rect key="frame" x="80" y="0.0" width="219" height="34"/>
                                         <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="Kunstwerke"/>
                                         <connections>
                                             <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="CIS-XS-VFr"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYa-Vj-79m">
+                                        <rect key="frame" x="301" y="0.0" width="219" height="34"/>
+                                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Künstlerinnen"/>
+                                        <connections>
+                                            <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="MAW-Gu-uBx"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="GYa-Vj-79m" secondAttribute="trailing" constant="50" id="1Jf-2o-VVh"/>
+                                    <constraint firstAttribute="trailing" secondItem="GYa-Vj-79m" secondAttribute="trailing" constant="60" id="1Jf-2o-VVh"/>
                                     <constraint firstAttribute="trailing" secondItem="ULf-Yd-zyN" secondAttribute="trailing" constant="10" id="8Rs-yA-4Ga"/>
-                                    <constraint firstItem="GYa-Vj-79m" firstAttribute="leading" secondItem="JHh-UV-fl3" secondAttribute="trailing" constant="8" id="9Bt-Wj-NGe"/>
+                                    <constraint firstItem="GYa-Vj-79m" firstAttribute="leading" secondItem="JHh-UV-fl3" secondAttribute="trailing" constant="2" id="9Bt-Wj-NGe"/>
                                     <constraint firstAttribute="bottom" secondItem="ULf-Yd-zyN" secondAttribute="bottom" id="DCO-af-cDu"/>
                                     <constraint firstItem="JHh-UV-fl3" firstAttribute="top" secondItem="m2L-Bm-FHB" secondAttribute="top" id="Eb1-ef-W2w"/>
                                     <constraint firstItem="ULf-Yd-zyN" firstAttribute="top" secondItem="GYa-Vj-79m" secondAttribute="bottom" constant="10" id="IPR-bg-67H"/>
                                     <constraint firstItem="ULf-Yd-zyN" firstAttribute="leading" secondItem="m2L-Bm-FHB" secondAttribute="leading" constant="10" id="LLz-rL-O7W"/>
-                                    <constraint firstItem="JHh-UV-fl3" firstAttribute="leading" secondItem="m2L-Bm-FHB" secondAttribute="leading" constant="50" id="Pnr-kT-O2v"/>
+                                    <constraint firstItem="JHh-UV-fl3" firstAttribute="leading" secondItem="m2L-Bm-FHB" secondAttribute="leading" constant="60" id="Pnr-kT-O2v"/>
                                     <constraint firstItem="GYa-Vj-79m" firstAttribute="width" secondItem="JHh-UV-fl3" secondAttribute="width" id="bp7-2H-kZt"/>
                                     <constraint firstItem="GYa-Vj-79m" firstAttribute="top" secondItem="m2L-Bm-FHB" secondAttribute="top" id="yct-r3-tSK"/>
                                 </constraints>
@@ -234,24 +245,26 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AlK-TB-kon">
                                 <rect key="frame" x="0.0" y="216" width="600" height="271"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFk-qi-IZN">
-                                        <rect key="frame" x="304" y="0.0" width="246" height="34"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFk-qi-IZN">
+                                        <rect key="frame" x="301" y="0.0" width="219" height="34"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="Künstlerinnen"/>
                                         <connections>
                                             <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="fKM-5e-YvG"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MRk-M5-5D7">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MRk-M5-5D7">
                                         <rect key="frame" x="10" y="44" width="580" height="227"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZT-5b-43J">
-                                        <rect key="frame" x="50" y="0.0" width="246" height="34"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZT-5b-43J">
+                                        <rect key="frame" x="80" y="0.0" width="219" height="34"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="Kunstwerke"/>
                                         <connections>
                                             <segue destination="hIs-vj-r55" kind="show" identifier="showArtwork" id="Rur-Bt-57K"/>
@@ -263,12 +276,12 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                                     <constraint firstAttribute="bottom" secondItem="MRk-M5-5D7" secondAttribute="bottom" id="7F4-tM-j9l"/>
                                     <constraint firstItem="MRk-M5-5D7" firstAttribute="leading" secondItem="AlK-TB-kon" secondAttribute="leading" constant="10" id="Hlf-R3-p8g"/>
                                     <constraint firstItem="uFk-qi-IZN" firstAttribute="width" secondItem="IZT-5b-43J" secondAttribute="width" id="IEA-uI-fys"/>
-                                    <constraint firstAttribute="trailing" secondItem="uFk-qi-IZN" secondAttribute="trailing" constant="50" id="OGw-az-dUN"/>
-                                    <constraint firstItem="uFk-qi-IZN" firstAttribute="leading" secondItem="IZT-5b-43J" secondAttribute="trailing" constant="8" id="VFD-gj-VIZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="uFk-qi-IZN" secondAttribute="trailing" constant="60" id="OGw-az-dUN"/>
+                                    <constraint firstItem="uFk-qi-IZN" firstAttribute="leading" secondItem="IZT-5b-43J" secondAttribute="trailing" constant="2" id="VFD-gj-VIZ"/>
                                     <constraint firstItem="IZT-5b-43J" firstAttribute="top" secondItem="AlK-TB-kon" secondAttribute="top" id="b3G-SX-cMQ"/>
                                     <constraint firstItem="uFk-qi-IZN" firstAttribute="top" secondItem="AlK-TB-kon" secondAttribute="top" id="lge-F7-Qsl"/>
                                     <constraint firstItem="MRk-M5-5D7" firstAttribute="top" secondItem="uFk-qi-IZN" secondAttribute="bottom" constant="10" id="qD9-s5-Vb7"/>
-                                    <constraint firstItem="IZT-5b-43J" firstAttribute="leading" secondItem="AlK-TB-kon" secondAttribute="leading" constant="50" id="qo0-KE-uhN"/>
+                                    <constraint firstItem="IZT-5b-43J" firstAttribute="leading" secondItem="AlK-TB-kon" secondAttribute="leading" constant="60" id="qo0-KE-uhN"/>
                                     <constraint firstAttribute="trailing" secondItem="MRk-M5-5D7" secondAttribute="trailing" constant="10" id="xe5-pJ-9S2"/>
                                 </constraints>
                             </view>
@@ -302,7 +315,7 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
             <objects>
                 <collectionViewController id="hIs-vj-r55" customClass="ArtworkGalleryCollectionViewController" customModule="DW2App" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="QeE-PC-68Y">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="0.0" id="30h-ta-Yba">
@@ -383,7 +396,7 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                         <viewControllerLayoutGuide type="bottom" id="UEy-bf-vYi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DxJ-c5-9n3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUC-In-yrJ">
@@ -399,7 +412,7 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YjN-yW-cqo">
                                 <rect key="frame" x="0.0" y="10" width="600" height="520"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-04-ZDC">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-04-ZDC">
                                         <rect key="frame" x="10" y="35" width="580" height="435"/>
                                         <variation key="heightClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="100" y="16" width="398" height="274"/>
@@ -447,7 +460,7 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
             <objects>
                 <tableViewController id="tqF-II-plG" customClass="ArtistsListTableViewController" customModule="DW2App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hht-xk-Se9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -493,10 +506,10 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
                         <viewControllerLayoutGuide type="bottom" id="cPb-JS-2dZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JFN-1w-XIy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x6b-vF-Skg">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x6b-vF-Skg">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kr1-xz-rfc">
@@ -628,8 +641,8 @@ Vernissage: Freitag, 6. Mai 20 Uhr</string>
         <image name="trash" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EFK-3s-5qr"/>
+        <segue reference="VJT-Po-Pc0"/>
+        <segue reference="YBS-uM-4H6"/>
         <segue reference="qZW-A5-nTG"/>
-        <segue reference="TkE-g0-hYh"/>
     </inferredMetricsTieBreakers>
 </document>
