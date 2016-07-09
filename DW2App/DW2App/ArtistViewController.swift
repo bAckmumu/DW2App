@@ -24,10 +24,9 @@ class ArtistViewController: UIViewController {
         nameImage.image = UIImage(named: artistKey + "_name")
         
         toArtwork_Button.setTitle("Kunstwerke", forState: UIControlState.Normal)
-        toArtwork_Button.layer.cornerRadius = 15
+        //toArtwork_Button.layer.cornerRadius = 15
         toArtwork_Button.backgroundColor = UIColor(red: 187/255, green: 14/255, blue: 25/255, alpha: 0.8)
         toArtwork_Button.tintColor = UIColor.whiteColor()
-        
         
         if let path = NSBundle.mainBundle().pathForResource(artistKey, ofType: "txt") {
             let contents: NSString
@@ -38,6 +37,7 @@ class ArtistViewController: UIViewController {
             }
         
             text.text  = contents as String
+            //text.scrollRangeToVisible(NSMakeRange(0, 0))
         }
     }
 
@@ -59,6 +59,11 @@ class ArtistViewController: UIViewController {
         
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        text.setContentOffset(CGPointZero, animated: false)
+    }
    
     /*
     // MARK: - Navigation

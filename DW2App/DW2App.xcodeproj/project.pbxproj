@@ -21,6 +21,21 @@
 		3265F7CE1D1BE4EE00B33362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3265F7CC1D1BE4EE00B33362 /* Main.storyboard */; };
 		3265F7D31D1BE4EE00B33362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3265F7D11D1BE4EE00B33362 /* LaunchScreen.storyboard */; };
 		32A202C71D3148FF00FA8B22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A202C61D3148FF00FA8B22 /* Assets.xcassets */; };
+		32A202D71D319A8A00FA8B22 /* adleraf.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32A202C81D319A8A00FA8B22 /* adleraf.txt */; };
+		32A202D81D319A8A00FA8B22 /* anra.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32A202C91D319A8A00FA8B22 /* anra.txt */; };
+		32A202D91D319A8A00FA8B22 /* christinatihansen.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32A202CA1D319A8A00FA8B22 /* christinatihansen.txt */; };
+		32A202DA1D319A8A00FA8B22 /* emilmemon.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32A202CB1D319A8A00FA8B22 /* emilmemon.txt */; };
+		32A202DB1D319A8A00FA8B22 /* franziskaagrawal.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32A202CC1D319A8A00FA8B22 /* franziskaagrawal.txt */; };
+		32A202DC1D319A8A00FA8B22 /* hpberndl.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32A202CD1D319A8A00FA8B22 /* hpberndl.txt */; };
+		32A202DD1D319A8A00FA8B22 /* ingekurtz.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32A202CE1D319A8A00FA8B22 /* ingekurtz.txt */; };
+		32A202DE1D319A8A00FA8B22 /* marcavrel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32A202CF1D319A8A00FA8B22 /* marcavrel.txt */; };
+		32A202DF1D319A8A00FA8B22 /* michaelheininger.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32A202D01D319A8A00FA8B22 /* michaelheininger.txt */; };
+		32A202E01D319A8A00FA8B22 /* optopussies.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32A202D11D319A8A00FA8B22 /* optopussies.txt */; };
+		32A202E11D319A8A00FA8B22 /* reginastaudturck.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32A202D21D319A8A00FA8B22 /* reginastaudturck.txt */; };
+		32A202E21D319A8A00FA8B22 /* roswithavallendor.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32A202D31D319A8A00FA8B22 /* roswithavallendor.txt */; };
+		32A202E31D319A8A00FA8B22 /* saanakang.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32A202D41D319A8A00FA8B22 /* saanakang.txt */; };
+		32A202E41D319A8A00FA8B22 /* sabinedresler.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32A202D51D319A8A00FA8B22 /* sabinedresler.txt */; };
+		32A202E51D319A8A00FA8B22 /* ursuladuch.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32A202D61D319A8A00FA8B22 /* ursuladuch.txt */; };
 		32ADA0961D25083100A1292C /* Festival.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32ADA0951D25083100A1292C /* Festival.plist */; };
 		32ECA68D1D2A8085001D2F02 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ECA68C1D2A8085001D2F02 /* ArtistViewController.swift */; };
 		32F66E6E1D280D13007CB75E /* ArtistsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F66E6D1D280D13007CB75E /* ArtistsListTableViewController.swift */; };
@@ -53,6 +68,21 @@
 		3265F7D21D1BE4EE00B33362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3265F7D41D1BE4EE00B33362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32A202C61D3148FF00FA8B22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32A202C81D319A8A00FA8B22 /* adleraf.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = adleraf.txt; sourceTree = "<group>"; };
+		32A202C91D319A8A00FA8B22 /* anra.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anra.txt; sourceTree = "<group>"; };
+		32A202CA1D319A8A00FA8B22 /* christinatihansen.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = christinatihansen.txt; sourceTree = "<group>"; };
+		32A202CB1D319A8A00FA8B22 /* emilmemon.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emilmemon.txt; sourceTree = "<group>"; };
+		32A202CC1D319A8A00FA8B22 /* franziskaagrawal.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = franziskaagrawal.txt; sourceTree = "<group>"; };
+		32A202CD1D319A8A00FA8B22 /* hpberndl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hpberndl.txt; sourceTree = "<group>"; };
+		32A202CE1D319A8A00FA8B22 /* ingekurtz.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ingekurtz.txt; sourceTree = "<group>"; };
+		32A202CF1D319A8A00FA8B22 /* marcavrel.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = marcavrel.txt; sourceTree = "<group>"; };
+		32A202D01D319A8A00FA8B22 /* michaelheininger.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = michaelheininger.txt; sourceTree = "<group>"; };
+		32A202D11D319A8A00FA8B22 /* optopussies.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = optopussies.txt; sourceTree = "<group>"; };
+		32A202D21D319A8A00FA8B22 /* reginastaudturck.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reginastaudturck.txt; sourceTree = "<group>"; };
+		32A202D31D319A8A00FA8B22 /* roswithavallendor.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = roswithavallendor.txt; sourceTree = "<group>"; };
+		32A202D41D319A8A00FA8B22 /* saanakang.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = saanakang.txt; sourceTree = "<group>"; };
+		32A202D51D319A8A00FA8B22 /* sabinedresler.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sabinedresler.txt; sourceTree = "<group>"; };
+		32A202D61D319A8A00FA8B22 /* ursuladuch.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ursuladuch.txt; sourceTree = "<group>"; };
 		32ADA0951D25083100A1292C /* Festival.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Festival.plist; sourceTree = "<group>"; };
 		32ECA68C1D2A8085001D2F02 /* ArtistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
 		32F66E6D1D280D13007CB75E /* ArtistsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistsListTableViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +113,21 @@
 		3246A6F91D2E5E580018D987 /* Text */ = {
 			isa = PBXGroup;
 			children = (
+				32A202C81D319A8A00FA8B22 /* adleraf.txt */,
+				32A202C91D319A8A00FA8B22 /* anra.txt */,
+				32A202CA1D319A8A00FA8B22 /* christinatihansen.txt */,
+				32A202CB1D319A8A00FA8B22 /* emilmemon.txt */,
+				32A202CC1D319A8A00FA8B22 /* franziskaagrawal.txt */,
+				32A202CD1D319A8A00FA8B22 /* hpberndl.txt */,
+				32A202CE1D319A8A00FA8B22 /* ingekurtz.txt */,
+				32A202CF1D319A8A00FA8B22 /* marcavrel.txt */,
+				32A202D01D319A8A00FA8B22 /* michaelheininger.txt */,
+				32A202D11D319A8A00FA8B22 /* optopussies.txt */,
+				32A202D21D319A8A00FA8B22 /* reginastaudturck.txt */,
+				32A202D31D319A8A00FA8B22 /* roswithavallendor.txt */,
+				32A202D41D319A8A00FA8B22 /* saanakang.txt */,
+				32A202D51D319A8A00FA8B22 /* sabinedresler.txt */,
+				32A202D61D319A8A00FA8B22 /* ursuladuch.txt */,
 				3246A7081D2E6D1F0018D987 /* kathykissik.txt */,
 				3246A7091D2E6D1F0018D987 /* lilly350.txt */,
 				3246A7001D2E6D120018D987 /* eleonorahofer.txt */,
@@ -215,18 +260,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				3246A7061D2E6D120018D987 /* evakollmar.txt in Resources */,
+				32A202DB1D319A8A00FA8B22 /* franziskaagrawal.txt in Resources */,
+				32A202E41D319A8A00FA8B22 /* sabinedresler.txt in Resources */,
 				3246A7101D2E88E90018D987 /* power.mp4 in Resources */,
 				3246A7071D2E6D120018D987 /* jpg.txt in Resources */,
+				32A202DE1D319A8A00FA8B22 /* marcavrel.txt in Resources */,
 				3246A7041D2E6D120018D987 /* eleonorahofer.txt in Resources */,
 				32A202C71D3148FF00FA8B22 /* Assets.xcassets in Resources */,
+				32A202E21D319A8A00FA8B22 /* roswithavallendor.txt in Resources */,
+				32A202E11D319A8A00FA8B22 /* reginastaudturck.txt in Resources */,
+				32A202D71D319A8A00FA8B22 /* adleraf.txt in Resources */,
 				3265F7D31D1BE4EE00B33362 /* LaunchScreen.storyboard in Resources */,
 				32FCE4BA1D2DA8C2008BCAA1 /* Artwork.plist in Resources */,
+				32A202DC1D319A8A00FA8B22 /* hpberndl.txt in Resources */,
+				32A202E31D319A8A00FA8B22 /* saanakang.txt in Resources */,
+				32A202E01D319A8A00FA8B22 /* optopussies.txt in Resources */,
+				32A202D91D319A8A00FA8B22 /* christinatihansen.txt in Resources */,
+				32A202D81D319A8A00FA8B22 /* anra.txt in Resources */,
 				3246A6FF1D2E669C0018D987 /* annanatascha.txt in Resources */,
 				32FCE4B81D2DA6C1008BCAA1 /* Artists.plist in Resources */,
 				3246A70A1D2E6D1F0018D987 /* kathykissik.txt in Resources */,
+				32A202DD1D319A8A00FA8B22 /* ingekurtz.txt in Resources */,
 				3246A70B1D2E6D1F0018D987 /* lilly350.txt in Resources */,
 				32ADA0961D25083100A1292C /* Festival.plist in Resources */,
+				32A202E51D319A8A00FA8B22 /* ursuladuch.txt in Resources */,
 				3265F7CE1D1BE4EE00B33362 /* Main.storyboard in Resources */,
+				32A202DA1D319A8A00FA8B22 /* emilmemon.txt in Resources */,
+				32A202DF1D319A8A00FA8B22 /* michaelheininger.txt in Resources */,
 				3246A7051D2E6D120018D987 /* elfiekriester.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
