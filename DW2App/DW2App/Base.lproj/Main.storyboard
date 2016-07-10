@@ -48,9 +48,9 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SDz-Sv-iyW">
                                         <rect key="frame" x="10" y="37" width="580" height="227"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">1. Art-Happening zum Thema Demokratie
+                                        <string key="text">1. Art-Happening zum Thema Demokratie
 
-„Wählen oder nicht wählen? das ist hier die Frage“:  6. bis 8. Mai 2016 in der Galerie LUXESE zwischen Luxus und Askese in Berg am Laim, Burggrafenstr. 5, Vernissage: Freitag, 6. Mai 20 Uhr, Ausstellung: Sa. u. So. 14 bis 18 Uhr</mutableString>
+„Wählen oder nicht wählen? das ist hier die Frage“:  6. bis 8. Mai 2016 in der Galerie LUXESE zwischen Luxus und Askese in Berg am Laim, Burggrafenstr. 5, Vernissage: Freitag, 6. Mai 20 Uhr, Ausstellung: Sa. u. So. 14 bis 18 Uhr</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -159,7 +159,7 @@
                                         <rect key="frame" x="301" y="0.0" width="219" height="34"/>
                                         <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="Künstlerinnen"/>
+                                        <state key="normal" title="Künstler"/>
                                         <connections>
                                             <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="MAW-Gu-uBx"/>
                                         </connections>
@@ -243,7 +243,7 @@
                                         <rect key="frame" x="301" y="0.0" width="219" height="34"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="Künstlerinnen"/>
+                                        <state key="normal" title="Künstler"/>
                                         <connections>
                                             <segue destination="tqF-II-plG" kind="show" identifier="showArtists" id="fKM-5e-YvG"/>
                                         </connections>
@@ -396,7 +396,7 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUC-In-yrJ">
                                 <rect key="frame" x="100" y="530" width="400" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Zur Künstlerin">
+                                <state key="normal" title="Künstler / Künstlerin">
                                     <color key="titleColor" red="0.97461939102564099" green="0.97461939102564099" blue="0.97461939102564099" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
