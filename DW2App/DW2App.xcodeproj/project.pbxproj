@@ -62,7 +62,7 @@
 		3246A7091D2E6D1F0018D987 /* lilly350.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lilly350.txt; sourceTree = "<group>"; };
 		3246A70F1D2E88E90018D987 /* power.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = power.mp4; sourceTree = "<group>"; };
 		3246A7111D2E8A390018D987 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		3265F7C31D1BE4EE00B33362 /* DW2App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DW2App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3265F7C31D1BE4EE00B33362 /* FFUK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFUK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3265F7C61D1BE4EE00B33362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3265F7CD1D1BE4EE00B33362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3265F7D21D1BE4EE00B33362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 		3265F7C41D1BE4EE00B33362 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3265F7C31D1BE4EE00B33362 /* DW2App.app */,
+				3265F7C31D1BE4EE00B33362 /* FFUK.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,9 +203,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3265F7C21D1BE4EE00B33362 /* DW2App */ = {
+		3265F7C21D1BE4EE00B33362 /* FFUK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3265F7D71D1BE4EE00B33362 /* Build configuration list for PBXNativeTarget "DW2App" */;
+			buildConfigurationList = 3265F7D71D1BE4EE00B33362 /* Build configuration list for PBXNativeTarget "FFUK" */;
 			buildPhases = (
 				3265F7BF1D1BE4EE00B33362 /* Sources */,
 				3265F7C01D1BE4EE00B33362 /* Frameworks */,
@@ -215,9 +215,9 @@
 			);
 			dependencies = (
 			);
-			name = DW2App;
+			name = FFUK;
 			productName = DW2App;
-			productReference = 3265F7C31D1BE4EE00B33362 /* DW2App.app */;
+			productReference = 3265F7C31D1BE4EE00B33362 /* FFUK.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -249,7 +249,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3265F7C21D1BE4EE00B33362 /* DW2App */,
+				3265F7C21D1BE4EE00B33362 /* FFUK */,
 			);
 		};
 /* End PBXProject section */
@@ -462,7 +462,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3265F7D71D1BE4EE00B33362 /* Build configuration list for PBXNativeTarget "DW2App" */ = {
+		3265F7D71D1BE4EE00B33362 /* Build configuration list for PBXNativeTarget "FFUK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3265F7D81D1BE4EE00B33362 /* Debug */,
