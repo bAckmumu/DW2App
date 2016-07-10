@@ -637,7 +637,7 @@ Die drei Themen der diesjährigen Festivalwochenenden – Demokratie, Macht und 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Über" image="first" id="Q0x-xA-sqx"/>
+                    <tabBarItem key="tabBarItem" title="Über" image="about" id="Q0x-xA-sqx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q4G-j6-sqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -670,9 +670,9 @@ Die drei Themen der diesjährigen Festivalwochenenden – Demokratie, Macht und 
     <resources>
         <image name="Allartists" width="30" height="30"/>
         <image name="Allartworks" width="30" height="30"/>
+        <image name="about" width="30" height="30"/>
         <image name="demokratie" width="30" height="30"/>
         <image name="ffukvideo" width="750" height="422"/>
-        <image name="first" width="30" height="30"/>
         <image name="header" width="576" height="233"/>
         <image name="info-1" width="30" height="30"/>
         <image name="partizipation4" width="30" height="30"/>
