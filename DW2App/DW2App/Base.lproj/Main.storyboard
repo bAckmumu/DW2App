@@ -624,7 +624,7 @@ Die drei Themen der diesjährigen Festivalwochenenden – Demokratie, Macht und 
             </objects>
             <point key="canvasLocation" x="-1720" y="806"/>
         </scene>
-        <!--Über-->
+        <!--Über uns-->
         <scene sceneID="yLo-Bc-JIZ">
             <objects>
                 <viewController id="gYy-bj-pCw" sceneMemberID="viewController">
@@ -659,7 +659,7 @@ Danke an alle Beteiligten und viel Spaß mit der App!
                             <constraint firstItem="EwO-d0-oS4" firstAttribute="trailing" secondItem="Jv8-2P-St4" secondAttribute="trailingMargin" id="Us8-bA-2hk"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Über" image="about" id="Q0x-xA-sqx"/>
+                    <tabBarItem key="tabBarItem" title="Über uns" image="about" id="Q0x-xA-sqx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q4G-j6-sqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
