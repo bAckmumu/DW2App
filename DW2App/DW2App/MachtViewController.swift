@@ -23,8 +23,8 @@ class MachtViewController: UIViewController {
         ArtistButton.layer.backgroundColor = buttonColor.CGColor
         ArtworkButton.layer.backgroundColor = buttonColor.CGColor
         
-        ArtworkButton.layer.cornerRadius = 2
-        ArtistButton.layer.cornerRadius = 2
+        //ArtworkButton.layer.cornerRadius = 2
+        //ArtistButton.layer.cornerRadius = 2
         Text.editable = false
 
         // Do any additional setup after loading the view.
